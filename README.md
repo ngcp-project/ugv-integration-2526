@@ -21,6 +21,6 @@ NVIDIA Jetson Orin Nano SBC Introduction: https://developer.nvidia.com/embedded/
 ## Software:
 Markdown Tutorial* : https://www.markdownguide.org/basic-syntax/
 
-Wireshark Introduction* (our network debugging tool) : https://www.youtube.com/watch?v=lb1Dw0elw0Q&t=68s
+Wireshark Introduction* (our network analysis and debugging tool) : https://www.youtube.com/watch?v=lb1Dw0elw0Q&t=68s
 
 ## *IMPORTANT!
