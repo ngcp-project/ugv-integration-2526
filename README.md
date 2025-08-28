@@ -5,6 +5,8 @@ RTI Connext Manual: https://community.rti.com/static/documentation/connext-dds/7
 
 Installing RTI and Shapes Demo* : https://www.youtube.com/watch?v=A9cTANTnqSY
 
+"Hello World" Demo : https://www.youtube.com/watch?v=76lqc1CRMRU
+
 RTI Connext Overview: https://www.youtube.com/watch?v=3W0eTaBLi0E
 
 
