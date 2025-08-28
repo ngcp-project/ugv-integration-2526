@@ -11,9 +11,9 @@ RTI Connext Overview: https://www.youtube.com/watch?v=3W0eTaBLi0E
 
 
 ## Programming Basics:   
-Python Introduction* : https://www.youtube.com/watch?v=ix9cRaBkVe0
+Python Introduction : https://www.youtube.com/watch?v=ix9cRaBkVe0
 
-C++ Introduction: https://www.youtube.com/watch?v=-TkoO8Z07hI
+C++ Introduction* : https://www.youtube.com/watch?v=-TkoO8Z07hI
 
 ## Hardware:
 NVIDIA Jetson Orin Nano SBC Introduction: https://developer.nvidia.com/embedded/learn/jetson-orin-nano-devkit-user-guide/software_setup.html
