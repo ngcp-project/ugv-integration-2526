@@ -18,7 +18,9 @@ C++ Introduction: https://www.youtube.com/watch?v=-TkoO8Z07hI
 ## Hardware:
 NVIDIA Jetson Orin Nano SBC Introduction: https://developer.nvidia.com/embedded/learn/jetson-orin-nano-devkit-user-guide/software_setup.html
 
+## Software:
+Markdown Tutorial* : https://www.markdownguide.org/basic-syntax/
 
-
+Wireshark Introduction* (our network debugging tool) : https://www.youtube.com/watch?v=lb1Dw0elw0Q&t=68s
 
 ## *IMPORTANT!
