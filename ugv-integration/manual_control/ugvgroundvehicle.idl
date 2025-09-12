@@ -1,0 +1,12 @@
+// Temperature data type
+struct ugvgroundvehicle {
+    
+
+    // Linear Velocity
+    float velocity;
+
+    //rotation
+    float SteeringAngle;
+
+
+};
