@@ -1,0 +1,24 @@
+[3.935s] Invoking command in '/home/kayla/NGCP/build/ugv_control': LD_LIBRARY_PATH=/home/kayla/NGCP/install/ugv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kayla/NGCP/build/ugv_control/build --no-deps symlink_data
+[5.217s] running develop
+[6.052s] running egg_info
+[6.052s] creating ugv_control.egg-info
+[6.053s] writing ugv_control.egg-info/PKG-INFO
+[6.054s] writing dependency_links to ugv_control.egg-info/dependency_links.txt
+[6.055s] writing entry points to ugv_control.egg-info/entry_points.txt
+[6.055s] writing requirements to ugv_control.egg-info/requires.txt
+[6.056s] writing top-level names to ugv_control.egg-info/top_level.txt
+[6.057s] writing manifest file 'ugv_control.egg-info/SOURCES.txt'
+[6.064s] reading manifest file 'ugv_control.egg-info/SOURCES.txt'
+[6.066s] writing manifest file 'ugv_control.egg-info/SOURCES.txt'
+[6.072s] running build_ext
+[6.073s] Creating /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv-control.egg-link (link to .)
+[6.076s] Installing ugv_control_pub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+[6.078s] 
+[6.078s] Installed /home/kayla/NGCP/build/ugv_control
+[6.079s] running symlink_data
+[6.079s] creating /home/kayla/NGCP/install/ugv_control/share/ament_index
+[6.080s] creating /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index
+[6.080s] creating /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index/packages
+[6.081s] symbolically linking /home/kayla/NGCP/build/ugv_control/resource/ugv_control -> /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index/packages
+[6.082s] symbolically linking /home/kayla/NGCP/build/ugv_control/package.xml -> /home/kayla/NGCP/install/ugv_control/share/ugv_control
+[6.223s] Invoked command in '/home/kayla/NGCP/build/ugv_control' returned '0': LD_LIBRARY_PATH=/home/kayla/NGCP/install/ugv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kayla/NGCP/build/ugv_control/build --no-deps symlink_data
