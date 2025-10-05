@@ -1,0 +1,24 @@
+[4.150s] Invoking command in '/home/kayla/NGCP/src/build/ugv_control': PYTHONPATH=/home/kayla/NGCP/src/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/src/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kayla/NGCP/src/build/ugv_control/build --no-deps symlink_data
+[6.473s] running develop
+[8.184s] running egg_info
+[8.185s] creating ugv_control.egg-info
+[8.185s] writing ugv_control.egg-info/PKG-INFO
+[8.186s] writing dependency_links to ugv_control.egg-info/dependency_links.txt
+[8.187s] writing entry points to ugv_control.egg-info/entry_points.txt
+[8.187s] writing requirements to ugv_control.egg-info/requires.txt
+[8.188s] writing top-level names to ugv_control.egg-info/top_level.txt
+[8.189s] writing manifest file 'ugv_control.egg-info/SOURCES.txt'
+[8.196s] reading manifest file 'ugv_control.egg-info/SOURCES.txt'
+[8.199s] writing manifest file 'ugv_control.egg-info/SOURCES.txt'
+[8.205s] running build_ext
+[8.206s] Creating /home/kayla/NGCP/src/install/ugv_control/lib/python3.10/site-packages/ugv-control.egg-link (link to .)
+[8.209s] Installing ugv_control_node script to /home/kayla/NGCP/src/install/ugv_control/lib/ugv_control
+[8.211s] 
+[8.211s] Installed /home/kayla/NGCP/src/build/ugv_control
+[8.212s] running symlink_data
+[8.212s] creating /home/kayla/NGCP/src/install/ugv_control/share/ament_index
+[8.213s] creating /home/kayla/NGCP/src/install/ugv_control/share/ament_index/resource_index
+[8.214s] creating /home/kayla/NGCP/src/install/ugv_control/share/ament_index/resource_index/packages
+[8.215s] symbolically linking /home/kayla/NGCP/src/build/ugv_control/resource/ugv_control -> /home/kayla/NGCP/src/install/ugv_control/share/ament_index/resource_index/packages
+[8.215s] symbolically linking /home/kayla/NGCP/src/build/ugv_control/package.xml -> /home/kayla/NGCP/src/install/ugv_control/share/ugv_control
+[8.369s] Invoked command in '/home/kayla/NGCP/src/build/ugv_control' returned '0': PYTHONPATH=/home/kayla/NGCP/src/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/src/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kayla/NGCP/src/build/ugv_control/build --no-deps symlink_data

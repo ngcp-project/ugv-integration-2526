@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/ugv_control
+ugv_control/__init__.py
+ugv_control/ugv_control_pub.py
+ugv_control.egg-info/PKG-INFO
+ugv_control.egg-info/SOURCES.txt
+ugv_control.egg-info/dependency_links.txt
+ugv_control.egg-info/entry_points.txt
+ugv_control.egg-info/requires.txt
+ugv_control.egg-info/top_level.txt
+ugv_control.egg-info/zip-safe
