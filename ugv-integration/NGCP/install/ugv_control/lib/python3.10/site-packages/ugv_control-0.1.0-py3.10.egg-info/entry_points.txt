@@ -1,0 +1,4 @@
+[console_scripts]
+ugv_control_pub = ugv_control.ugv_control_pub:main
+ugv_control_sub = ugv_control.ugv_control_sub:main
+
