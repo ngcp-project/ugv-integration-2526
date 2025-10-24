@@ -1,20 +1,11 @@
 #!/usr/bin/env python3
-import threading
-# import time
+import time
 import rclpy
 from rclpy.node import Node
 from ugv_msgs.msg import ManCtrl, AutoCtrl
 # from inputs import get_gamepad
 from sensor_msgs.msg import Joy
 from rclpy.qos import qos_profile_system_default, qos_profile_sensor_data
-
-# MAX_JOY_VAL = float(2**15)  # 32768.0
-# DEAD_ZONE_THRESH = 0.15
-# UPPER_STEER_CMD_LIMIT = 1.0
-# INC_DEC_VAL = 5.0
-
-# LOWER_ELBOW_SERV_LIM = -360.0
-# UPPER_ELBOW_SERV_LIM = 360.0
 
 def clamp(v, lo, hi):
     return max(lo, min(hi, v))
@@ -30,6 +21,11 @@ class UgvControlNode(Node):
         self.declare_parameter('lower_elbow_limit', -360.0)
         self.declare_parameter('upper_elbow_limit', 360.0)
 
+        '''Newly added params/constants'''
+        self.declare_parameter('watchdog_timeout', 0.25) # seconds without /joy → stop (4 Hz)
+        # self.declare_parameter('publish_rate_hz', 50.0) # 50 Hz main loop
+        self.declare_parameter('require_deadman', True) # require LB held to allow motion
+
         # Retrieve parameter values
         self.max_joy_val       = self.get_parameter('max_joy_val').value
         self.dead_zone         = self.get_parameter('dead_zone').value
@@ -37,12 +33,15 @@ class UgvControlNode(Node):
         self.inc_dec_val       = self.get_parameter('inc_dec_val').value
         self.lower_elbow_limit = self.get_parameter('lower_elbow_limit').value
         self.upper_elbow_limit = self.get_parameter('upper_elbow_limit').value
-
+        self.watchdog_timeout = self.get_parameter('watchdog_timeout').value
+        self.require_deadman  = self.get_parameter('require_deadman').value
+        self.last_joy_time = time.monotonic()
+        
         self.man_pub = self.create_publisher(ManCtrl, 'man_ctrl', qos_profile_system_default)
         # replaced depth=10 wtih qos profile sys default, built into ros2. lower latency
         self.auto_pub = self.create_publisher(AutoCtrl, 'auto_ctrl', qos_profile_system_default)
         self.create_subscription(Joy, 'joy', self.on_joy, qos_profile_sensor_data)
-        self.get_logger().info('UGV Publiser Started (joy topic)')
+        self.get_logger().info('UGV Publisher Started! (50hz)')
 
         # Joy is the standard for getting gamepad input in ROS2. Built in feature.
         # Published by a node that reads controller input thru OS.
@@ -68,7 +67,7 @@ class UgvControlNode(Node):
         self.x_btn = 0
         self.y_btn = 0
 
-        self.timer = self.create_timer(0.02, self.timer_callback)
+        self.timer = self.create_timer(0.02, self.timer_callback) # 50hz since 1/50 = 0.02
 
         # self._stop = threading.Event()
         # self.reader_thread = threading.Thread(target=self._gamepad_reader, daemon=True)
@@ -76,7 +75,30 @@ class UgvControlNode(Node):
 
         self.get_logger().info('UGV CONTROL PUBLISHER STARTED AT 50 HZ')
 
+# Stop function used by watchdog and error handlers
+    def _stop(self, reason: str) -> None:
+        self.man_obj.linear_vel = 0.0
+        self.man_obj.steer_cmd = 0.0
+        self.man_pub.publish(self.man_obj)
+        self.auto_pub.publish(self.auto_obj)
+        self.get_logger().warn(f'[SAFETY STOP]: {reason}')
+
     def timer_callback(self):
+        now = time.monotonic() # get curr time
+
+        # Watchdog function -- handles unplugging of controller. Constantly fetches joy msgs, if its not getting any input
+        if (now - self.last_joy_time) > self.watchdog_timeout:
+            self._stop('No /joy messages / controller unplugged')
+            return
+        
+        '''
+        -- add safety bumper feature here in the future. --
+
+        if self.require_deadman and not self.l_bumper:
+            self._stop('Deadman (LB) not held')
+            return
+        '''
+
         if self.l_bumper == 1 and self.r_bumper == 1 and self.a_btn == 1:
             self.man_obj.auto_en = not self.man_obj.auto_en
             self.auto_obj.auto_en = self.man_obj.auto_en
@@ -86,6 +108,7 @@ class UgvControlNode(Node):
             self.auto_pub.publish(self.auto_obj)
             return
 
+        # --- work on arm code later ---
         if self.lt_val > 1000 and self.rt_val < 1000:
             self.man_obj.arm_cmd[1] += float(self.ud_dpad) * self.inc_dec_val
             self.man_obj.arm_cmd[1] = clamp(self.man_obj.arm_cmd[1],
@@ -109,86 +132,46 @@ class UgvControlNode(Node):
         else:
             self.man_obj.linear_vel = self.cmd_vel
             self.man_obj.steer_cmd = clamp(self.cmd_steer,
-                                           -self.upper_elbow_limit, self.upper_elbow_limit)
+                                           -self.upper_steer_limit, self.upper_steer_limit)
 
         self.man_pub.publish(self.man_obj)
 
     # converted to joy msgs 
     def on_joy(self, msg: Joy): # replaced gamepad reader function
-            # Axes/buttons mapping depends on your controller
-            self.cmd_vel   = -msg.axes[1]
-            self.cmd_steer =  msg.axes[3]
-            self.lt_val    = int((1 - msg.axes[2]) * self.max_joy_val / 2)  # normalized [0, 32767]
-            # changed hard coded 32737 # to default value
-            self.rt_val    = int((1 - msg.axes[5]) * self.max_joy_val / 2)
-            self.l_bumper  = int(msg.buttons[4])
-            self.r_bumper  = int(msg.buttons[5])
-            self.a_btn     = int(msg.buttons[0])
-            self.b_btn     = int(msg.buttons[1])
-            self.x_btn     = int(msg.buttons[2])
-            self.y_btn     = int(msg.buttons[3])
-            # d-pad is usually axes[6], axes[7]
-            self.lr_dpad   = int(msg.axes[6])
-            self.ud_dpad   = int(msg.axes[7])
+            self.last_joy_time = time.monotonic()
 
-    #  def _gamepad_reader(self):
-    #     while not self._stop.is_set():
-    #         try:
-    #             events = get_gamepad()
-    #             for e in events:
-    #                 code = e.code
-    #                 state = e.state
+            try:
+                # Axes/buttons mapping depends on your controller
+                self.cmd_vel   = -msg.axes[1]
+                self.cmd_steer =  msg.axes[3]
 
-    #                 if code == 'ABS_Y':
-    #                     val = -state / MAX_JOY_VAL
-    #                     if abs(val) < DEAD_ZONE_THRESH:
-    #                         val = 0.0
-    #                     self.cmd_vel = float(val)
+                # Deadzone filtering added
+                if abs(self.cmd_vel) < self.dead_zone:
+                    self.cmd_vel = 0.0
+                if abs(self.cmd_steer) < self.dead_zone:
+                    self.cmd_steer = 0.0
 
-    #                 elif code == 'ABS_RX':
-    #                     val = state / MAX_JOY_VAL
-    #                     if abs(val) < DEAD_ZONE_THRESH:
-    #                         val = 0.0
-    #                     self.cmd_steer = float(val)
+                self.lt_val    = int((1 - msg.axes[2]) * self.max_joy_val / 2)  # normalized [0, 32767]
+                # changed hard coded 32737 # to default value
+                self.rt_val    = int((1 - msg.axes[5]) * self.max_joy_val / 2)
+                self.l_bumper  = int(msg.buttons[4])
+                self.r_bumper  = int(msg.buttons[5])
+                self.a_btn     = int(msg.buttons[0])
+                self.b_btn     = int(msg.buttons[1])
+                self.x_btn     = int(msg.buttons[2])
+                self.y_btn     = int(msg.buttons[3])
+                # d-pad is usually axes[6], axes[7]
+                self.lr_dpad   = int(msg.axes[6])
+                self.ud_dpad   = int(msg.axes[7])
 
-    #                 elif code == 'ABS_Z':
-    #                     self.lt_val = int(state)
+            except (IndexError, ValueError):
+                self._stop('Bad joystick data detected...')
+                return
 
-    #                 elif code == 'ABS_RZ':
-    #                     self.rt_val = int(state)
-
-    #                 elif code == 'ABS_HAT0Y':
-    #                     self.ud_dpad = int(state)
-
-    #                 elif code == 'ABS_HAT0X':
-    #                     self.lr_dpad = int(state)
-
-    #                 elif code == 'BTN_TR':
-    #                     self.r_bumper = int(state)
-
-    #                 elif code == 'BTN_TL':
-    #                     self.l_bumper = int(state)
-
-    #                 elif code == 'BTN_SOUTH':
-    #                     self.a_btn = int(state)
-
-    #                 elif code == 'BTN_EAST':
-    #                     self.b_btn = int(state)
-
-    #                 elif code == 'BTN_NORTH':
-    #                     self.x_btn = int(state)
-
-    #                 elif code == 'BTN_WEST':
-    #                     self.y_btn = int(state)
-
-    #         except KeyboardInterrupt:
-    #             break
-    #         except Exception as ex:
-    #             self.get_logger().warning(f'GAMEPAD READ EXCEPTION: {ex}')
-    #             time.sleep(0.01)
-
+    # Shutdown function
     def destroy_node(self):
         self.get_logger().info('Shutting down node..')
+        self._stop('Node shutdown')
         super().destroy_node()
 
 def main():
@@ -199,7 +182,7 @@ def main():
     except KeyboardInterrupt:
         pass
     finally:
-        # node.destroy_node()
+        node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
