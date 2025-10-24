@@ -1,0 +1,1 @@
+/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_cpp/ugv_msgs/msg/detail/man_ctrl__traits.hpp

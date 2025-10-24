@@ -1,0 +1,1 @@
+/home/lev/ngcp_ws/build/ugv_msgs/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_c.h

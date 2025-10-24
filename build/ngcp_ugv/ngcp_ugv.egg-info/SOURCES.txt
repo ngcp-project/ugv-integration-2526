@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+ngcp_ugv/__init__.py
+ngcp_ugv/ugv_control_pub.py
+ngcp_ugv/ugv_control_sub.py
+ngcp_ugv.egg-info/PKG-INFO
+ngcp_ugv.egg-info/SOURCES.txt
+ngcp_ugv.egg-info/dependency_links.txt
+ngcp_ugv.egg-info/entry_points.txt
+ngcp_ugv.egg-info/requires.txt
+ngcp_ugv.egg-info/top_level.txt
+ngcp_ugv.egg-info/zip-safe
+resource/ngcp_ugv

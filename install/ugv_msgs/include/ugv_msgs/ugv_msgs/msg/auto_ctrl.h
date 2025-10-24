@@ -1,0 +1,1 @@
+/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_c/ugv_msgs/msg/auto_ctrl.h

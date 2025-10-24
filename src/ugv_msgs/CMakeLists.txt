@@ -5,14 +5,40 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+<<<<<<< HEAD
 find_package(ament_cmake REQUIRED)
+=======
+# find dependencies
+find_package(ament_cmake REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
+>>>>>>> 91b71dd (Fixed file structure, packages)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ManCtrl.msg"
   "msg/AutoCtrl.msg"
+<<<<<<< HEAD
   "msg/UGVTelemetry.msg"
 )
 
+=======
+  # add services/actions if any
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+>>>>>>> 91b71dd (Fixed file structure, packages)
 ament_export_dependencies(rosidl_default_runtime)
 ament_package()
