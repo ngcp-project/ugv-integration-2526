@@ -1,0 +1,1 @@
+/home/lev/ngcp_ws/build/ugv_msgs/rosidl_typesupport_introspection_c/ugv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

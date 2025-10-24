@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating ngcp_ugv.egg-info
+writing ngcp_ugv.egg-info/PKG-INFO
+writing dependency_links to ngcp_ugv.egg-info/dependency_links.txt
+writing entry points to ngcp_ugv.egg-info/entry_points.txt
+writing requirements to ngcp_ugv.egg-info/requires.txt
+writing top-level names to ngcp_ugv.egg-info/top_level.txt
+writing manifest file 'ngcp_ugv.egg-info/SOURCES.txt'
+reading manifest file 'ngcp_ugv.egg-info/SOURCES.txt'
+writing manifest file 'ngcp_ugv.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lev/ngcp_ws/install/ngcp_ugv/lib/python3.10/site-packages/ngcp-ugv.egg-link (link to .)
+Installing ugv_control_pub script to /home/lev/ngcp_ws/install/ngcp_ugv/lib/ngcp_ugv
+Installing ugv_control_sub script to /home/lev/ngcp_ws/install/ngcp_ugv/lib/ngcp_ugv
+
+Installed /home/lev/ngcp_ws/build/ngcp_ugv
+running symlink_data
+creating /home/lev/ngcp_ws/install/ngcp_ugv/share/ament_index
+creating /home/lev/ngcp_ws/install/ngcp_ugv/share/ament_index/resource_index
+creating /home/lev/ngcp_ws/install/ngcp_ugv/share/ament_index/resource_index/packages
+symbolically linking /home/lev/ngcp_ws/build/ngcp_ugv/resource/ngcp_ugv -> /home/lev/ngcp_ws/install/ngcp_ugv/share/ament_index/resource_index/packages
+symbolically linking /home/lev/ngcp_ws/build/ngcp_ugv/package.xml -> /home/lev/ngcp_ws/install/ngcp_ugv/share/ngcp_ugv

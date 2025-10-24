@@ -1,0 +1,1 @@
+/home/lev/ngcp_ws/src/ugv_msgs/msg/ManCtrl.msg
