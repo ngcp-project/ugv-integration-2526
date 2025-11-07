@@ -24,7 +24,7 @@ class UgvControlNode(Node):
         '''Newly added params/constants'''
         self.declare_parameter('watchdog_timeout', 0.25) # seconds without /joy → stop (4 Hz)
         # self.declare_parameter('publish_rate_hz', 50.0) # 50 Hz main loop
-        self.declare_parameter('require_deadman', True) # require LB held to allow motion
+        self.declare_parameter('require_safety', True) # require LB held to allow motion
 
         # Retrieve parameter values
         self.max_joy_val       = self.get_parameter('max_joy_val').value
@@ -34,7 +34,7 @@ class UgvControlNode(Node):
         self.lower_elbow_limit = self.get_parameter('lower_elbow_limit').value
         self.upper_elbow_limit = self.get_parameter('upper_elbow_limit').value
         self.watchdog_timeout = self.get_parameter('watchdog_timeout').value
-        self.require_deadman  = self.get_parameter('require_deadman').value
+        self.require_safety  = self.get_parameter('require_safety').value
         self.last_joy_time = time.monotonic()
         
         self.man_pub = self.create_publisher(ManCtrl, 'man_ctrl', qos_profile_system_default)
@@ -92,13 +92,13 @@ class UgvControlNode(Node):
             return
         
         '''
-        -- add safety bumper feature here in the future. --
-
-        if self.require_deadman and not self.l_bumper:
-            self._stop('Deadman (LB) not held')
-            return
+        -- added safety bumper feature here --
         '''
 
+        if self.require_safety and not self.l_bumper:
+            self._stop('Safety (LB) not held')
+            return
+        
         if self.l_bumper == 1 and self.r_bumper == 1 and self.a_btn == 1:
             self.man_obj.auto_en = not self.man_obj.auto_en
             self.auto_obj.auto_en = self.man_obj.auto_en
