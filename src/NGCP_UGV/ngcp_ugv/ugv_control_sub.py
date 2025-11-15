@@ -5,43 +5,50 @@ from rclpy.qos import QoSProfile
 
 from ugv_msgs.msg import ManCtrl, AutoCtrl  # ensure these match your .msg files
 
-def get_typed_param(node: Node, name: str, default):
-    """Typed parameter helper so you can pass ints/strings cleanly."""
-    p = node.get_parameter(name).get_parameter_value()
-    # rclpy stores different types in different fields
-    if hasattr(p, "string_value") and p.string_value != "":
-        return p.string_value
-    if hasattr(p, "integer_value") and p.integer_value != 0:
-        return int(p.integer_value)
-    if hasattr(p, "double_value") and p.double_value != 0.0:
-        return float(p.double_value)
-    if hasattr(p, "bool_value"):
-        return bool(p.bool_value)
-    # Fallback to default when parameter was declared but left at type 0
-    return default
+'''
+Unnecessary function below, this was needed for older rclpy versions, but now we can use get_parameter to simplify all this.
+'''
+
+# def get_typed_param(node: Node, name: str, default):
+#     """Typed parameter helper so you can pass ints/strings cleanly."""
+#     p = node.get_parameter(name).get_parameter_value()
+#     # rclpy stores different types in different fields
+#     if hasattr(p, "string_value") and p.string_value != "":
+#         return p.string_value
+#     if hasattr(p, "integer_value") and p.integer_value != 0:
+#         return int(p.integer_value)
+#     if hasattr(p, "double_value") and p.double_value != 0.0:
+#         return float(p.double_value)
+#     if hasattr(p, "bool_value"):
+#         return bool(p.bool_value)
+#     # Fallback to default when parameter was declared but left at type 0
+#     return default
 
 class UgvControlSubNode(Node):
     def __init__(self):
         super().__init__('ugv_control_sub')
-
-        # ---- Parameters (override at runtime with --ros-args -p key:=value) ----
-        # Local bind address (same as your RTI script)
-        self.declare_parameter('server_ip', '192.168.20.5')
+        
+        self.declare_parameter('server_ip', '0.0.0.0')
         self.declare_parameter('server_port', 12345)
         # Destination (client) address
-        self.declare_parameter('client_ip', '192.168.20.21')
-        self.declare_parameter('client_port', 8)
+        self.declare_parameter('client_ip', '127.0.0.1')
+        self.declare_parameter('client_port', 5000)
+        # autovel and autosteer params
+        self.declare_parameter('auto_vel', -1.0)
+        self.declare_parameter('auto_steer', 0.0)
 
-        server_ip   = get_typed_param(self, 'server_ip', '0.0.0.0')
-        server_port = get_typed_param(self, 'server_port', 12345)
-        self.client_ip   = get_typed_param(self, 'client_ip', '127.0.0.1')
-        self.client_port = get_typed_param(self, 'client_port', 8)
+        server_ip        = self.get_parameter('server_ip').value
+        server_port      = int(self.get_parameter('server_port').value)
+        self.client_ip   = self.get_parameter('client_ip').value
+        self.client_port = int(self.get_parameter('client_port').value)
+        self.auto_vel    = float(self.get_parameter('auto_vel').value)
+        self.auto_steer  = float(self.get_parameter('auto_steer').value)
 
         # ---- UDP socket setup (bind + sendto) ----
         try:
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            self.sock.bind((server_ip, int(server_port)))
+            self.sock.bind((server_ip, server_port))
             self.get_logger().info(
                 f'UDP bound to {server_ip}:{server_port}, sending to {self.client_ip}:{self.client_port}'
             )
@@ -55,7 +62,7 @@ class UgvControlSubNode(Node):
         self.auto_sub = self.create_subscription(AutoCtrl, 'auto_ctrl', self.on_auto_ctrl, qos)
 
         # Constants used in auto callback (tweak as needed)
-        self.AUTO_VEL = -1.0
+        self.AUTO_VEL = -1.0 # make these parameters later
         self.STEER_CMD = 0.0
 
     # --- man_ctrl callback ---
@@ -71,7 +78,7 @@ class UgvControlSubNode(Node):
         payload = f'{linear_vel},{steer_cmd}'.encode()
         try:
             self.sock.sendto(payload, (self.client_ip, int(self.client_port)))
-            self.get_logger().debug(f'Sent MAN {linear_vel=}, {steer_cmd=}')
+            self.get_logger().info(f'Sent MAN {linear_vel=}, {steer_cmd=}')
         except Exception as ex:
             self.get_logger().warning(f'UDP send (MAN) failed: {ex}')
 
@@ -92,7 +99,8 @@ class UgvControlSubNode(Node):
         except Exception as ex:
             self.get_logger().warning(f'UDP send (AUTO) failed: {ex}')
 
-    def destroy_node(self):
+    def destroy_node(self): # added shutdown msg
+        self.get_logger().info('Shutting down UDP subscriber node...')
         try:
             if hasattr(self, 'sock'):
                 self.sock.close()
