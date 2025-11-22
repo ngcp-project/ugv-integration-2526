@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o" "gcc" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o.d"
-  "/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o" "gcc" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o.d"
+  "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o" "gcc" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o.d"
+  "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o" "gcc" "CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/DependInfo.cmake"
-  "/home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles/ugv_msgs__rosidl_generator_c.dir/DependInfo.cmake"
+  "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles/ugv_msgs__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

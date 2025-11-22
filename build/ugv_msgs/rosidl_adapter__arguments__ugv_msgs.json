@@ -1,7 +1,7 @@
 {
   "package_name": "ugv_msgs",
   "non_idl_tuples": [
-    "/home/lev/ngcp_ws/src/ugv_msgs:msg/ManCtrl.msg",
-    "/home/lev/ngcp_ws/src/ugv_msgs:msg/AutoCtrl.msg"
+    "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs:msg/ManCtrl.msg",
+    "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs:msg/AutoCtrl.msg"
   ]
 }

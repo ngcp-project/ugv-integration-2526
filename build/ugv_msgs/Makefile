@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lev/ngcp_ws/src/ugv_msgs
+CMAKE_SOURCE_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lev/ngcp_ws/build/ugv_msgs
+CMAKE_BINARY_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles /home/lev/ngcp_ws/build/ugv_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ ugv_msgs__rosidl_typesupport_cpp/fast:
 .PHONY : ugv_msgs__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_ugv_msgs
+# Target rules for targets named ament_cmake_python_copy_ugv_msgs
 
 # Build rule for target.
-ament_cmake_python_symlink_ugv_msgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_ugv_msgs
-.PHONY : ament_cmake_python_symlink_ugv_msgs
+ament_cmake_python_copy_ugv_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_ugv_msgs
+.PHONY : ament_cmake_python_copy_ugv_msgs
 
 # fast build rule for target.
-ament_cmake_python_symlink_ugv_msgs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_ugv_msgs.dir/build.make CMakeFiles/ament_cmake_python_symlink_ugv_msgs.dir/build
-.PHONY : ament_cmake_python_symlink_ugv_msgs/fast
+ament_cmake_python_copy_ugv_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_ugv_msgs.dir/build.make CMakeFiles/ament_cmake_python_copy_ugv_msgs.dir/build
+.PHONY : ament_cmake_python_copy_ugv_msgs/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_ugv_msgs_egg
@@ -875,7 +875,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_ugv_msgs_egg"
-	@echo "... ament_cmake_python_symlink_ugv_msgs"
+	@echo "... ament_cmake_python_copy_ugv_msgs"
 	@echo "... ugv_msgs"
 	@echo "... ugv_msgs__cpp"
 	@echo "... ugv_msgs__py"

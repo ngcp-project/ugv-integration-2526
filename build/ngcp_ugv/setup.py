@@ -1,1 +1,0 @@
-/home/lev/ngcp_ws/src/NGCP_UGV/setup.py

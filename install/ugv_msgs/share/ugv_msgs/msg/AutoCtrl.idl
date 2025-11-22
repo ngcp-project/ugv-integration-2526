@@ -1,1 +1,14 @@
-/home/lev/ngcp_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/AutoCtrl.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ugv_msgs/msg/AutoCtrl.msg
+// generated code does not contain a copyright notice
+
+
+module ugv_msgs {
+  module msg {
+    struct AutoCtrl {
+      boolean auto_en;
+
+      float heading_error;
+    };
+  };
+};

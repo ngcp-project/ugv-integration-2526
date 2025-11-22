@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/ngcp_ugv/ngcp_ugv.egg-info
+writing ../../build/ngcp_ugv/ngcp_ugv.egg-info/PKG-INFO
+writing dependency_links to ../../build/ngcp_ugv/ngcp_ugv.egg-info/dependency_links.txt
+writing entry points to ../../build/ngcp_ugv/ngcp_ugv.egg-info/entry_points.txt
+writing requirements to ../../build/ngcp_ugv/ngcp_ugv.egg-info/requires.txt
+writing top-level names to ../../build/ngcp_ugv/ngcp_ugv.egg-info/top_level.txt
+writing manifest file '../../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'
+reading manifest file '../../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'
+writing manifest file '../../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv
+copying ngcp_ugv/ugv_control_sub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv
+copying ngcp_ugv/__init__.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv
+copying ngcp_ugv/ugv_control_pub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv
+running install
+running install_lib
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv
+copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/ugv_control_sub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv
+copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/__init__.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv
+copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/ugv_control_pub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv
+byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/ugv_control_sub.py to ugv_control_sub.cpython-310.pyc
+byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/ugv_control_pub.py to ugv_control_pub.cpython-310.pyc
+running install_data
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index/resource_index
+creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index/resource_index/packages
+copying resource/ngcp_ugv -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index/resource_index/packages
+copying package.xml -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv
+running install_egg_info
+Copying ../../build/ngcp_ugv/ngcp_ugv.egg-info to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ugv_control_pub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/ngcp_ugv
+Installing ugv_control_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/ngcp_ugv
+writing list of installed files to '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/install.log'

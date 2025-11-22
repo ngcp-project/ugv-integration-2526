@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lev/ngcp_ws/src/ugv_msgs
+CMAKE_SOURCE_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lev/ngcp_ws/build/ugv_msgs
+CMAKE_BINARY_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs
 
 # Utility rule file for ugv_msgs.
 
@@ -66,8 +66,8 @@ include CMakeFiles/ugv_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/ugv_msgs.dir/progress.make
 
-CMakeFiles/ugv_msgs: /home/lev/ngcp_ws/src/ugv_msgs/msg/ManCtrl.msg
-CMakeFiles/ugv_msgs: /home/lev/ngcp_ws/src/ugv_msgs/msg/AutoCtrl.msg
+CMakeFiles/ugv_msgs: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs/msg/ManCtrl.msg
+CMakeFiles/ugv_msgs: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs/msg/AutoCtrl.msg
 
 ugv_msgs: CMakeFiles/ugv_msgs
 ugv_msgs: CMakeFiles/ugv_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ugv_msgs.dir/clean:
 .PHONY : CMakeFiles/ugv_msgs.dir/clean
 
 CMakeFiles/ugv_msgs.dir/depend:
-	cd /home/lev/ngcp_ws/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lev/ngcp_ws/src/ugv_msgs /home/lev/ngcp_ws/src/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles/ugv_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles/ugv_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ugv_msgs.dir/depend
 

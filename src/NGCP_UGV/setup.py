@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'ugv_control_pub = ngcp_ugv.ugv_control_pub:main',
             'ugv_control_sub = ngcp_ugv.ugv_control_sub:main',
+            'ugv_arm_sub = ngcp_ugv.ugv_arm_sub:main',
         ],
     },
 )
