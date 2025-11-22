@@ -1,6 +1,0 @@
-source;share/ngcp_ugv/hook/pythonpath.ps1
-source;share/ngcp_ugv/hook/pythonpath.dsv
-source;share/ngcp_ugv/hook/pythonpath.sh
-source;share/ngcp_ugv/hook/ament_prefix_path.ps1
-source;share/ngcp_ugv/hook/ament_prefix_path.dsv
-source;share/ngcp_ugv/hook/ament_prefix_path.sh
