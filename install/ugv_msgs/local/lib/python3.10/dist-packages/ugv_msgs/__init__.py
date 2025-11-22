@@ -1,1 +1,0 @@
-/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/__init__.py

@@ -31,8 +31,8 @@ class UgvControlSubNode(Node):
         self.declare_parameter('server_ip', '0.0.0.0')
         self.declare_parameter('server_port', 12345)
         # Destination (client) address
-        self.declare_parameter('client_ip', '127.0.0.1')
-        self.declare_parameter('client_port', 5000)
+        self.declare_parameter('client_ip', '192.168.20.21')
+        self.declare_parameter('client_port', 8)
         # autovel and autosteer params
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
@@ -64,6 +64,7 @@ class UgvControlSubNode(Node):
         # Constants used in auto callback (tweak as needed)
         self.AUTO_VEL = -1.0 # make these parameters later
         self.STEER_CMD = 0.0
+        
 
     # --- man_ctrl callback ---
     def on_man_ctrl(self, msg: ManCtrl):
@@ -72,13 +73,17 @@ class UgvControlSubNode(Node):
             self.get_logger().debug('Manual suppressed (auto_en=True).')
             return
 
-        linear_vel = round(float(getattr(msg, 'linear_vel', 0.0)), 3)
-        steer_cmd  = round(float(getattr(msg, 'steer_cmd', 0.0)), 3)
+        linear_vel = msg.linear_vel
+        steer_cmd = msg.steer_cmd
+        arm_cmd = msg.arm_cmd # joints
 
-        payload = f'{linear_vel},{steer_cmd}'.encode()
+        # linear_vel = round(float(getattr(msg, 'linear_vel', 0.0)), 3)
+        # steer_cmd  = round(float(getattr(msg, 'steer_cmd', 0.0)), 3)
+
+        payload = f'{linear_vel},{steer_cmd}, {",".join(str(x) for x in arm_cmd)}'.encode()
         try:
             self.sock.sendto(payload, (self.client_ip, int(self.client_port)))
-            self.get_logger().info(f'Sent MAN {linear_vel=}, {steer_cmd=}')
+            self.get_logger().info(f'Sent MAN {linear_vel=}, {steer_cmd=}, Payload = {payload}')
         except Exception as ex:
             self.get_logger().warning(f'UDP send (MAN) failed: {ex}')
 

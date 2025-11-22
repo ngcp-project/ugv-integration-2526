@@ -1,2 +1,2 @@
-/home/lev/ngcp_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/ManCtrl.idl
-/home/lev/ngcp_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/AutoCtrl.idl
+/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/ManCtrl.idl
+/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/AutoCtrl.idl

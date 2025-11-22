@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lev/ngcp_ws/src/ugv_msgs
+CMAKE_SOURCE_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lev/ngcp_ws/build/ugv_msgs
+CMAKE_BINARY_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs
 
 # Utility rule file for ament_cmake_python_build_ugv_msgs_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/compiler_depend.mak
 include CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_ugv_msgs_egg:
-	cd /home/lev/ngcp_ws/build/ugv_msgs/ament_cmake_python/ugv_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/ament_cmake_python/ugv_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_ugv_msgs_egg: CMakeFiles/ament_cmake_python_build_ugv_msgs_egg
 ament_cmake_python_build_ugv_msgs_egg: CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/depend:
-	cd /home/lev/ngcp_ws/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lev/ngcp_ws/src/ugv_msgs /home/lev/ngcp_ws/src/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_ugv_msgs_egg.dir/depend
 

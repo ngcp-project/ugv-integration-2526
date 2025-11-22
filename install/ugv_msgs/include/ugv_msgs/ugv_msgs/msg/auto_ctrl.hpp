@@ -1,1 +1,12 @@
-/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_cpp/ugv_msgs/msg/auto_ctrl.hpp
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef UGV_MSGS__MSG__AUTO_CTRL_HPP_
+#define UGV_MSGS__MSG__AUTO_CTRL_HPP_
+
+#include "ugv_msgs/msg/detail/auto_ctrl__struct.hpp"
+#include "ugv_msgs/msg/detail/auto_ctrl__builder.hpp"
+#include "ugv_msgs/msg/detail/auto_ctrl__traits.hpp"
+#include "ugv_msgs/msg/detail/auto_ctrl__type_support.hpp"
+
+#endif  // UGV_MSGS__MSG__AUTO_CTRL_HPP_

@@ -1,1 +1,31 @@
-/home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_cpp/ugv_msgs/msg/detail/auto_ctrl__type_support.hpp
+// generated from rosidl_generator_cpp/resource/idl__type_support.hpp.em
+// with input from ugv_msgs:msg/AutoCtrl.idl
+// generated code does not contain a copyright notice
+
+#ifndef UGV_MSGS__MSG__DETAIL__AUTO_CTRL__TYPE_SUPPORT_HPP_
+#define UGV_MSGS__MSG__DETAIL__AUTO_CTRL__TYPE_SUPPORT_HPP_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "ugv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
+
+#include "rosidl_typesupport_cpp/message_type_support.hpp"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_CPP_PUBLIC_ugv_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_cpp,
+  ugv_msgs,
+  msg,
+  AutoCtrl
+)();
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // UGV_MSGS__MSG__DETAIL__AUTO_CTRL__TYPE_SUPPORT_HPP_

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lev/ngcp_ws/src/ugv_msgs
+CMAKE_SOURCE_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lev/ngcp_ws/build/ugv_msgs
+CMAKE_BINARY_DIR = /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ugv_msgs__rosidl_generator_py.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/ugv_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o: CMakeFiles/ugv_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o: rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o: CMakeFiles/ugv_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o -MF CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o.d -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o -c /home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o -MF CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o.d -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o -c /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c
 
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c > CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c > CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.i
 
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.s
 
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o: CMakeFiles/ugv_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o: rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o: CMakeFiles/ugv_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o -MF CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o.d -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o -c /home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o -MF CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o.d -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o -c /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c
 
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c > CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c > CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.i
 
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lev/ngcp_ws/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c -o CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.s
 
 # Object files for target ugv_msgs__rosidl_generator_py
 ugv_msgs__rosidl_generator_py_OBJECTS = \
@@ -114,7 +114,7 @@ rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so: libugv_msgs__r
 rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so: CMakeFiles/ugv_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ugv_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +126,6 @@ CMakeFiles/ugv_msgs__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/ugv_msgs__rosidl_generator_py.dir/clean
 
 CMakeFiles/ugv_msgs__rosidl_generator_py.dir/depend:
-	cd /home/lev/ngcp_ws/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lev/ngcp_ws/src/ugv_msgs /home/lev/ngcp_ws/src/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs /home/lev/ngcp_ws/build/ugv_msgs/CMakeFiles/ugv_msgs__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs/CMakeFiles/ugv_msgs__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ugv_msgs__rosidl_generator_py.dir/depend
 
