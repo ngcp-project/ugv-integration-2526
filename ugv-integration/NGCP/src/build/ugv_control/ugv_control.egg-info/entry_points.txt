@@ -1,3 +1,0 @@
-[console_scripts]
-ugv_control_node = ugv_control.ugv_control_node:main
-
