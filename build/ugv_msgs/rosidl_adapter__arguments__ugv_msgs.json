@@ -1,0 +1,7 @@
+{
+  "package_name": "ugv_msgs",
+  "non_idl_tuples": [
+    "/home/kayla/NGCP/src/ugv_msgs:msg/ManCtrl.msg",
+    "/home/kayla/NGCP/src/ugv_msgs:msg/AutoCtrl.msg"
+  ]
+}

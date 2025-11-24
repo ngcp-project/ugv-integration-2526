@@ -1,0 +1,1 @@
+/home/kayla/NGCP/build/ugv_msgs/ament_cmake_core/ugv_msgsConfig-version.cmake

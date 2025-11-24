@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target ntrip_lib[0m
+[ 60%] Built target ntrip_lib
+[35m[1mConsolidate compiler generated dependencies of target ntrip[0m
+[100%] Built target ntrip
+-- Install configuration: ""
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/lib/libntrip_lib.a
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/lib/ntrip/ntrip
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/config
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/config/ntrip-param.yaml
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/launch
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/launch/ntrip_launch.py
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/include/
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/include//ntrip_client
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/include//ntrip_client/rtcm_parser.h
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/include//ntrip_client/ntrip_client.h
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ament_index/resource_index/package_run_dependencies/ntrip
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ament_index/resource_index/parent_prefix_path/ntrip
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/environment/ament_prefix_path.sh
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/environment/path.sh
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/environment/path.dsv
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/local_setup.bash
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/local_setup.sh
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/local_setup.zsh
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/local_setup.dsv
+-- Installing: /home/kayla/NGCP/install/ntrip/share/ntrip/package.dsv
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ament_index/resource_index/packages/ntrip
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/cmake/ntripConfig.cmake
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/cmake/ntripConfig-version.cmake
+-- Up-to-date: /home/kayla/NGCP/install/ntrip/share/ntrip/package.xml

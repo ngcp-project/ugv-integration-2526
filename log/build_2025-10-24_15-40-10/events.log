@@ -1,0 +1,133 @@
+[0.000000] (-) TimerEvent: {}
+[0.003508] (ntrip) JobQueued: {'identifier': 'ntrip', 'dependencies': OrderedDict()}
+[0.007220] (ugv_msgs) JobQueued: {'identifier': 'ugv_msgs', 'dependencies': OrderedDict()}
+[0.009666] (xsens_mti_ros2_driver) JobQueued: {'identifier': 'xsens_mti_ros2_driver', 'dependencies': OrderedDict()}
+[0.010717] (ugv_control) JobQueued: {'identifier': 'ugv_control', 'dependencies': OrderedDict([('ugv_msgs', '/home/kayla/NGCP/install/ugv_msgs')])}
+[0.011506] (ugv_msgs) JobStarted: {'identifier': 'ugv_msgs'}
+[0.107072] (ntrip) JobStarted: {'identifier': 'ntrip'}
+[0.120683] (-) TimerEvent: {}
+[0.137648] (xsens_mti_ros2_driver) JobStarted: {'identifier': 'xsens_mti_ros2_driver'}
+[0.168908] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'cmake'}
+[0.188134] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kayla/NGCP/src/ugv_msgs', '-DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ugv_msgs'], 'cwd': '/home/kayla/NGCP/build/ugv_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('HOME', '/home/kayla'), ('OLDPWD', '/home/kayla'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1333'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'kayla'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1310,unix/kayla-ngcp:/tmp/.ICE-unix/1310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4095b3cf_7f5e_45ef_9c3b_b7ae54a6aa68'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.221126] (-) TimerEvent: {}
+[0.225028] (ntrip) JobProgress: {'identifier': 'ntrip', 'progress': 'cmake'}
+[0.234119] (ntrip) Command: {'cmd': ['/usr/bin/cmake', '/home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip', '-DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ntrip'], 'cwd': '/home/kayla/NGCP/build/ntrip', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('HOME', '/home/kayla'), ('OLDPWD', '/home/kayla'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1333'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'kayla'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1310,unix/kayla-ngcp:/tmp/.ICE-unix/1310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4095b3cf_7f5e_45ef_9c3b_b7ae54a6aa68'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/ntrip'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.323636] (xsens_mti_ros2_driver) JobProgress: {'identifier': 'xsens_mti_ros2_driver', 'progress': 'cmake'}
+[0.324430] (-) TimerEvent: {}
+[0.336997] (xsens_mti_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/xsens_mti_ros2_driver', '-DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/xsens_mti_ros2_driver'], 'cwd': '/home/kayla/NGCP/build/xsens_mti_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('HOME', '/home/kayla'), ('OLDPWD', '/home/kayla'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1333'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'kayla'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1310,unix/kayla-ngcp:/tmp/.ICE-unix/1310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4095b3cf_7f5e_45ef_9c3b_b7ae54a6aa68'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/xsens_mti_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.435573] (-) TimerEvent: {}
+[0.478469] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.536552] (-) TimerEvent: {}
+[0.641098] (-) TimerEvent: {}
+[0.754675] (-) TimerEvent: {}
+[0.775479] (ntrip) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[0.777927] (ntrip) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.779592] (ntrip) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.781630] (ntrip) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.782782] (ntrip) StderrLine: {'line': b'\n'}
+[0.800014] (ntrip) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.802228] (ntrip) StderrLine: {'line': b'  any of the following names:\n'}
+[0.822484] (ntrip) StderrLine: {'line': b'\n'}
+[0.824663] (ntrip) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.827208] (ntrip) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.829157] (ntrip) StderrLine: {'line': b'\n'}
+[0.830590] (ntrip) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.832395] (ntrip) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.845719] (ntrip) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.847599] (ntrip) StderrLine: {'line': b'  has been installed.\n'}
+[0.874474] (-) TimerEvent: {}
+[0.875928] (ntrip) StderrLine: {'line': b'\n'}
+[0.878087] (ntrip) StderrLine: {'line': b'\x1b[0m\n'}
+[0.879804] (ntrip) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.882325] (ntrip) StdoutLine: {'line': b'See also "/home/kayla/NGCP/build/ntrip/CMakeFiles/CMakeOutput.log".\n'}
+[0.891895] (ntrip) CommandEnded: {'returncode': 1}
+[0.975205] (-) TimerEvent: {}
+[1.097593] (-) TimerEvent: {}
+[1.201187] (-) TimerEvent: {}
+[1.311469] (-) TimerEvent: {}
+[1.419720] (ntrip) JobEnded: {'identifier': 'ntrip', 'rc': 1}
+[1.444443] (-) TimerEvent: {}
+[1.489482] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.544825] (-) TimerEvent: {}
+[1.648209] (-) TimerEvent: {}
+[1.751747] (-) TimerEvent: {}
+[1.855662] (-) TimerEvent: {}
+[1.958647] (-) TimerEvent: {}
+[2.063500] (-) TimerEvent: {}
+[2.167708] (-) TimerEvent: {}
+[2.272276] (-) TimerEvent: {}
+[2.357152] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.373868] (-) TimerEvent: {}
+[2.441019] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.474203] (-) TimerEvent: {}
+[2.576538] (-) TimerEvent: {}
+[2.679750] (-) TimerEvent: {}
+[2.782188] (-) TimerEvent: {}
+[2.885617] (-) TimerEvent: {}
+[2.995595] (-) TimerEvent: {}
+[3.098202] (-) TimerEvent: {}
+[3.203889] (-) TimerEvent: {}
+[3.305612] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.307984] (-) TimerEvent: {}
+[3.338491] (ugv_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.344390] (ugv_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[3.346667] (ugv_msgs) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[3.348520] (ugv_msgs) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[3.360592] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.370920] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.383959] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.409837] (-) TimerEvent: {}
+[3.459897] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.510274] (-) TimerEvent: {}
+[3.563778] (ugv_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[3.565349] (ugv_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[3.567382] (ugv_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[3.570571] (ugv_msgs) StderrLine: {'line': b'  /home/kayla/NGCP/build/ugv_msgs/ament_cmake_package_templates/templates.cmake)\n'}
+[3.575496] (ugv_msgs) StderrLine: {'line': b'  returned error code 1\n'}
+[3.580103] (ugv_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.582683] (ugv_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[3.585924] (ugv_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[3.596015] (ugv_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[3.601005] (ugv_msgs) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[3.602889] (ugv_msgs) StderrLine: {'line': b'\n'}
+[3.605607] (ugv_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[3.613939] (-) TimerEvent: {}
+[3.617033] (ugv_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.619625] (ugv_msgs) StdoutLine: {'line': b'See also "/home/kayla/NGCP/build/ugv_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[3.630078] (ugv_msgs) JobEnded: {'identifier': 'ugv_msgs', 'rc': 'SIGINT'}
+[3.714233] (-) TimerEvent: {}
+[3.816880] (-) TimerEvent: {}
+[3.918920] (-) TimerEvent: {}
+[4.024035] (-) TimerEvent: {}
+[4.137003] (-) TimerEvent: {}
+[4.244645] (-) TimerEvent: {}
+[4.347294] (-) TimerEvent: {}
+[4.383620] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.424126] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.426911] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.429071] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.447972] (-) TimerEvent: {}
+[4.549636] (-) TimerEvent: {}
+[4.611967] (xsens_mti_ros2_driver) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[4.613452] (xsens_mti_ros2_driver) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[4.614484] (xsens_mti_ros2_driver) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[4.616142] (xsens_mti_ros2_driver) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[4.620321] (xsens_mti_ros2_driver) StderrLine: {'line': b'\n'}
+[4.633012] (xsens_mti_ros2_driver) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[4.642589] (xsens_mti_ros2_driver) StderrLine: {'line': b'  any of the following names:\n'}
+[4.645994] (xsens_mti_ros2_driver) StderrLine: {'line': b'\n'}
+[4.648057] (xsens_mti_ros2_driver) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[4.649748] (xsens_mti_ros2_driver) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[4.652764] (-) TimerEvent: {}
+[4.655304] (xsens_mti_ros2_driver) StderrLine: {'line': b'\n'}
+[4.656787] (xsens_mti_ros2_driver) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[4.659306] (xsens_mti_ros2_driver) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[4.660914] (xsens_mti_ros2_driver) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[4.662245] (xsens_mti_ros2_driver) StderrLine: {'line': b'  has been installed.\n'}
+[4.662885] (xsens_mti_ros2_driver) StderrLine: {'line': b'\n'}
+[4.663818] (xsens_mti_ros2_driver) StderrLine: {'line': b'\x1b[0m\n'}
+[4.664344] (xsens_mti_ros2_driver) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.665091] (xsens_mti_ros2_driver) StdoutLine: {'line': b'See also "/home/kayla/NGCP/build/xsens_mti_ros2_driver/CMakeFiles/CMakeOutput.log".\n'}
+[4.666072] (xsens_mti_ros2_driver) JobEnded: {'identifier': 'xsens_mti_ros2_driver', 'rc': 'SIGINT'}
+[4.679052] (ugv_control) JobSkipped: {'identifier': 'ugv_control'}
+[4.679681] (-) EventReactorShutdown: {}

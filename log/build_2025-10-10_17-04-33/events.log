@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.001543] (-) JobUnselected: {'identifier': 'ugv_msgs'}
+[0.002152] (ugv_control) JobQueued: {'identifier': 'ugv_control', 'dependencies': OrderedDict([('ugv_msgs', '/home/kayla/NGCP/install/ugv_msgs')])}
+[0.002259] (ugv_control) JobStarted: {'identifier': 'ugv_control'}
+[0.040797] (ugv_control) JobEnded: {'identifier': 'ugv_control', 'rc': 1}
+[0.055699] (-) EventReactorShutdown: {}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ugv_msgs__py",
+		"source" : "/home/kayla/NGCP/build/ugv_msgs/ugv_msgs__py"
+	}
+}

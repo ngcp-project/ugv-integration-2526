@@ -1,0 +1,142 @@
+[0.477s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'ugv_control']
+[0.478s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ugv_control'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff92aa9ea0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff92c4ee30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff92c4ee30>>, mixin_verb=('build',))
+[1.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.322s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kayla/NGCP'
+[1.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.377s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extensions ['ignore', 'ignore_ament_install']
+[1.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extension 'ignore'
+[1.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extension 'ignore_ament_install'
+[1.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extensions ['colcon_pkg']
+[1.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extension 'colcon_pkg'
+[1.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extensions ['colcon_meta']
+[1.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extension 'colcon_meta'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extensions ['ros']
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_control) by extension 'ros'
+[1.388s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_control' with type 'ros.ament_python' and name 'ugv_control'
+[1.388s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'ignore'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'ignore_ament_install'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['colcon_pkg']
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'colcon_pkg'
+[1.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['colcon_meta']
+[1.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'colcon_meta'
+[1.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['ros']
+[1.390s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'ros'
+[1.392s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_msgs' with type 'ros.ament_cmake' and name 'ugv_msgs'
+[1.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.510s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ugv_msgs' in 'src/ugv_msgs'
+[1.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.520s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/kayla/NGCP/install
+[1.529s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[1.535s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.698s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'cmake_target' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.699s] Level 5:colcon.colcon_core.verb:set package 'ugv_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.700s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kayla/NGCP/build/ugv_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kayla/NGCP/install/ugv_control', 'merge_install': False, 'path': '/home/kayla/NGCP/src/ugv_control', 'symlink_install': True, 'test_result_base': None}
+[1.700s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.704s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.706s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kayla/NGCP/src/ugv_control' with build type 'ament_python'
+[1.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_control', 'ament_prefix_path')
+[1.720s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kayla/NGCP/install/ugv_control/share/ugv_control/hook/ament_prefix_path.ps1'
+[1.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kayla/NGCP/install/ugv_control/share/ugv_control/hook/ament_prefix_path.dsv'
+[1.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kayla/NGCP/install/ugv_control/share/ugv_control/hook/ament_prefix_path.sh'
+[1.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.762s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kayla/NGCP/src/ugv_control'
+[3.764s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.764s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kayla/NGCP/build/ugv_control': PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kayla/NGCP/build/ugv_control/build --no-deps symlink_data
+[11.245s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_control', 'pythonpath_develop')
+[11.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kayla/NGCP/build/ugv_control/share/ugv_control/hook/pythonpath_develop.ps1'
+[11.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kayla/NGCP/build/ugv_control' returned '0': PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kayla/NGCP/build/ugv_control/build --no-deps symlink_data
+[11.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kayla/NGCP/build/ugv_control/share/ugv_control/hook/pythonpath_develop.dsv'
+[11.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kayla/NGCP/build/ugv_control/share/ugv_control/hook/pythonpath_develop.sh'
+[11.322s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control' for CMake module files
+[11.326s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control' for CMake config files
+[11.335s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control/lib'
+[11.338s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control/bin'
+[11.341s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control/lib/pkgconfig/ugv_control.pc'
+[11.345s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages'
+[11.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_control', 'pythonpath')
+[11.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kayla/NGCP/install/ugv_control/share/ugv_control/hook/pythonpath.ps1'
+[11.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kayla/NGCP/install/ugv_control/share/ugv_control/hook/pythonpath.dsv'
+[11.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kayla/NGCP/install/ugv_control/share/ugv_control/hook/pythonpath.sh'
+[11.364s] Level 1:colcon.colcon_core.environment:checking '/home/kayla/NGCP/install/ugv_control/bin'
+[11.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_control)
+[11.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/kayla/NGCP/install/ugv_control/share/ugv_control/package.ps1'
+[11.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kayla/NGCP/install/ugv_control/share/ugv_control/package.dsv'
+[11.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/kayla/NGCP/install/ugv_control/share/ugv_control/package.sh'
+[11.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/kayla/NGCP/install/ugv_control/share/ugv_control/package.bash'
+[11.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/kayla/NGCP/install/ugv_control/share/ugv_control/package.zsh'
+[11.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kayla/NGCP/install/ugv_control/share/colcon-core/packages/ugv_control)
+[11.411s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.413s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.415s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.475s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.476s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.477s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.642s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.644s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kayla/NGCP/install/local_setup.ps1'
+[11.650s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kayla/NGCP/install/_local_setup_util_ps1.py'
+[11.660s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kayla/NGCP/install/setup.ps1'
+[11.672s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kayla/NGCP/install/local_setup.sh'
+[11.679s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kayla/NGCP/install/_local_setup_util_sh.py'
+[11.686s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kayla/NGCP/install/setup.sh'
+[11.698s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kayla/NGCP/install/local_setup.bash'
+[11.704s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kayla/NGCP/install/setup.bash'
+[11.713s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kayla/NGCP/install/local_setup.zsh'
+[11.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kayla/NGCP/install/setup.zsh'

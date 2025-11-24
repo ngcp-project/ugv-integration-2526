@@ -1,0 +1,4 @@
+Invoking command in '/home/kayla/NGCP/build/ugv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --build /home/kayla/NGCP/build/ugv_msgs -- -j4 -l4
+Invoked command in '/home/kayla/NGCP/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --build /home/kayla/NGCP/build/ugv_msgs -- -j4 -l4
+Invoking command in '/home/kayla/NGCP/build/ugv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --install /home/kayla/NGCP/build/ugv_msgs
+Invoked command in '/home/kayla/NGCP/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --install /home/kayla/NGCP/build/ugv_msgs

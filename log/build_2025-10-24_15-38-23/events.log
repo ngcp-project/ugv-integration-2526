@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.001586] (-) JobUnselected: {'identifier': 'ugv_control'}
+[0.001829] (-) JobUnselected: {'identifier': 'ugv_msgs'}
+[0.002172] (-) JobUnselected: {'identifier': 'xsens_mti_ros2_driver'}
+[0.002352] (ntrip) JobQueued: {'identifier': 'ntrip', 'dependencies': OrderedDict()}
+[0.002464] (ntrip) JobStarted: {'identifier': 'ntrip'}
+[0.052069] (ntrip) JobProgress: {'identifier': 'ntrip', 'progress': 'cmake'}
+[0.054026] (ntrip) Command: {'cmd': ['/usr/bin/cmake', '/home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip', '-DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ntrip'], 'cwd': '/home/kayla/NGCP/build/ntrip', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('HOME', '/home/kayla'), ('OLDPWD', '/home/kayla'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1333'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'kayla'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1310,unix/kayla-ngcp:/tmp/.ICE-unix/1310'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4095b3cf_7f5e_45ef_9c3b_b7ae54a6aa68'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.105'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/ntrip'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.097667] (-) TimerEvent: {}
+[0.198834] (-) TimerEvent: {}
+[0.299965] (-) TimerEvent: {}
+[0.400911] (-) TimerEvent: {}
+[0.501800] (-) TimerEvent: {}
+[0.602807] (-) TimerEvent: {}
+[0.703821] (-) TimerEvent: {}
+[0.804959] (-) TimerEvent: {}
+[0.906104] (-) TimerEvent: {}
+[1.008119] (-) TimerEvent: {}
+[1.108933] (-) TimerEvent: {}
+[1.160432] (ntrip) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.209116] (-) TimerEvent: {}
+[1.309911] (-) TimerEvent: {}
+[1.411015] (-) TimerEvent: {}
+[1.512209] (-) TimerEvent: {}
+[1.613388] (-) TimerEvent: {}
+[1.714416] (-) TimerEvent: {}
+[1.815263] (-) TimerEvent: {}
+[1.895728] (ntrip) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.915470] (-) TimerEvent: {}
+[1.940370] (ntrip) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.015743] (-) TimerEvent: {}
+[2.116527] (-) TimerEvent: {}
+[2.217285] (-) TimerEvent: {}
+[2.309264] (ntrip) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.317423] (-) TimerEvent: {}
+[2.336137] (ntrip) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.337929] (ntrip) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.340844] (ntrip) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.357279] (ntrip) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.417674] (-) TimerEvent: {}
+[2.518594] (-) TimerEvent: {}
+[2.619559] (-) TimerEvent: {}
+[2.720522] (-) TimerEvent: {}
+[2.725228] (ntrip) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.752405] (ntrip) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.753814] (ntrip) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.755444] (ntrip) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.820700] (-) TimerEvent: {}
+[2.921622] (-) TimerEvent: {}
+[2.935607] (ntrip) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[2.936362] (ntrip) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.936731] (ntrip) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.937084] (ntrip) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.937405] (ntrip) StderrLine: {'line': b'\n'}
+[2.937729] (ntrip) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.938081] (ntrip) StderrLine: {'line': b'  any of the following names:\n'}
+[2.938425] (ntrip) StderrLine: {'line': b'\n'}
+[2.938833] (ntrip) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.939303] (ntrip) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.939790] (ntrip) StderrLine: {'line': b'\n'}
+[2.940558] (ntrip) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.941065] (ntrip) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.941404] (ntrip) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.941712] (ntrip) StderrLine: {'line': b'  has been installed.\n'}
+[2.942072] (ntrip) StderrLine: {'line': b'\n'}
+[2.942392] (ntrip) StderrLine: {'line': b'\x1b[0m\n'}
+[2.942696] (ntrip) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.943066] (ntrip) StdoutLine: {'line': b'See also "/home/kayla/NGCP/build/ntrip/CMakeFiles/CMakeOutput.log".\n'}
+[2.946778] (ntrip) CommandEnded: {'returncode': 1}
+[3.021942] (-) TimerEvent: {}
+[3.061323] (ntrip) JobEnded: {'identifier': 'ntrip', 'rc': 1}
+[3.073547] (-) EventReactorShutdown: {}

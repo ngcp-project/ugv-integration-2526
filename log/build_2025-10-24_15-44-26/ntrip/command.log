@@ -1,0 +1,4 @@
+Invoking command in '/home/kayla/NGCP/build/ntrip': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --build /home/kayla/NGCP/build/ntrip -- -j4 -l4
+Invoked command in '/home/kayla/NGCP/build/ntrip' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --build /home/kayla/NGCP/build/ntrip -- -j4 -l4
+Invoking command in '/home/kayla/NGCP/build/ntrip': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --install /home/kayla/NGCP/build/ntrip
+Invoked command in '/home/kayla/NGCP/build/ntrip' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/kayla/NGCP/install/ugv_control /usr/bin/cmake --install /home/kayla/NGCP/build/ntrip

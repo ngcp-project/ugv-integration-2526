@@ -1,0 +1,21 @@
+[0.135s] Invoking command in '/home/kayla/NGCP/build/ntrip': /usr/bin/cmake /home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ntrip
+[0.670s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.672s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.674s]   has asked CMake to find a package configuration file provided by
+[0.675s]   "ament_cmake", but CMake did not find one.
+[0.688s] 
+[0.694s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.696s]   any of the following names:
+[0.717s] 
+[0.718s]     ament_cmakeConfig.cmake
+[0.721s]     ament_cmake-config.cmake
+[0.722s] 
+[0.724s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.738s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.739s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.766s]   has been installed.
+[0.769s] 
+[0.772s] [0m
+[0.774s] -- Configuring incomplete, errors occurred!
+[0.776s] See also "/home/kayla/NGCP/build/ntrip/CMakeFiles/CMakeOutput.log".
+[0.797s] Invoked command in '/home/kayla/NGCP/build/ntrip' returned '1': /usr/bin/cmake /home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ntrip

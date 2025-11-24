@@ -1,0 +1,8 @@
+source;share/ntrip/hook/cmake_prefix_path.ps1
+source;share/ntrip/hook/cmake_prefix_path.dsv
+source;share/ntrip/hook/cmake_prefix_path.sh
+source;share/ntrip/local_setup.bash
+source;share/ntrip/local_setup.dsv
+source;share/ntrip/local_setup.ps1
+source;share/ntrip/local_setup.sh
+source;share/ntrip/local_setup.zsh

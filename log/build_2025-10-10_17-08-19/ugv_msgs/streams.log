@@ -1,0 +1,227 @@
+[0.053s] Invoking command in '/home/kayla/NGCP/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kayla/NGCP/src/ugv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ugv_msgs
+[1.184s] -- The C compiler identification is GNU 11.4.0
+[2.065s] -- The CXX compiler identification is GNU 11.4.0
+[2.122s] -- Detecting C compiler ABI info
+[2.558s] -- Detecting C compiler ABI info - done
+[2.592s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.595s] -- Detecting C compile features
+[2.600s] -- Detecting C compile features - done
+[2.618s] -- Detecting CXX compiler ABI info
+[3.108s] -- Detecting CXX compiler ABI info - done
+[3.150s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.152s] -- Detecting CXX compile features
+[3.155s] -- Detecting CXX compile features - done
+[3.242s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.324s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.759s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.136s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.210s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.297s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.762s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.348s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[10.297s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.895s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.081s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[12.108s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[12.321s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[12.323s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[12.324s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[12.325s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[12.460s] -- Found PythonExtra: .so  
+[12.683s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.951s] -- Added test 'lint_cmake' to check CMake code style
+[12.962s] -- Added test 'xmllint' to check XML markup files
+[12.997s] -- Configuring done
+[13.243s] -- Generating done
+[13.297s] -- Build files have been written to: /home/kayla/NGCP/build/ugv_msgs
+[13.330s] Invoked command in '/home/kayla/NGCP/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kayla/NGCP/src/ugv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ugv_msgs
+[13.343s] Invoking command in '/home/kayla/NGCP/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kayla/NGCP/build/ugv_msgs -- -j4 -l4
+[13.580s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[13.641s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[13.710s] [  5%] Built target ament_cmake_python_symlink_ugv_msgs
+[16.761s] [  7%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/man_ctrl__functions.c.o[0m
+[16.838s] [ 10%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/auto_ctrl__functions.c.o[0m
+[16.941s] [ 10%] Built target ugv_msgs__cpp
+[17.039s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[17.135s] running egg_info
+[17.138s] creating ugv_msgs.egg-info
+[17.139s] writing ugv_msgs.egg-info/PKG-INFO
+[17.140s] writing dependency_links to ugv_msgs.egg-info/dependency_links.txt
+[17.141s] writing top-level names to ugv_msgs.egg-info/top_level.txt
+[17.143s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[17.158s] reading manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[17.167s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[17.616s] [ 12%] Built target ament_cmake_python_build_ugv_msgs_egg
+[17.714s] [ 15%] [32m[1mLinking C shared library libugv_msgs__rosidl_generator_c.so[0m
+[17.738s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[17.816s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[18.338s] [ 20%] Built target ugv_msgs__rosidl_generator_c
+[18.479s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.511s] [ 25%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/man_ctrl__type_support.cpp.o[0m
+[21.339s] [ 28%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/man_ctrl__type_support.cpp.o[0m
+[21.579s] [ 30%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/man_ctrl__type_support.cpp.o[0m
+[21.938s] [ 33%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/man_ctrl__type_support_c.cpp.o[0m
+[24.782s] [ 35%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/auto_ctrl__type_support.cpp.o[0m
+[27.432s] [ 38%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/auto_ctrl__type_support.cpp.o[0m
+[27.530s] [ 41%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/auto_ctrl__type_support_c.cpp.o[0m
+[28.024s] [ 43%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/auto_ctrl__type_support.cpp.o[0m
+[29.287s] [ 46%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_cpp.so[0m
+[29.814s] [ 46%] Built target ugv_msgs__rosidl_typesupport_cpp
+[29.967s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[33.377s] [ 51%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[34.109s] [ 53%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[34.606s] [ 53%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c
+[34.649s] [ 56%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/man_ctrl__type_support.c.o[0m
+[34.704s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[34.993s] [ 61%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[35.029s] [ 61%] Built target ugv_msgs__rosidl_typesupport_introspection_cpp
+[35.069s] [ 64%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/auto_ctrl__type_support.c.o[0m
+[35.446s] [ 66%] [32m[1mLinking C shared library libugv_msgs__rosidl_typesupport_introspection_c.so[0m
+[35.755s] [ 66%] Built target ugv_msgs__rosidl_typesupport_fastrtps_cpp
+[35.805s] [ 66%] Built target ugv_msgs__rosidl_typesupport_introspection_c
+[37.002s] [ 69%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/man_ctrl__type_support.cpp.o[0m
+[37.199s] [ 71%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/auto_ctrl__type_support.cpp.o[0m
+[37.429s] [ 74%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_c.so[0m
+[37.743s] [ 74%] Built target ugv_msgs__rosidl_typesupport_c
+[37.907s] [ 74%] Built target ugv_msgs
+[38.039s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[40.280s] [ 76%] Built target ugv_msgs__py
+[40.399s] [ 79%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o[0m
+[40.408s] [ 82%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o[0m
+[41.245s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so[0m
+[41.484s] [ 84%] Built target ugv_msgs__rosidl_generator_py
+[41.627s] [ 87%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[41.636s] [ 89%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[42.326s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[42.332s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[42.628s] [ 94%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext
+[42.643s] [ 94%] Built target ugv_msgs__rosidl_typesupport_introspection_c__pyext
+[42.749s] [ 97%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[43.337s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[43.553s] [100%] Built target ugv_msgs__rosidl_typesupport_c__pyext
+[43.602s] Invoked command in '/home/kayla/NGCP/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kayla/NGCP/build/ugv_msgs -- -j4 -l4
+[43.661s] Invoking command in '/home/kayla/NGCP/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kayla/NGCP/build/ugv_msgs
+[43.690s] -- Install configuration: ""
+[43.692s] -- Execute custom install script
+[43.694s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/rosidl_interfaces/ugv_msgs
+[43.744s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.h
+[43.781s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__functions.h
+[43.823s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.h
+[43.867s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.h
+[43.902s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__functions.h
+[43.954s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.h
+[43.989s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.h
+[44.036s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.h
+[44.088s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_c__visibility_control.h
+[44.139s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/library_path.sh
+[44.188s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/library_path.dsv
+[44.237s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_c.h
+[44.278s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_c.h
+[44.317s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[44.367s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_c.h
+[44.403s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_c.h
+[44.453s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[44.489s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.hpp
+[44.534s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__builder.hpp
+[44.575s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.hpp
+[44.613s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__traits.hpp
+[44.662s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.hpp
+[44.695s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__builder.hpp
+[44.743s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.hpp
+[44.780s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__traits.hpp
+[44.818s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.hpp
+[44.865s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.hpp
+[44.899s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[44.954s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[44.989s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[45.033s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[45.086s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[45.133s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[45.175s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.sh
+[45.211s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.dsv
+[45.262s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[45.298s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[45.345s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[45.383s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[45.428s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py
+[45.472s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c
+[45.507s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[45.559s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[45.594s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/libugv_msgs__rosidl_generator_py.so
+[45.641s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py
+[45.678s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py
+[45.714s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl_s.c
+[45.770s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py
+[45.809s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl_s.c
+[45.862s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[45.903s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[45.958s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[46.002s] -- Up-to-date symlink: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[46.004s] -- Up-to-date symlink: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[46.006s] -- Up-to-date symlink: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[46.008s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.idl
+[46.063s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.idl
+[46.102s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.msg
+[46.166s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.msg
+[46.205s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/package_run_dependencies/ugv_msgs
+[46.260s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/parent_prefix_path/ugv_msgs
+[46.301s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.sh
+[46.354s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.dsv
+[46.398s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/path.sh
+[46.446s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/path.dsv
+[46.494s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.bash
+[46.541s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.sh
+[46.590s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.zsh
+[46.630s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.dsv
+[46.686s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/package.dsv
+[46.727s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/packages/ugv_msgs
+[46.785s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake-extras.cmake
+[46.827s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[46.884s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[46.924s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[46.980s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[47.020s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[47.076s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[47.114s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig.cmake
+[47.167s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig-version.cmake
+[47.208s] -- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/package.xml
+[47.264s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so
+[47.269s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so" to ""
+[47.270s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so
+[47.273s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[47.274s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so
+[47.276s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so" to ""
+[47.277s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so
+[47.279s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so" to ""
+[47.280s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so
+[47.283s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[47.284s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so
+[47.288s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[47.288s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so
+[47.291s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so" to ""
+[47.519s] Listing '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs'...
+[47.520s] Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py'...
+[47.522s] Listing '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg'...
+[47.524s] Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py'...
+[47.525s] Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py'...
+[47.529s] Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py'...
+[47.567s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so
+[47.570s] -- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so" to ""
+[47.571s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport.cmake
+[47.572s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport-noconfig.cmake
+[47.574s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[47.576s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[47.578s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport.cmake
+[47.579s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[47.581s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport.cmake
+[47.582s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[47.583s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cppExport.cmake
+[47.585s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[47.586s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[47.588s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[47.589s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[47.591s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport.cmake
+[47.592s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[47.593s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport.cmake
+[47.595s] -- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport-noconfig.cmake
+[47.603s] Invoked command in '/home/kayla/NGCP/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kayla/NGCP/build/ugv_msgs

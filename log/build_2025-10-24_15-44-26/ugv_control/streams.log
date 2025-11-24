@@ -1,0 +1,44 @@
+[4.046s] Invoking command in '/home/kayla/NGCP/build/ugv_control': LD_LIBRARY_PATH=/home/kayla/NGCP/install/ugv_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/kayla/NGCP/build/ugv_control/build
+[6.335s] running develop
+[8.438s] Removing /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv-control.egg-link (link to .)
+[8.682s] Invoked command in '/home/kayla/NGCP/build/ugv_control' returned '0': LD_LIBRARY_PATH=/home/kayla/NGCP/install/ugv_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/kayla/NGCP/build/ugv_control/build
+[8.685s] Invoking command in '/home/kayla/NGCP/src/ugv_control': LD_LIBRARY_PATH=/home/kayla/NGCP/install/ugv_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ugv_control build --build-base /home/kayla/NGCP/build/ugv_control/build install --record /home/kayla/NGCP/build/ugv_control/install.log --single-version-externally-managed install_data --force
+[13.941s] running egg_info
+[13.946s] writing ../../build/ugv_control/ugv_control.egg-info/PKG-INFO
+[13.952s] writing dependency_links to ../../build/ugv_control/ugv_control.egg-info/dependency_links.txt
+[13.957s] writing entry points to ../../build/ugv_control/ugv_control.egg-info/entry_points.txt
+[13.960s] writing requirements to ../../build/ugv_control/ugv_control.egg-info/requires.txt
+[13.962s] writing top-level names to ../../build/ugv_control/ugv_control.egg-info/top_level.txt
+[14.000s] reading manifest file '../../build/ugv_control/ugv_control.egg-info/SOURCES.txt'
+[14.048s] writing manifest file '../../build/ugv_control/ugv_control.egg-info/SOURCES.txt'
+[14.051s] running build
+[14.054s] running build_py
+[14.061s] creating /home/kayla/NGCP/build/ugv_control/build
+[14.066s] creating /home/kayla/NGCP/build/ugv_control/build/lib
+[14.068s] creating /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+[14.101s] copying ugv_control/__init__.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+[14.112s] copying ugv_control/ugv_armcontrol_sub.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+[14.117s] copying ugv_control/ugv_control_pub.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+[14.122s] copying ugv_control/ugv_control_sub.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+[14.130s] running install
+[14.132s] running install_lib
+[14.146s] creating /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+[14.149s] copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/__init__.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+[14.152s] copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/ugv_armcontrol_sub.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+[14.154s] copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/ugv_control_pub.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+[14.164s] copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/ugv_control_sub.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+[14.165s] byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/__init__.py to __init__.cpython-310.pyc
+[14.181s] byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/ugv_armcontrol_sub.py to ugv_armcontrol_sub.cpython-310.pyc
+[14.202s] byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/ugv_control_pub.py to ugv_control_pub.cpython-310.pyc
+[14.216s] byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/ugv_control_sub.py to ugv_control_sub.cpython-310.pyc
+[14.228s] running install_data
+[14.230s] copying resource/ugv_control -> /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index/packages
+[14.248s] copying package.xml -> /home/kayla/NGCP/install/ugv_control/share/ugv_control
+[14.249s] running install_egg_info
+[14.268s] Copying ../../build/ugv_control/ugv_control.egg-info to /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control-0.1.0-py3.10.egg-info
+[14.279s] running install_scripts
+[14.623s] Installing ugv_armcontrol_sub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+[14.625s] Installing ugv_control_pub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+[14.629s] Installing ugv_control_sub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+[14.633s] writing list of installed files to '/home/kayla/NGCP/build/ugv_control/install.log'
+[14.971s] Invoked command in '/home/kayla/NGCP/src/ugv_control' returned '0': LD_LIBRARY_PATH=/home/kayla/NGCP/install/ugv_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ugv_control build --build-base /home/kayla/NGCP/build/ugv_control/build install --record /home/kayla/NGCP/build/ugv_control/install.log --single-version-externally-managed install_data --force

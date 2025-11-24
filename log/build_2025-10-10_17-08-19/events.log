@@ -1,0 +1,701 @@
+[0.000000] (-) TimerEvent: {}
+[0.001640] (-) JobUnselected: {'identifier': 'ugv_control'}
+[0.002190] (ugv_msgs) JobQueued: {'identifier': 'ugv_msgs', 'dependencies': OrderedDict()}
+[0.002291] (ugv_msgs) JobStarted: {'identifier': 'ugv_msgs'}
+[0.045988] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'cmake'}
+[0.049560] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kayla/NGCP/src/ugv_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ugv_msgs'], 'cwd': '/home/kayla/NGCP/build/ugv_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kayla'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/kayla/NGCP'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '916'), ('SYSTEMD_EXEC_PID', '1335'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2331'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kayla'), ('JOURNAL_STREAM', '8:24405'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1312,unix/kayla-ngcp:/tmp/.ICE-unix/1312'), ('INVOCATION_ID', '22594db74c5d44cca01705f55e40fc12'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-42b656d3a6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099160] (-) TimerEvent: {}
+[0.200551] (-) TimerEvent: {}
+[0.301845] (-) TimerEvent: {}
+[0.402967] (-) TimerEvent: {}
+[0.504350] (-) TimerEvent: {}
+[0.605941] (-) TimerEvent: {}
+[0.706868] (-) TimerEvent: {}
+[0.808050] (-) TimerEvent: {}
+[0.909584] (-) TimerEvent: {}
+[1.010460] (-) TimerEvent: {}
+[1.111412] (-) TimerEvent: {}
+[1.184933] (ugv_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.211630] (-) TimerEvent: {}
+[1.312454] (-) TimerEvent: {}
+[1.413464] (-) TimerEvent: {}
+[1.514496] (-) TimerEvent: {}
+[1.615831] (-) TimerEvent: {}
+[1.717288] (-) TimerEvent: {}
+[1.818179] (-) TimerEvent: {}
+[1.919041] (-) TimerEvent: {}
+[2.024190] (-) TimerEvent: {}
+[2.066482] (ugv_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.123734] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.124613] (-) TimerEvent: {}
+[2.225432] (-) TimerEvent: {}
+[2.326544] (-) TimerEvent: {}
+[2.427360] (-) TimerEvent: {}
+[2.528139] (-) TimerEvent: {}
+[2.559098] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.593139] (ugv_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.596631] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.601505] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.620065] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.628318] (-) TimerEvent: {}
+[2.729071] (-) TimerEvent: {}
+[2.829968] (-) TimerEvent: {}
+[2.930661] (-) TimerEvent: {}
+[3.031419] (-) TimerEvent: {}
+[3.109642] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.132502] (-) TimerEvent: {}
+[3.150823] (ugv_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.153717] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.156464] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.232214] (-) TimerEvent: {}
+[3.243707] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.332452] (-) TimerEvent: {}
+[3.433378] (-) TimerEvent: {}
+[3.534111] (-) TimerEvent: {}
+[3.635362] (-) TimerEvent: {}
+[3.736070] (-) TimerEvent: {}
+[3.836751] (-) TimerEvent: {}
+[3.937451] (-) TimerEvent: {}
+[4.038225] (-) TimerEvent: {}
+[4.139298] (-) TimerEvent: {}
+[4.240046] (-) TimerEvent: {}
+[4.325437] (ugv_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.340481] (-) TimerEvent: {}
+[4.441831] (-) TimerEvent: {}
+[4.542756] (-) TimerEvent: {}
+[4.643439] (-) TimerEvent: {}
+[4.744244] (-) TimerEvent: {}
+[4.761046] (ugv_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.844430] (-) TimerEvent: {}
+[4.945200] (-) TimerEvent: {}
+[5.046072] (-) TimerEvent: {}
+[5.138144] (ugv_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[5.146260] (-) TimerEvent: {}
+[5.211926] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.246468] (-) TimerEvent: {}
+[5.298747] (ugv_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.346664] (-) TimerEvent: {}
+[5.447368] (-) TimerEvent: {}
+[5.548083] (-) TimerEvent: {}
+[5.648825] (-) TimerEvent: {}
+[5.749552] (-) TimerEvent: {}
+[5.764029] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.849732] (-) TimerEvent: {}
+[5.950412] (-) TimerEvent: {}
+[6.051150] (-) TimerEvent: {}
+[6.151856] (-) TimerEvent: {}
+[6.253525] (-) TimerEvent: {}
+[6.354544] (-) TimerEvent: {}
+[6.460411] (-) TimerEvent: {}
+[6.561739] (-) TimerEvent: {}
+[6.662900] (-) TimerEvent: {}
+[6.764374] (-) TimerEvent: {}
+[6.866474] (-) TimerEvent: {}
+[6.970059] (-) TimerEvent: {}
+[7.072163] (-) TimerEvent: {}
+[7.174187] (-) TimerEvent: {}
+[7.275735] (-) TimerEvent: {}
+[7.377104] (-) TimerEvent: {}
+[7.481167] (-) TimerEvent: {}
+[7.582485] (-) TimerEvent: {}
+[7.686299] (-) TimerEvent: {}
+[7.789637] (-) TimerEvent: {}
+[7.891393] (-) TimerEvent: {}
+[7.992645] (-) TimerEvent: {}
+[8.094886] (-) TimerEvent: {}
+[8.196801] (-) TimerEvent: {}
+[8.300081] (-) TimerEvent: {}
+[8.349274] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[8.400250] (-) TimerEvent: {}
+[8.501843] (-) TimerEvent: {}
+[8.608022] (-) TimerEvent: {}
+[8.710037] (-) TimerEvent: {}
+[8.811450] (-) TimerEvent: {}
+[8.914457] (-) TimerEvent: {}
+[9.017134] (-) TimerEvent: {}
+[9.120788] (-) TimerEvent: {}
+[9.222109] (-) TimerEvent: {}
+[9.323679] (-) TimerEvent: {}
+[9.425786] (-) TimerEvent: {}
+[9.527445] (-) TimerEvent: {}
+[9.629206] (-) TimerEvent: {}
+[9.731434] (-) TimerEvent: {}
+[9.832873] (-) TimerEvent: {}
+[9.934672] (-) TimerEvent: {}
+[10.037638] (-) TimerEvent: {}
+[10.139728] (-) TimerEvent: {}
+[10.241730] (-) TimerEvent: {}
+[10.298302] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.341933] (-) TimerEvent: {}
+[10.442981] (-) TimerEvent: {}
+[10.543892] (-) TimerEvent: {}
+[10.644760] (-) TimerEvent: {}
+[10.745673] (-) TimerEvent: {}
+[10.846616] (-) TimerEvent: {}
+[10.947446] (-) TimerEvent: {}
+[11.048735] (-) TimerEvent: {}
+[11.149454] (-) TimerEvent: {}
+[11.250362] (-) TimerEvent: {}
+[11.351121] (-) TimerEvent: {}
+[11.452048] (-) TimerEvent: {}
+[11.552709] (-) TimerEvent: {}
+[11.653417] (-) TimerEvent: {}
+[11.754197] (-) TimerEvent: {}
+[11.855036] (-) TimerEvent: {}
+[11.897166] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.955294] (-) TimerEvent: {}
+[12.056634] (-) TimerEvent: {}
+[12.082400] (ugv_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[12.108919] (ugv_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[12.156951] (-) TimerEvent: {}
+[12.258119] (-) TimerEvent: {}
+[12.320281] (ugv_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[12.323881] (ugv_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.326082] (ugv_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[12.327041] (ugv_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[12.358319] (-) TimerEvent: {}
+[12.459173] (-) TimerEvent: {}
+[12.461788] (ugv_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[12.559379] (-) TimerEvent: {}
+[12.660127] (-) TimerEvent: {}
+[12.684780] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[12.760331] (-) TimerEvent: {}
+[12.861045] (-) TimerEvent: {}
+[12.952552] (ugv_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[12.961195] (-) TimerEvent: {}
+[12.963768] (ugv_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.998783] (ugv_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.061448] (-) TimerEvent: {}
+[13.162439] (-) TimerEvent: {}
+[13.244365] (ugv_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[13.262616] (-) TimerEvent: {}
+[13.298247] (ugv_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/kayla/NGCP/build/ugv_msgs\n'}
+[13.331561] (ugv_msgs) CommandEnded: {'returncode': 0}
+[13.334152] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'build'}
+[13.336712] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kayla/NGCP/build/ugv_msgs', '--', '-j4', '-l4'], 'cwd': '/home/kayla/NGCP/build/ugv_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kayla'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/kayla/NGCP'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '916'), ('SYSTEMD_EXEC_PID', '1335'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2331'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kayla'), ('JOURNAL_STREAM', '8:24405'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1312,unix/kayla-ngcp:/tmp/.ICE-unix/1312'), ('INVOCATION_ID', '22594db74c5d44cca01705f55e40fc12'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-42b656d3a6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.362870] (-) TimerEvent: {}
+[13.464033] (-) TimerEvent: {}
+[13.564950] (-) TimerEvent: {}
+[13.582268] (ugv_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[13.642174] (ugv_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[13.665309] (-) TimerEvent: {}
+[13.712037] (ugv_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_ugv_msgs\n'}
+[13.765842] (-) TimerEvent: {}
+[13.872758] (-) TimerEvent: {}
+[13.975053] (-) TimerEvent: {}
+[14.077573] (-) TimerEvent: {}
+[14.183622] (-) TimerEvent: {}
+[14.290389] (-) TimerEvent: {}
+[14.394372] (-) TimerEvent: {}
+[14.508304] (-) TimerEvent: {}
+[14.610145] (-) TimerEvent: {}
+[14.713130] (-) TimerEvent: {}
+[14.816892] (-) TimerEvent: {}
+[14.921154] (-) TimerEvent: {}
+[15.025859] (-) TimerEvent: {}
+[15.128682] (-) TimerEvent: {}
+[15.230089] (-) TimerEvent: {}
+[15.334869] (-) TimerEvent: {}
+[15.435925] (-) TimerEvent: {}
+[15.540904] (-) TimerEvent: {}
+[15.642090] (-) TimerEvent: {}
+[15.743683] (-) TimerEvent: {}
+[15.845342] (-) TimerEvent: {}
+[15.948753] (-) TimerEvent: {}
+[16.056018] (-) TimerEvent: {}
+[16.161964] (-) TimerEvent: {}
+[16.264342] (-) TimerEvent: {}
+[16.367174] (-) TimerEvent: {}
+[16.475017] (-) TimerEvent: {}
+[16.583265] (-) TimerEvent: {}
+[16.691434] (-) TimerEvent: {}
+[16.762634] (ugv_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/man_ctrl__functions.c.o\x1b[0m\n'}
+[16.792557] (-) TimerEvent: {}
+[16.839352] (ugv_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/auto_ctrl__functions.c.o\x1b[0m\n'}
+[16.892870] (-) TimerEvent: {}
+[16.942625] (ugv_msgs) StdoutLine: {'line': b'[ 10%] Built target ugv_msgs__cpp\n'}
+[16.994251] (-) TimerEvent: {}
+[17.039692] (ugv_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.094703] (-) TimerEvent: {}
+[17.136382] (ugv_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[17.139620] (ugv_msgs) StdoutLine: {'line': b'creating ugv_msgs.egg-info\n'}
+[17.140812] (ugv_msgs) StdoutLine: {'line': b'writing ugv_msgs.egg-info/PKG-INFO\n'}
+[17.141947] (ugv_msgs) StdoutLine: {'line': b'writing dependency_links to ugv_msgs.egg-info/dependency_links.txt\n'}
+[17.143196] (ugv_msgs) StdoutLine: {'line': b'writing top-level names to ugv_msgs.egg-info/top_level.txt\n'}
+[17.144693] (ugv_msgs) StdoutLine: {'line': b"writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'\n"}
+[17.159875] (ugv_msgs) StdoutLine: {'line': b"reading manifest file 'ugv_msgs.egg-info/SOURCES.txt'\n"}
+[17.168525] (ugv_msgs) StdoutLine: {'line': b"writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'\n"}
+[17.195181] (-) TimerEvent: {}
+[17.301067] (-) TimerEvent: {}
+[17.412184] (-) TimerEvent: {}
+[17.513485] (-) TimerEvent: {}
+[17.615309] (-) TimerEvent: {}
+[17.617180] (ugv_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_build_ugv_msgs_egg\n'}
+[17.715305] (ugv_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libugv_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[17.716791] (-) TimerEvent: {}
+[17.738327] (ugv_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.817363] (ugv_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[17.818732] (-) TimerEvent: {}
+[17.923183] (-) TimerEvent: {}
+[18.026826] (-) TimerEvent: {}
+[18.130179] (-) TimerEvent: {}
+[18.232197] (-) TimerEvent: {}
+[18.338744] (ugv_msgs) StdoutLine: {'line': b'[ 20%] Built target ugv_msgs__rosidl_generator_c\n'}
+[18.341469] (-) TimerEvent: {}
+[18.443934] (-) TimerEvent: {}
+[18.480642] (ugv_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[18.544179] (-) TimerEvent: {}
+[18.645544] (-) TimerEvent: {}
+[18.746622] (-) TimerEvent: {}
+[18.848513] (-) TimerEvent: {}
+[18.950469] (-) TimerEvent: {}
+[19.051737] (-) TimerEvent: {}
+[19.152831] (-) TimerEvent: {}
+[19.253775] (-) TimerEvent: {}
+[19.354768] (-) TimerEvent: {}
+[19.459129] (-) TimerEvent: {}
+[19.567808] (-) TimerEvent: {}
+[19.669601] (-) TimerEvent: {}
+[19.770922] (-) TimerEvent: {}
+[19.872123] (-) TimerEvent: {}
+[19.977220] (-) TimerEvent: {}
+[20.082560] (-) TimerEvent: {}
+[20.186378] (-) TimerEvent: {}
+[20.293560] (-) TimerEvent: {}
+[20.394466] (-) TimerEvent: {}
+[20.496536] (-) TimerEvent: {}
+[20.512625] (ugv_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[20.597314] (-) TimerEvent: {}
+[20.711345] (-) TimerEvent: {}
+[20.813062] (-) TimerEvent: {}
+[20.918046] (-) TimerEvent: {}
+[21.021370] (-) TimerEvent: {}
+[21.124590] (-) TimerEvent: {}
+[21.229539] (-) TimerEvent: {}
+[21.333907] (-) TimerEvent: {}
+[21.341206] (ugv_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[21.436173] (-) TimerEvent: {}
+[21.539023] (-) TimerEvent: {}
+[21.580455] (ugv_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[21.640202] (-) TimerEvent: {}
+[21.741388] (-) TimerEvent: {}
+[21.845302] (-) TimerEvent: {}
+[21.939553] (ugv_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/man_ctrl__type_support_c.cpp.o\x1b[0m\n'}
+[21.945487] (-) TimerEvent: {}
+[22.051253] (-) TimerEvent: {}
+[22.155733] (-) TimerEvent: {}
+[22.262545] (-) TimerEvent: {}
+[22.364079] (-) TimerEvent: {}
+[22.465482] (-) TimerEvent: {}
+[22.567141] (-) TimerEvent: {}
+[22.668632] (-) TimerEvent: {}
+[22.778167] (-) TimerEvent: {}
+[22.879754] (-) TimerEvent: {}
+[22.990135] (-) TimerEvent: {}
+[23.116165] (-) TimerEvent: {}
+[23.217112] (-) TimerEvent: {}
+[23.324253] (-) TimerEvent: {}
+[23.425620] (-) TimerEvent: {}
+[23.528078] (-) TimerEvent: {}
+[23.630995] (-) TimerEvent: {}
+[23.732282] (-) TimerEvent: {}
+[23.834755] (-) TimerEvent: {}
+[23.936229] (-) TimerEvent: {}
+[24.038773] (-) TimerEvent: {}
+[24.145925] (-) TimerEvent: {}
+[24.248833] (-) TimerEvent: {}
+[24.354119] (-) TimerEvent: {}
+[24.460471] (-) TimerEvent: {}
+[24.571335] (-) TimerEvent: {}
+[24.673833] (-) TimerEvent: {}
+[24.776535] (-) TimerEvent: {}
+[24.783277] (ugv_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[24.880519] (-) TimerEvent: {}
+[24.985957] (-) TimerEvent: {}
+[25.087244] (-) TimerEvent: {}
+[25.188718] (-) TimerEvent: {}
+[25.296338] (-) TimerEvent: {}
+[25.398295] (-) TimerEvent: {}
+[25.500154] (-) TimerEvent: {}
+[25.613031] (-) TimerEvent: {}
+[25.722672] (-) TimerEvent: {}
+[25.824664] (-) TimerEvent: {}
+[25.930111] (-) TimerEvent: {}
+[26.040490] (-) TimerEvent: {}
+[26.145165] (-) TimerEvent: {}
+[26.253786] (-) TimerEvent: {}
+[26.360307] (-) TimerEvent: {}
+[26.462353] (-) TimerEvent: {}
+[26.569223] (-) TimerEvent: {}
+[26.671563] (-) TimerEvent: {}
+[26.776355] (-) TimerEvent: {}
+[26.881469] (-) TimerEvent: {}
+[27.000425] (-) TimerEvent: {}
+[27.104364] (-) TimerEvent: {}
+[27.208245] (-) TimerEvent: {}
+[27.309407] (-) TimerEvent: {}
+[27.410431] (-) TimerEvent: {}
+[27.433433] (ugv_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[27.511217] (-) TimerEvent: {}
+[27.531285] (ugv_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/auto_ctrl__type_support_c.cpp.o\x1b[0m\n'}
+[27.611560] (-) TimerEvent: {}
+[27.723634] (-) TimerEvent: {}
+[27.831848] (-) TimerEvent: {}
+[27.947561] (-) TimerEvent: {}
+[28.025406] (ugv_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[28.048871] (-) TimerEvent: {}
+[28.151022] (-) TimerEvent: {}
+[28.254240] (-) TimerEvent: {}
+[28.359507] (-) TimerEvent: {}
+[28.463675] (-) TimerEvent: {}
+[28.568990] (-) TimerEvent: {}
+[28.678395] (-) TimerEvent: {}
+[28.782694] (-) TimerEvent: {}
+[28.888597] (-) TimerEvent: {}
+[28.995238] (-) TimerEvent: {}
+[29.099583] (-) TimerEvent: {}
+[29.208545] (-) TimerEvent: {}
+[29.286812] (ugv_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[29.309161] (-) TimerEvent: {}
+[29.411136] (-) TimerEvent: {}
+[29.515167] (-) TimerEvent: {}
+[29.620654] (-) TimerEvent: {}
+[29.726913] (-) TimerEvent: {}
+[29.816167] (ugv_msgs) StdoutLine: {'line': b'[ 46%] Built target ugv_msgs__rosidl_typesupport_cpp\n'}
+[29.836513] (-) TimerEvent: {}
+[29.939155] (-) TimerEvent: {}
+[29.968647] (ugv_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[30.042766] (-) TimerEvent: {}
+[30.144836] (-) TimerEvent: {}
+[30.248827] (-) TimerEvent: {}
+[30.350768] (-) TimerEvent: {}
+[30.452406] (-) TimerEvent: {}
+[30.554630] (-) TimerEvent: {}
+[30.657380] (-) TimerEvent: {}
+[30.760913] (-) TimerEvent: {}
+[30.872128] (-) TimerEvent: {}
+[30.973682] (-) TimerEvent: {}
+[31.076029] (-) TimerEvent: {}
+[31.178892] (-) TimerEvent: {}
+[31.280518] (-) TimerEvent: {}
+[31.384613] (-) TimerEvent: {}
+[31.493931] (-) TimerEvent: {}
+[31.599832] (-) TimerEvent: {}
+[31.708380] (-) TimerEvent: {}
+[31.810491] (-) TimerEvent: {}
+[31.914559] (-) TimerEvent: {}
+[32.020444] (-) TimerEvent: {}
+[32.122118] (-) TimerEvent: {}
+[32.224764] (-) TimerEvent: {}
+[32.329070] (-) TimerEvent: {}
+[32.434259] (-) TimerEvent: {}
+[32.540550] (-) TimerEvent: {}
+[32.641884] (-) TimerEvent: {}
+[32.744932] (-) TimerEvent: {}
+[32.852863] (-) TimerEvent: {}
+[32.959594] (-) TimerEvent: {}
+[33.065101] (-) TimerEvent: {}
+[33.169038] (-) TimerEvent: {}
+[33.271493] (-) TimerEvent: {}
+[33.378267] (ugv_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[33.379648] (-) TimerEvent: {}
+[33.482019] (-) TimerEvent: {}
+[33.588529] (-) TimerEvent: {}
+[33.690513] (-) TimerEvent: {}
+[33.798513] (-) TimerEvent: {}
+[33.905778] (-) TimerEvent: {}
+[34.014555] (-) TimerEvent: {}
+[34.110331] (ugv_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[34.115116] (-) TimerEvent: {}
+[34.223776] (-) TimerEvent: {}
+[34.328922] (-) TimerEvent: {}
+[34.443206] (-) TimerEvent: {}
+[34.545424] (-) TimerEvent: {}
+[34.607793] (ugv_msgs) StdoutLine: {'line': b'[ 53%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c\n'}
+[34.646044] (-) TimerEvent: {}
+[34.650819] (ugv_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/man_ctrl__type_support.c.o\x1b[0m\n'}
+[34.705592] (ugv_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[34.746497] (-) TimerEvent: {}
+[34.855318] (-) TimerEvent: {}
+[34.961539] (-) TimerEvent: {}
+[34.994816] (ugv_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[35.031092] (ugv_msgs) StdoutLine: {'line': b'[ 61%] Built target ugv_msgs__rosidl_typesupport_introspection_cpp\n'}
+[35.063076] (-) TimerEvent: {}
+[35.070380] (ugv_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/auto_ctrl__type_support.c.o\x1b[0m\n'}
+[35.163356] (-) TimerEvent: {}
+[35.268101] (-) TimerEvent: {}
+[35.378689] (-) TimerEvent: {}
+[35.447329] (ugv_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libugv_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[35.479051] (-) TimerEvent: {}
+[35.584387] (-) TimerEvent: {}
+[35.691670] (-) TimerEvent: {}
+[35.756859] (ugv_msgs) StdoutLine: {'line': b'[ 66%] Built target ugv_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[35.791906] (-) TimerEvent: {}
+[35.806127] (ugv_msgs) StdoutLine: {'line': b'[ 66%] Built target ugv_msgs__rosidl_typesupport_introspection_c\n'}
+[35.892232] (-) TimerEvent: {}
+[35.993276] (-) TimerEvent: {}
+[36.093986] (-) TimerEvent: {}
+[36.194991] (-) TimerEvent: {}
+[36.297120] (-) TimerEvent: {}
+[36.398469] (-) TimerEvent: {}
+[36.499773] (-) TimerEvent: {}
+[36.604284] (-) TimerEvent: {}
+[36.707028] (-) TimerEvent: {}
+[36.809732] (-) TimerEvent: {}
+[36.913015] (-) TimerEvent: {}
+[37.002873] (ugv_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[37.013212] (-) TimerEvent: {}
+[37.114377] (-) TimerEvent: {}
+[37.200528] (ugv_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[37.214547] (-) TimerEvent: {}
+[37.315406] (-) TimerEvent: {}
+[37.416419] (-) TimerEvent: {}
+[37.430025] (ugv_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[37.520288] (-) TimerEvent: {}
+[37.621601] (-) TimerEvent: {}
+[37.723705] (-) TimerEvent: {}
+[37.744106] (ugv_msgs) StdoutLine: {'line': b'[ 74%] Built target ugv_msgs__rosidl_typesupport_c\n'}
+[37.823919] (-) TimerEvent: {}
+[37.907686] (ugv_msgs) StdoutLine: {'line': b'[ 74%] Built target ugv_msgs\n'}
+[37.924471] (-) TimerEvent: {}
+[38.026207] (-) TimerEvent: {}
+[38.040497] (ugv_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[38.126468] (-) TimerEvent: {}
+[38.233760] (-) TimerEvent: {}
+[38.334537] (-) TimerEvent: {}
+[38.435610] (-) TimerEvent: {}
+[38.536355] (-) TimerEvent: {}
+[38.637009] (-) TimerEvent: {}
+[38.737728] (-) TimerEvent: {}
+[38.838398] (-) TimerEvent: {}
+[38.939379] (-) TimerEvent: {}
+[39.040837] (-) TimerEvent: {}
+[39.142141] (-) TimerEvent: {}
+[39.242820] (-) TimerEvent: {}
+[39.343527] (-) TimerEvent: {}
+[39.444532] (-) TimerEvent: {}
+[39.545451] (-) TimerEvent: {}
+[39.646100] (-) TimerEvent: {}
+[39.746760] (-) TimerEvent: {}
+[39.847397] (-) TimerEvent: {}
+[39.948071] (-) TimerEvent: {}
+[40.048889] (-) TimerEvent: {}
+[40.150368] (-) TimerEvent: {}
+[40.251881] (-) TimerEvent: {}
+[40.282007] (ugv_msgs) StdoutLine: {'line': b'[ 76%] Built target ugv_msgs__py\n'}
+[40.352339] (-) TimerEvent: {}
+[40.399936] (ugv_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o\x1b[0m\n'}
+[40.409289] (ugv_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o\x1b[0m\n'}
+[40.452904] (-) TimerEvent: {}
+[40.554262] (-) TimerEvent: {}
+[40.655035] (-) TimerEvent: {}
+[40.755932] (-) TimerEvent: {}
+[40.856981] (-) TimerEvent: {}
+[40.957873] (-) TimerEvent: {}
+[41.059246] (-) TimerEvent: {}
+[41.161222] (-) TimerEvent: {}
+[41.246312] (ugv_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[41.261528] (-) TimerEvent: {}
+[41.362660] (-) TimerEvent: {}
+[41.463480] (-) TimerEvent: {}
+[41.485264] (ugv_msgs) StdoutLine: {'line': b'[ 84%] Built target ugv_msgs__rosidl_generator_py\n'}
+[41.564072] (-) TimerEvent: {}
+[41.627157] (ugv_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[41.637480] (ugv_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[41.664349] (-) TimerEvent: {}
+[41.766032] (-) TimerEvent: {}
+[41.867473] (-) TimerEvent: {}
+[41.969586] (-) TimerEvent: {}
+[42.072269] (-) TimerEvent: {}
+[42.174414] (-) TimerEvent: {}
+[42.276855] (-) TimerEvent: {}
+[42.327254] (ugv_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[42.333519] (ugv_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[42.377567] (-) TimerEvent: {}
+[42.481198] (-) TimerEvent: {}
+[42.583655] (-) TimerEvent: {}
+[42.629811] (ugv_msgs) StdoutLine: {'line': b'[ 94%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[42.643903] (ugv_msgs) StdoutLine: {'line': b'[ 94%] Built target ugv_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[42.683844] (-) TimerEvent: {}
+[42.749760] (ugv_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[42.784174] (-) TimerEvent: {}
+[42.884932] (-) TimerEvent: {}
+[42.985635] (-) TimerEvent: {}
+[43.086478] (-) TimerEvent: {}
+[43.187480] (-) TimerEvent: {}
+[43.288529] (-) TimerEvent: {}
+[43.338476] (ugv_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[43.388757] (-) TimerEvent: {}
+[43.489540] (-) TimerEvent: {}
+[43.555156] (ugv_msgs) StdoutLine: {'line': b'[100%] Built target ugv_msgs__rosidl_typesupport_c__pyext\n'}
+[43.589713] (-) TimerEvent: {}
+[43.602862] (ugv_msgs) CommandEnded: {'returncode': 0}
+[43.607098] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'install'}
+[43.657260] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kayla/NGCP/build/ugv_msgs'], 'cwd': '/home/kayla/NGCP/build/ugv_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kayla'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kayla'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/kayla/NGCP'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '916'), ('SYSTEMD_EXEC_PID', '1335'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2331'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kayla'), ('JOURNAL_STREAM', '8:24405'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kayla'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kayla-ngcp:@/tmp/.ICE-unix/1312,unix/kayla-ngcp:/tmp/.ICE-unix/1312'), ('INVOCATION_ID', '22594db74c5d44cca01705f55e40fc12'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-42b656d3a6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kayla/NGCP/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[43.689927] (-) TimerEvent: {}
+[43.692310] (ugv_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.694237] (ugv_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[43.695692] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/rosidl_interfaces/ugv_msgs\n'}
+[43.746181] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.h\n'}
+[43.782877] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__functions.h\n'}
+[43.790123] (-) TimerEvent: {}
+[43.825071] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.h\n'}
+[43.869080] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.h\n'}
+[43.890390] (-) TimerEvent: {}
+[43.904124] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__functions.h\n'}
+[43.955907] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.h\n'}
+[43.990899] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.h\n'}
+[43.991591] (-) TimerEvent: {}
+[44.037196] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.h\n'}
+[44.090047] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[44.091773] (-) TimerEvent: {}
+[44.140112] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/library_path.sh\n'}
+[44.190256] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/library_path.dsv\n'}
+[44.191992] (-) TimerEvent: {}
+[44.237959] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[44.279820] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[44.292162] (-) TimerEvent: {}
+[44.319104] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[44.369373] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[44.392396] (-) TimerEvent: {}
+[44.405253] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[44.453399] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[44.490484] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.hpp\n'}
+[44.492515] (-) TimerEvent: {}
+[44.534762] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__builder.hpp\n'}
+[44.576672] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.hpp\n'}
+[44.592722] (-) TimerEvent: {}
+[44.614653] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__traits.hpp\n'}
+[44.663356] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.hpp\n'}
+[44.692932] (-) TimerEvent: {}
+[44.697207] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__builder.hpp\n'}
+[44.744926] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.hpp\n'}
+[44.781649] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__traits.hpp\n'}
+[44.793242] (-) TimerEvent: {}
+[44.819160] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.hpp\n'}
+[44.866809] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.hpp\n'}
+[44.893436] (-) TimerEvent: {}
+[44.900556] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[44.954344] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.991330] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.993583] (-) TimerEvent: {}
+[45.033810] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[45.087704] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[45.093798] (-) TimerEvent: {}
+[45.133602] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[45.176946] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.sh\n'}
+[45.194037] (-) TimerEvent: {}
+[45.212894] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.dsv\n'}
+[45.264206] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[45.294251] (-) TimerEvent: {}
+[45.299593] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[45.347172] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[45.384999] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[45.394446] (-) TimerEvent: {}
+[45.429348] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py\n'}
+[45.473821] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[45.494765] (-) TimerEvent: {}
+[45.509117] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[45.560909] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[45.594950] (-) TimerEvent: {}
+[45.595752] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/libugv_msgs__rosidl_generator_py.so\n'}
+[45.642682] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py\n'}
+[45.680260] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py\n'}
+[45.695178] (-) TimerEvent: {}
+[45.715729] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl_s.c\n'}
+[45.771043] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py\n'}
+[45.795393] (-) TimerEvent: {}
+[45.810359] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl_s.c\n'}
+[45.863435] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[45.895634] (-) TimerEvent: {}
+[45.905215] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[45.959069] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[45.995892] (-) TimerEvent: {}
+[46.003785] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.005991] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.007859] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[46.009413] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.idl\n'}
+[46.063856] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.idl\n'}
+[46.096142] (-) TimerEvent: {}
+[46.104054] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.msg\n'}
+[46.166328] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.msg\n'}
+[46.196415] (-) TimerEvent: {}
+[46.207274] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/package_run_dependencies/ugv_msgs\n'}
+[46.261295] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/parent_prefix_path/ugv_msgs\n'}
+[46.296667] (-) TimerEvent: {}
+[46.302911] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.sh\n'}
+[46.354502] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.dsv\n'}
+[46.396955] (-) TimerEvent: {}
+[46.400186] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/path.sh\n'}
+[46.447759] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/environment/path.dsv\n'}
+[46.496149] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.bash\n'}
+[46.497085] (-) TimerEvent: {}
+[46.542820] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.sh\n'}
+[46.591504] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.zsh\n'}
+[46.597292] (-) TimerEvent: {}
+[46.632004] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/local_setup.dsv\n'}
+[46.687708] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/package.dsv\n'}
+[46.697500] (-) TimerEvent: {}
+[46.728707] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ament_index/resource_index/packages/ugv_msgs\n'}
+[46.786603] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[46.797750] (-) TimerEvent: {}
+[46.828832] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[46.885156] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[46.897987] (-) TimerEvent: {}
+[46.925803] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[46.982071] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[46.998285] (-) TimerEvent: {}
+[47.021635] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[47.077317] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[47.098496] (-) TimerEvent: {}
+[47.115478] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig.cmake\n'}
+[47.169065] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig-version.cmake\n'}
+[47.198714] (-) TimerEvent: {}
+[47.209374] (ugv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/package.xml\n'}
+[47.265703] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so\n'}
+[47.270642] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so" to ""\n'}
+[47.271784] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[47.274746] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[47.275607] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so\n'}
+[47.278158] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[47.278835] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so\n'}
+[47.281146] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so" to ""\n'}
+[47.281765] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[47.284805] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[47.285560] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[47.289318] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[47.290186] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so\n'}
+[47.292448] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[47.299016] (-) TimerEvent: {}
+[47.400004] (-) TimerEvent: {}
+[47.500657] (-) TimerEvent: {}
+[47.519748] (ugv_msgs) StdoutLine: {'line': b"Listing '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs'...\n"}
+[47.521507] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py'...\n"}
+[47.523110] (ugv_msgs) StdoutLine: {'line': b"Listing '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg'...\n"}
+[47.524879] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py'...\n"}
+[47.526403] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py'...\n"}
+[47.527670] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py'...\n"}
+[47.568625] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so\n'}
+[47.571460] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kayla/NGCP/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so" to ""\n'}
+[47.572485] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport.cmake\n'}
+[47.574227] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[47.576165] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[47.577941] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[47.579506] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[47.581176] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[47.582583] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport.cmake\n'}
+[47.584068] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[47.585474] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cppExport.cmake\n'}
+[47.586807] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[47.588291] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[47.589688] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[47.591152] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[47.592678] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[47.593951] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[47.595258] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport.cmake\n'}
+[47.596576] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/kayla/NGCP/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[47.600877] (-) TimerEvent: {}
+[47.604407] (ugv_msgs) CommandEnded: {'returncode': 0}
+[47.701362] (-) TimerEvent: {}
+[47.778386] (ugv_msgs) JobEnded: {'identifier': 'ugv_msgs', 'rc': 0}
+[47.781784] (-) EventReactorShutdown: {}

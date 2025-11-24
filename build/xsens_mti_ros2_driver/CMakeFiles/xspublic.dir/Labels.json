@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/CMakeFiles/xspublic"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/CMakeFiles/xspublic.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/CMakeFiles/xspublic-complete.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-build.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-configure.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-download.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-install.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-mkdir.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-patch.rule"
+		},
+		{
+			"file" : "/home/kayla/NGCP/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"xspublic"
+		],
+		"name" : "xspublic"
+	}
+}

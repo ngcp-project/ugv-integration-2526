@@ -1,0 +1,1 @@
+Invoking command in '/home/kayla/NGCP/build/ugv_msgs': /usr/bin/cmake /home/kayla/NGCP/src/ugv_msgs -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ugv_msgs

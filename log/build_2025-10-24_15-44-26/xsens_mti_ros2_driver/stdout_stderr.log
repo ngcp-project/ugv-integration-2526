@@ -1,0 +1,499 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found nmea_msgs: 2.0.0 (/opt/ros/humble/share/nmea_msgs/cmake)
+-- Found mavros_msgs: 2.12.0 (/opt/ros/humble/share/mavros_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Detected ROS_DISTRO: humble
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kayla/NGCP/build/xsens_mti_ros2_driver
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  6%] [34m[1mCreating directories for 'xspublic'[0m
+[  6%] Built target ament_cmake_python_copy_xsens_mti_ros2_driver
+[  8%] [34m[1mNo download step for 'xspublic'[0m
+[ 10%] [34m[1mNo update step for 'xspublic'[0m
+[ 13%] [34m[1mNo patch step for 'xspublic'[0m
+[ 15%] [34m[1mNo configure step for 'xspublic'[0m
+[ 17%] [34m[1mPerforming build step for 'xspublic'[0m
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+running egg_info
+creating xsens_mti_ros2_driver.egg-info
+writing xsens_mti_ros2_driver.egg-info/PKG-INFO
+writing dependency_links to xsens_mti_ros2_driver.egg-info/dependency_links.txt
+writing top-level names to xsens_mti_ros2_driver.egg-info/top_level.txt
+writing manifest file 'xsens_mti_ros2_driver.egg-info/SOURCES.txt'
+reading manifest file 'xsens_mti_ros2_driver.egg-info/SOURCES.txt'
+writing manifest file 'xsens_mti_ros2_driver.egg-info/SOURCES.txt'
+[ 17%] Built target ament_cmake_python_build_xsens_mti_ros2_driver_egg
+[ 17%] Built target xsens_mti_ros2_driver__cpp
+[ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 21%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 23%] [32mBuilding C object CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o[0m
+[ 26%] [32m[1mLinking C shared library libxsens_mti_ros2_driver__rosidl_generator_c.so[0m
+[ 26%] Built target xsens_mti_ros2_driver__rosidl_generator_c
+[ 28%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xsens_mti_ros2_driver/msg/xs_status_word__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xsens_mti_ros2_driver/msg/detail/dds_fastrtps/xs_status_word__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.cpp.o[0m
+[ 36%] [32m[1mLinking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_cpp.so[0m
+[ 36%] Built target xsens_mti_ros2_driver__rosidl_typesupport_cpp
+[ 39%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 41%] [32m[1mLinking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 41%] Built target xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cpp
+[ 43%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 45%] [32m[1mLinking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_introspection_cpp.so[0m
+[ 45%] Built target xsens_mti_ros2_driver__rosidl_typesupport_introspection_cpp
+[ 47%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[01m[Kxsmalloc.c:75:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   75 | [01;35m[K{[m[K
+      | [01;35m[K^[m[K
+[ 50%] [32mBuilding CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.c.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/xsens_mti_ros2_driver/msg/xs_status_word__type_support.cpp.o[0m
+[ 56%] [32m[1mLinking C shared library libxsens_mti_ros2_driver__rosidl_typesupport_introspection_c.so[0m
+[ 58%] [32m[1mLinking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_c.so[0m
+[ 58%] Built target xsens_mti_ros2_driver__rosidl_typesupport_introspection_c
+[ 58%] Built target xsens_mti_ros2_driver__rosidl_typesupport_c
+[ 60%] [32m[1mLinking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so[0m
+[ 60%] Built target xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c
+[ 60%] Built target xsens_mti_ros2_driver
+[ 63%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 63%] Built target xsens_mti_ros2_driver__py
+[ 65%] [32mBuilding C object CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_py.dir/rosidl_generator_py/xsens_mti_ros2_driver/msg/_xs_status_word_s.c.o[0m
+[ 67%] [32m[1mLinking C shared library rosidl_generator_py/xsens_mti_ros2_driver/libxsens_mti_ros2_driver__rosidl_generator_py.so[0m
+[ 67%] Built target xsens_mti_ros2_driver__rosidl_generator_py
+[ 69%] [32mBuilding C object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_c.c.o[0m
+[ 71%] [32mBuilding C object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 73%] [32mBuilding C object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 76%] [32m[1mLinking C shared library rosidl_generator_py/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 78%] [32m[1mLinking C shared library rosidl_generator_py/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 80%] [32m[1mLinking C shared library rosidl_generator_py/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 80%] Built target xsens_mti_ros2_driver__rosidl_typesupport_c__pyext
+[ 80%] Built target xsens_mti_ros2_driver__rosidl_typesupport_introspection_c__pyext
+[ 80%] Built target xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c__pyext
+In file included from [01m[Kthreading.cpp:33[m[K:
+[01m[Kthreading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[Kthreading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kxsens_threadpool.cpp:44[m[K:
+[01m[Kthreading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[Kthreading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kcommunicator.cpp:44[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kcommunicator.cpp:44[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kdataparser.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdatapoller.h:36[m[K,
+                 from [01m[Kdatapoller.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kmtbfilecommunicator.cpp:37[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kmtbfilecommunicator.cpp:40[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kmtbfilecommunicator.cpp:40[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Kdatapoller.h:36[m[K,
+                 from [01m[Kmtthread.h:36[m[K,
+                 from [01m[Kmtthread.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kpacketerrorrateestimator.h:36[m[K,
+                 from [01m[Kpacketerrorrateestimator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kproxycommunicator.h:36[m[K,
+                 from [01m[Kproxycommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kproxycommunicator.cpp:36[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kproxycommunicator.cpp:36[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Krestorecommunication.h:37[m[K,
+                 from [01m[Krestorecommunication.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kscanner.cpp:51[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kscanner.cpp:55[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kscanner.cpp:55[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialcommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kserialportcommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kusbcommunicator.h:36[m[K,
+                 from [01m[Kusbcommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kxdacommunicatorfactory.cpp:35[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kproxycommunicator.h:36[m[K,
+                 from [01m[Kxscontrol_def.cpp:41[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+[ 82%] [34m[1mNo install step for 'xspublic'[0m
+[ 84%] [34m[1mCompleted 'xspublic'[0m
+[ 84%] Built target xspublic
+[ 89%] [32mBuilding CXX object CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/xsens_mti_node.dir/src/xdainterface.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/xsens_mti_node.dir/src/main.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/xsens_mti_node.dir/src/xsens_log_handler.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/xsens_mti_node.dir/src/ntrip_util.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/xsens_mti_node.dir/src/xsens_time_handler.cpp.o[0m
+[100%] [32m[1mLinking CXX executable xsens_mti_node[0m
+[100%] Built target xsens_mti_node
+-- Install configuration: ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/ament_index/resource_index/rosidl_interfaces/xsens_mti_ros2_driver
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/xs_status_word.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/library_path.sh
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/library_path.dsv
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_generator_c.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/xs_status_word.hpp
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__struct.hpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.hpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__traits.hpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__builder.hpp
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/dds_fastrtps
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_introspection_c.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.c
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_c.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg
+-- Up-to-date: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.cpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/include/xsens_mti_ros2_driver/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/pythonpath.sh
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/pythonpath.dsv
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver-1.0.2-py3.10.egg-info
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver-1.0.2-py3.10.egg-info/PKG-INFO
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver-1.0.2-py3.10.egg-info/top_level.txt
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver-1.0.2-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver-1.0.2-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg/__init__.py
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg/_xs_status_word.py
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg/_xs_status_word_s.c
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/__init__.py
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/libxsens_mti_ros2_driver__rosidl_generator_py.so
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_introspection_c.c
+Listing '/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver'...
+Compiling '/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/__init__.py'...
+Listing '/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg'...
+Compiling '/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg/__init__.py'...
+Compiling '/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/msg/_xs_status_word.py'...
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages/xsens_mti_ros2_driver/xsens_mti_ros2_driver_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_generator_py.so
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/libxsens_mti_ros2_driver__rosidl_generator_py.so" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/msg/XsStatusWord.idl
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/msg/XsStatusWord.msg
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/xsens_mti_ros2_driver/xsens_mti_node
+-- Set runtime path of "/home/kayla/NGCP/install/xsens_mti_ros2_driver/lib/xsens_mti_ros2_driver/xsens_mti_node" to ""
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/launch
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/launch/display.launch.py
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/launch/xsens_mti_node.launch.py
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/param
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/param/xsens_mti_node.yaml
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/rviz
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/rviz/display.rviz
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf/MTi_10.urdf
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf/MTi_10.stl
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf/MTi_6xx.urdf
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf/MTi_6xx.stl
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf/MTi_1.urdf
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/urdf/MTi_1.stl
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/ament_index/resource_index/package_run_dependencies/xsens_mti_ros2_driver
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/ament_index/resource_index/parent_prefix_path/xsens_mti_ros2_driver
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/ament_prefix_path.sh
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/path.sh
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/environment/path.dsv
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/local_setup.bash
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/local_setup.sh
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/local_setup.zsh
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/local_setup.dsv
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/package.dsv
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/ament_index/resource_index/packages/xsens_mti_ros2_driver
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_generator_cExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_generator_cppExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_cExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driver__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_generator_pyExport.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/export_xsens_mti_ros2_driver__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driverConfig.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/cmake/xsens_mti_ros2_driverConfig-version.cmake
+-- Installing: /home/kayla/NGCP/install/xsens_mti_ros2_driver/share/xsens_mti_ros2_driver/package.xml

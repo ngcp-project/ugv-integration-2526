@@ -1,0 +1,5 @@
+[console_scripts]
+ugv_armcontrol_sub = ugv_control.ugv_armcontrol_sub:main
+ugv_control_pub = ugv_control.ugv_control_pub:main
+ugv_control_sub = ugv_control.ugv_control_sub:main
+

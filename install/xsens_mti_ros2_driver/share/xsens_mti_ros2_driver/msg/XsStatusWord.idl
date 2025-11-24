@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xsens_mti_ros2_driver/msg/XsStatusWord.msg
+// generated code does not contain a copyright notice
+
+
+module xsens_mti_ros2_driver {
+  module msg {
+    @verbatim (language="comment", text=
+      "Define the custom XsStatusWord message")
+    struct XsStatusWord {
+      boolean selftest;
+
+      boolean filter_valid;
+
+      boolean gnss_fix;
+
+      @verbatim (language="comment", text=
+        "0: not running, 2: aborted, 3:running")
+      uint8 no_rotation_update_status;
+
+      boolean representative_motion;
+
+      boolean clock_bias_estimation;
+
+      @verbatim (language="comment", text=
+        "bool reserved1")
+      boolean clipflag_acc_x;
+
+      boolean clipflag_acc_y;
+
+      boolean clipflag_acc_z;
+
+      boolean clipflag_gyr_x;
+
+      boolean clipflag_gyr_y;
+
+      boolean clipflag_gyr_z;
+
+      boolean clipflag_mag_x;
+
+      boolean clipflag_mag_y;
+
+      boolean clipflag_mag_z;
+
+      @verbatim (language="comment", text=
+        "uint8 reserved2")
+      boolean clipping_indication;
+
+      @verbatim (language="comment", text=
+        "bool reserved3")
+      boolean syncin_marker;
+
+      boolean syncout_marker;
+
+      @verbatim (language="comment", text=
+        "0: Without GNSS, 1: Coasting, 3: With GNSS")
+      uint8 filter_mode;
+
+      boolean have_gnss_time_pulse;
+
+      @verbatim (language="comment", text=
+        "0: No RTK, 1: RTK Floating, 2: RTK Fix")
+      uint8 rtk_status;
+    };
+  };
+};

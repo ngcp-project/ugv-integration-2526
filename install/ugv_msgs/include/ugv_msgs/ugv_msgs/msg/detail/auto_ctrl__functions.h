@@ -1,0 +1,1 @@
+/home/kayla/NGCP/build/ugv_msgs/rosidl_generator_c/ugv_msgs/msg/detail/auto_ctrl__functions.h

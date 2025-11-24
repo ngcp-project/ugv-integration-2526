@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b451b1cf7cd68ae86179.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ntrip",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ntrip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ntrip-88d284673840f7bb1926.json",
+					"name" : "ntrip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ntrip_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ntrip_lib-05c2d8a3ce000a5f5559.json",
+					"name" : "ntrip_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ntrip_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ntrip_uninstall-0cfe9b01ab13972f1138.json",
+					"name" : "ntrip_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-14ac1505c898be455222.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kayla/NGCP/build/ntrip",
+		"source" : "/home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,128 @@
+[0.000000] (-) TimerEvent: {}
+[0.002366] (-) JobUnselected: {'identifier': 'ugv_msgs'}
+[0.003167] (ugv_control) JobQueued: {'identifier': 'ugv_control', 'dependencies': OrderedDict([('ugv_msgs', '/home/kayla/NGCP/install/ugv_msgs')])}
+[0.003814] (ugv_control) JobStarted: {'identifier': 'ugv_control'}
+[0.099186] (-) TimerEvent: {}
+[0.200370] (-) TimerEvent: {}
+[0.301557] (-) TimerEvent: {}
+[0.402245] (-) TimerEvent: {}
+[0.502940] (-) TimerEvent: {}
+[0.603597] (-) TimerEvent: {}
+[0.704308] (-) TimerEvent: {}
+[0.804993] (-) TimerEvent: {}
+[0.905629] (-) TimerEvent: {}
+[1.006260] (-) TimerEvent: {}
+[1.106919] (-) TimerEvent: {}
+[1.207603] (-) TimerEvent: {}
+[1.308227] (-) TimerEvent: {}
+[1.408944] (-) TimerEvent: {}
+[1.509625] (-) TimerEvent: {}
+[1.610281] (-) TimerEvent: {}
+[1.710997] (-) TimerEvent: {}
+[1.811843] (-) TimerEvent: {}
+[1.912686] (-) TimerEvent: {}
+[2.014020] (-) TimerEvent: {}
+[2.115448] (-) TimerEvent: {}
+[2.216353] (-) TimerEvent: {}
+[2.317040] (-) TimerEvent: {}
+[2.417796] (-) TimerEvent: {}
+[2.518697] (-) TimerEvent: {}
+[2.619441] (-) TimerEvent: {}
+[2.720122] (-) TimerEvent: {}
+[2.820776] (-) TimerEvent: {}
+[2.921412] (-) TimerEvent: {}
+[3.022054] (-) TimerEvent: {}
+[3.122699] (-) TimerEvent: {}
+[3.223366] (-) TimerEvent: {}
+[3.324127] (-) TimerEvent: {}
+[3.424836] (-) TimerEvent: {}
+[3.525533] (-) TimerEvent: {}
+[3.626181] (-) TimerEvent: {}
+[3.726794] (-) TimerEvent: {}
+[3.827449] (-) TimerEvent: {}
+[3.928138] (-) TimerEvent: {}
+[4.028932] (-) TimerEvent: {}
+[4.129595] (-) TimerEvent: {}
+[4.230244] (-) TimerEvent: {}
+[4.330899] (-) TimerEvent: {}
+[4.431954] (-) TimerEvent: {}
+[4.535083] (-) TimerEvent: {}
+[4.641078] (-) TimerEvent: {}
+[4.742918] (-) TimerEvent: {}
+[4.826614] (ugv_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/kayla/NGCP/build/ugv_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/kayla/NGCP/build/ugv_control', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kayla', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/kayla/NGCP/install/ugv_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/kayla', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/kayla/NGCP', 'TERM_PROGRAM_VERSION': '1.104.3', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '916', 'SYSTEMD_EXEC_PID': '1335', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2331', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kayla/NGCP/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'kayla', 'JOURNAL_STREAM': '8:24405', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kayla', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/kayla-ngcp:@/tmp/.ICE-unix/1312,unix/kayla-ngcp:/tmp/.ICE-unix/1312', 'INVOCATION_ID': '22594db74c5d44cca01705f55e40fc12', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-42b656d3a6.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kayla/NGCP/install/ugv_msgs:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kayla/NGCP/build/ugv_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kayla/NGCP/build/ugv_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages:/home/kayla/NGCP/install/ugv_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/kayla/NGCP/install/ugv_msgs'}, 'shell': False}
+[4.843087] (-) TimerEvent: {}
+[4.944410] (-) TimerEvent: {}
+[5.046775] (-) TimerEvent: {}
+[5.147598] (-) TimerEvent: {}
+[5.248973] (-) TimerEvent: {}
+[5.350293] (-) TimerEvent: {}
+[5.451816] (-) TimerEvent: {}
+[5.554446] (-) TimerEvent: {}
+[5.655164] (-) TimerEvent: {}
+[5.756092] (-) TimerEvent: {}
+[5.856787] (-) TimerEvent: {}
+[5.957445] (-) TimerEvent: {}
+[6.058374] (-) TimerEvent: {}
+[6.160083] (-) TimerEvent: {}
+[6.261133] (-) TimerEvent: {}
+[6.362348] (-) TimerEvent: {}
+[6.463695] (-) TimerEvent: {}
+[6.564859] (-) TimerEvent: {}
+[6.666628] (-) TimerEvent: {}
+[6.768075] (-) TimerEvent: {}
+[6.869094] (-) TimerEvent: {}
+[6.970123] (-) TimerEvent: {}
+[7.071089] (-) TimerEvent: {}
+[7.172001] (-) TimerEvent: {}
+[7.273004] (-) TimerEvent: {}
+[7.310999] (ugv_control) StdoutLine: {'line': b'running develop\n'}
+[7.373359] (-) TimerEvent: {}
+[7.474511] (-) TimerEvent: {}
+[7.575846] (-) TimerEvent: {}
+[7.676932] (-) TimerEvent: {}
+[7.777682] (-) TimerEvent: {}
+[7.878697] (-) TimerEvent: {}
+[7.979360] (-) TimerEvent: {}
+[8.080054] (-) TimerEvent: {}
+[8.180831] (-) TimerEvent: {}
+[8.282319] (-) TimerEvent: {}
+[8.385011] (-) TimerEvent: {}
+[8.486533] (-) TimerEvent: {}
+[8.587647] (-) TimerEvent: {}
+[8.688926] (-) TimerEvent: {}
+[8.789801] (-) TimerEvent: {}
+[8.890666] (-) TimerEvent: {}
+[8.991354] (-) TimerEvent: {}
+[9.092008] (-) TimerEvent: {}
+[9.190032] (ugv_control) StdoutLine: {'line': b'running egg_info\n'}
+[9.190605] (ugv_control) StdoutLine: {'line': b'creating ugv_control.egg-info\n'}
+[9.191160] (ugv_control) StdoutLine: {'line': b'writing ugv_control.egg-info/PKG-INFO\n'}
+[9.192130] (-) TimerEvent: {}
+[9.192679] (ugv_control) StdoutLine: {'line': b'writing dependency_links to ugv_control.egg-info/dependency_links.txt\n'}
+[9.193618] (ugv_control) StdoutLine: {'line': b'writing entry points to ugv_control.egg-info/entry_points.txt\n'}
+[9.194353] (ugv_control) StdoutLine: {'line': b'writing requirements to ugv_control.egg-info/requires.txt\n'}
+[9.195311] (ugv_control) StdoutLine: {'line': b'writing top-level names to ugv_control.egg-info/top_level.txt\n'}
+[9.196698] (ugv_control) StdoutLine: {'line': b"writing manifest file 'ugv_control.egg-info/SOURCES.txt'\n"}
+[9.209323] (ugv_control) StdoutLine: {'line': b"reading manifest file 'ugv_control.egg-info/SOURCES.txt'\n"}
+[9.214097] (ugv_control) StdoutLine: {'line': b"writing manifest file 'ugv_control.egg-info/SOURCES.txt'\n"}
+[9.222392] (ugv_control) StdoutLine: {'line': b'running build_ext\n'}
+[9.223370] (ugv_control) StdoutLine: {'line': b'Creating /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv-control.egg-link (link to .)\n'}
+[9.231376] (ugv_control) StdoutLine: {'line': b'Installing ugv_armcontrol_sub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control\n'}
+[9.238606] (ugv_control) StdoutLine: {'line': b'Installing ugv_control_pub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control\n'}
+[9.244133] (ugv_control) StdoutLine: {'line': b'Installing ugv_control_sub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control\n'}
+[9.246753] (ugv_control) StdoutLine: {'line': b'\n'}
+[9.250751] (ugv_control) StdoutLine: {'line': b'Installed /home/kayla/NGCP/build/ugv_control\n'}
+[9.262205] (ugv_control) StdoutLine: {'line': b'running symlink_data\n'}
+[9.271979] (ugv_control) StdoutLine: {'line': b'creating /home/kayla/NGCP/install/ugv_control/share/ament_index\n'}
+[9.275523] (ugv_control) StdoutLine: {'line': b'creating /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index\n'}
+[9.280877] (ugv_control) StdoutLine: {'line': b'creating /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index/packages\n'}
+[9.284165] (ugv_control) StdoutLine: {'line': b'symbolically linking /home/kayla/NGCP/build/ugv_control/resource/ugv_control -> /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index/packages\n'}
+[9.288003] (ugv_control) StdoutLine: {'line': b'symbolically linking /home/kayla/NGCP/build/ugv_control/package.xml -> /home/kayla/NGCP/install/ugv_control/share/ugv_control\n'}
+[9.292818] (-) TimerEvent: {}
+[9.394277] (-) TimerEvent: {}
+[9.495729] (-) TimerEvent: {}
+[9.552022] (ugv_control) CommandEnded: {'returncode': 0}
+[9.596336] (-) TimerEvent: {}
+[9.701734] (-) TimerEvent: {}
+[9.707624] (ugv_control) JobEnded: {'identifier': 'ugv_control', 'rc': 0}
+[9.713960] (-) EventReactorShutdown: {}

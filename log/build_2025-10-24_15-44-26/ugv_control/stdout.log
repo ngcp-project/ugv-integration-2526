@@ -1,0 +1,40 @@
+running develop
+Removing /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv-control.egg-link (link to .)
+running egg_info
+writing ../../build/ugv_control/ugv_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/ugv_control/ugv_control.egg-info/dependency_links.txt
+writing entry points to ../../build/ugv_control/ugv_control.egg-info/entry_points.txt
+writing requirements to ../../build/ugv_control/ugv_control.egg-info/requires.txt
+writing top-level names to ../../build/ugv_control/ugv_control.egg-info/top_level.txt
+reading manifest file '../../build/ugv_control/ugv_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/ugv_control/ugv_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kayla/NGCP/build/ugv_control/build
+creating /home/kayla/NGCP/build/ugv_control/build/lib
+creating /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+copying ugv_control/__init__.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+copying ugv_control/ugv_armcontrol_sub.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+copying ugv_control/ugv_control_pub.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+copying ugv_control/ugv_control_sub.py -> /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control
+running install
+running install_lib
+creating /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/__init__.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/ugv_armcontrol_sub.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/ugv_control_pub.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+copying /home/kayla/NGCP/build/ugv_control/build/lib/ugv_control/ugv_control_sub.py -> /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control
+byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/ugv_armcontrol_sub.py to ugv_armcontrol_sub.cpython-310.pyc
+byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/ugv_control_pub.py to ugv_control_pub.cpython-310.pyc
+byte-compiling /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control/ugv_control_sub.py to ugv_control_sub.cpython-310.pyc
+running install_data
+copying resource/ugv_control -> /home/kayla/NGCP/install/ugv_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/kayla/NGCP/install/ugv_control/share/ugv_control
+running install_egg_info
+Copying ../../build/ugv_control/ugv_control.egg-info to /home/kayla/NGCP/install/ugv_control/lib/python3.10/site-packages/ugv_control-0.1.0-py3.10.egg-info
+running install_scripts
+Installing ugv_armcontrol_sub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+Installing ugv_control_pub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+Installing ugv_control_sub script to /home/kayla/NGCP/install/ugv_control/lib/ugv_control
+writing list of installed files to '/home/kayla/NGCP/build/ugv_control/install.log'

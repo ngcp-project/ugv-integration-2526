@@ -1,0 +1,2 @@
+Invoking command in '/home/kayla/NGCP/build/ntrip': /usr/bin/cmake /home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ntrip
+Invoked command in '/home/kayla/NGCP/build/ntrip' returned '1': /usr/bin/cmake /home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/ntrip -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/ntrip

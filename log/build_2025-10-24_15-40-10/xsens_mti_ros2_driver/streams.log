@@ -1,0 +1,32 @@
+[0.211s] Invoking command in '/home/kayla/NGCP/build/xsens_mti_ros2_driver': /usr/bin/cmake /home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/xsens_mti_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/kayla/NGCP/install/xsens_mti_ros2_driver
+[1.353s] -- The C compiler identification is GNU 11.4.0
+[2.220s] -- The CXX compiler identification is GNU 11.4.0
+[2.304s] -- Detecting C compiler ABI info
+[3.169s] -- Detecting C compiler ABI info - done
+[3.225s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.235s] -- Detecting C compile features
+[3.248s] -- Detecting C compile features - done
+[3.327s] -- Detecting CXX compiler ABI info
+[4.247s] -- Detecting CXX compiler ABI info - done
+[4.288s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.290s] -- Detecting CXX compile features
+[4.292s] -- Detecting CXX compile features - done
+[4.475s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[4.476s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[4.477s]   has asked CMake to find a package configuration file provided by
+[4.479s]   "ament_cmake", but CMake did not find one.
+[4.495s] 
+[4.504s]   Could not find a package configuration file provided by "ament_cmake" with
+[4.506s]   any of the following names:
+[4.509s] 
+[4.511s]     ament_cmakeConfig.cmake
+[4.514s]     ament_cmake-config.cmake
+[4.518s] 
+[4.521s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[4.523s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[4.524s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[4.525s]   has been installed.
+[4.526s] 
+[4.526s] [0m
+[4.527s] -- Configuring incomplete, errors occurred!
+[4.528s] See also "/home/kayla/NGCP/build/xsens_mti_ros2_driver/CMakeFiles/CMakeOutput.log".

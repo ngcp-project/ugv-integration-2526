@@ -1,0 +1,1 @@
+/home/kayla/NGCP/build/ugv_msgs/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_cpp.hpp

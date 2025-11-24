@@ -1,0 +1,6 @@
+{
+  "package_name": "xsens_mti_ros2_driver",
+  "non_idl_tuples": [
+    "/home/kayla/NGCP/Xsens_MTi_ROS_Driver_and_Ntrip_Client/src/xsens_mti_ros2_driver:msg/XsStatusWord.msg"
+  ]
+}

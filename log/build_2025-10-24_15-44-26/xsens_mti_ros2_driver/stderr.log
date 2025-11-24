@@ -1,0 +1,240 @@
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+[01m[Kxsmalloc.c:75:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+   75 | [01;35m[K{[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[Kthreading.cpp:33[m[K:
+[01m[Kthreading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[Kthreading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kxsens_threadpool.cpp:44[m[K:
+[01m[Kthreading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[Kthreading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kcommunicator.cpp:44[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kcommunicator.cpp:44[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kdataparser.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdatapoller.h:36[m[K,
+                 from [01m[Kdatapoller.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kmtbfilecommunicator.cpp:37[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kmtbfilecommunicator.cpp:40[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kmtbfilecommunicator.cpp:40[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Kdatapoller.h:36[m[K,
+                 from [01m[Kmtthread.h:36[m[K,
+                 from [01m[Kmtthread.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kpacketerrorrateestimator.h:36[m[K,
+                 from [01m[Kpacketerrorrateestimator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kproxycommunicator.h:36[m[K,
+                 from [01m[Kproxycommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kproxycommunicator.cpp:36[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kproxycommunicator.cpp:36[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Krestorecommunication.h:37[m[K,
+                 from [01m[Krestorecommunication.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kscanner.cpp:51[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kscanner.cpp:55[m[K:
+[01m[K../xscommon/xsens_janitors.h:439:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  439 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(void[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                             [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:531:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  531 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:577:66:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  577 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a janitor function
+      |                                                                  [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:623:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  623 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+In file included from [01m[Kscanner.cpp:55[m[K:
+[01m[K../xscommon/xsens_janitors.h:670:79:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  670 |         typedef ResultType(__cdecl* t_func_JanitorFunc)(Param1Type, Param2Type[01;35m[K)[m[K;  //!< A function prototype for a janitor function
+      |                                                                               [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:717:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  717 |         typedef R(__cdecl* t_func_JanitorLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor log function
+      |                                                                                [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:776:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  776 |         typedef R(__cdecl* t_func_JanitorSimpleLogFunc)(const char*, const char*, ...[01;35m[K)[m[K;   //!< A function prototype for a janitor simple log function
+      |                                                                                      [01;35m[K^[m[K
+[01m[K../xscommon/xsens_janitors.h:836:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstdcall[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  836 |         typedef ResultType(__stdcall* t_func_JanitorFuncStdCall)(ParamType[01;35m[K)[m[K;   //!< A function prototype for a calling janitor function
+      |                                                                           [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialcommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kserialportcommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kusbcommunicator.h:36[m[K,
+                 from [01m[Kusbcommunicator.cpp:33[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kserialportcommunicator.h:36[m[K,
+                 from [01m[Kxdacommunicatorfactory.cpp:35[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[Kdataparser.h:38[m[K,
+                 from [01m[Kserialcommunicator.h:40[m[K,
+                 from [01m[Kproxycommunicator.h:36[m[K,
+                 from [01m[Kxscontrol_def.cpp:41[m[K:
+[01m[K../xscommon/threading.h:129:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  129 | typedef void (CDECL_XS* WatchDogFunction)(void*[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+[01m[K../xscommon/threading.h:189:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcdecl[m[K’ attribute directive ignored [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wattributes-Wattributes]8;;[m[K]
+  189 |         typedef void (CDECL_XS* TaskFunction)(void*[01;35m[K)[m[K; //!< A function prototype for a task
+      |                                                    [01;35m[K^[m[K
