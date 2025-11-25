@@ -1,0 +1,415 @@
+[0.000000] (-) TimerEvent: {}
+[0.000885] (ugv_msgs) JobQueued: {'identifier': 'ugv_msgs', 'dependencies': OrderedDict()}
+[0.001238] (ngcp_ugv) JobQueued: {'identifier': 'ngcp_ugv', 'dependencies': OrderedDict([('ugv_msgs', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs')])}
+[0.001610] (ugv_msgs) JobStarted: {'identifier': 'ugv_msgs'}
+[0.018816] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'cmake'}
+[0.019640] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs', '-DCMAKE_INSTALL_PREFIX=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs'], 'cwd': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ugv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ugv'), ('OLDPWD', '/home/ugv'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2725'), ('SYSTEMD_EXEC_PID', '2893'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15682'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ugv'), ('JOURNAL_STREAM', '8:47152'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ugv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ugv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ugv/Luxonis/depthai/entrypoint:/home/ugv/Luxonis/depthai/entrypoint'), ('SESSION_MANAGER', 'local/ugv-desktop:@/tmp/.ICE-unix/2869,unix/ugv-desktop:/tmp/.ICE-unix/2869'), ('INVOCATION_ID', '3e01d8f9c7ae4048bbaffabe999de226'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d6ad82aa-52a0-481a-a365-5fec960d93d1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('JREHOME', '/usr/lib/jvm/java-11-openjdk-arm64'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098847] (-) TimerEvent: {}
+[0.133776] (ugv_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199152] (-) TimerEvent: {}
+[0.276681] (ugv_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.299284] (-) TimerEvent: {}
+[0.300103] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399542] (-) TimerEvent: {}
+[0.483003] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.499613] (-) TimerEvent: {}
+[0.507721] (ugv_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.508659] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.510059] (ugv_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.520897] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.599717] (-) TimerEvent: {}
+[0.700376] (-) TimerEvent: {}
+[0.711433] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.736529] (ugv_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.737234] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.738027] (ugv_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.742828] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.800428] (-) TimerEvent: {}
+[0.901186] (-) TimerEvent: {}
+[1.002168] (-) TimerEvent: {}
+[1.094338] (ugv_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102235] (-) TimerEvent: {}
+[1.202743] (-) TimerEvent: {}
+[1.299231] (ugv_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.302830] (-) TimerEvent: {}
+[1.306833] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.321417] (ugv_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.398177] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.402926] (-) TimerEvent: {}
+[1.503523] (-) TimerEvent: {}
+[1.604504] (-) TimerEvent: {}
+[1.705350] (-) TimerEvent: {}
+[1.805952] (-) TimerEvent: {}
+[1.906606] (-) TimerEvent: {}
+[2.007568] (-) TimerEvent: {}
+[2.012958] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.107647] (-) TimerEvent: {}
+[2.208323] (-) TimerEvent: {}
+[2.309285] (-) TimerEvent: {}
+[2.410142] (-) TimerEvent: {}
+[2.465402] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.510234] (-) TimerEvent: {}
+[2.610886] (-) TimerEvent: {}
+[2.711604] (-) TimerEvent: {}
+[2.812482] (-) TimerEvent: {}
+[2.913413] (-) TimerEvent: {}
+[3.014077] (-) TimerEvent: {}
+[3.049223] (ugv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.108145] (ugv_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.110556] (ugv_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.114151] (-) TimerEvent: {}
+[3.172762] (ugv_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.173278] (ugv_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.173563] (ugv_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.173819] (ugv_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.214265] (-) TimerEvent: {}
+[3.225376] (ugv_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.303142] (ugv_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.314386] (-) TimerEvent: {}
+[3.343729] (ugv_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.345829] (ugv_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.351879] (ugv_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.412448] (ugv_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.414485] (-) TimerEvent: {}
+[3.431853] (ugv_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs\n'}
+[3.448319] (ugv_msgs) CommandEnded: {'returncode': 0}
+[3.449712] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'build'}
+[3.451782] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs', '--', '-j6', '-l6'], 'cwd': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ugv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ugv'), ('OLDPWD', '/home/ugv'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2725'), ('SYSTEMD_EXEC_PID', '2893'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15682'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ugv'), ('JOURNAL_STREAM', '8:47152'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ugv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ugv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ugv/Luxonis/depthai/entrypoint:/home/ugv/Luxonis/depthai/entrypoint'), ('SESSION_MANAGER', 'local/ugv-desktop:@/tmp/.ICE-unix/2869,unix/ugv-desktop:/tmp/.ICE-unix/2869'), ('INVOCATION_ID', '3e01d8f9c7ae4048bbaffabe999de226'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d6ad82aa-52a0-481a-a365-5fec960d93d1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('JREHOME', '/usr/lib/jvm/java-11-openjdk-arm64'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.514641] (-) TimerEvent: {}
+[3.547262] (ugv_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.567360] (ugv_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.589804] (ugv_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_ugv_msgs\n'}
+[3.614793] (-) TimerEvent: {}
+[3.715381] (-) TimerEvent: {}
+[3.815984] (-) TimerEvent: {}
+[3.916553] (-) TimerEvent: {}
+[4.017041] (-) TimerEvent: {}
+[4.105505] (ugv_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.106952] (ugv_msgs) StdoutLine: {'line': b'creating ugv_msgs.egg-info\n'}
+[4.107423] (ugv_msgs) StdoutLine: {'line': b'writing ugv_msgs.egg-info/PKG-INFO\n'}
+[4.107893] (ugv_msgs) StdoutLine: {'line': b'writing dependency_links to ugv_msgs.egg-info/dependency_links.txt\n'}
+[4.108278] (ugv_msgs) StdoutLine: {'line': b'writing top-level names to ugv_msgs.egg-info/top_level.txt\n'}
+[4.108804] (ugv_msgs) StdoutLine: {'line': b"writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'\n"}
+[4.113799] (ugv_msgs) StdoutLine: {'line': b"reading manifest file 'ugv_msgs.egg-info/SOURCES.txt'\n"}
+[4.115197] (ugv_msgs) StdoutLine: {'line': b"writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'\n"}
+[4.117182] (-) TimerEvent: {}
+[4.195763] (ugv_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/man_ctrl__functions.c.o\x1b[0m\n'}
+[4.196421] (ugv_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/auto_ctrl__functions.c.o\x1b[0m\n'}
+[4.197581] (ugv_msgs) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_ugv_msgs_egg\n'}
+[4.198700] (ugv_msgs) StdoutLine: {'line': b'[ 10%] Built target ugv_msgs__cpp\n'}
+[4.217393] (-) TimerEvent: {}
+[4.221550] (ugv_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.222269] (ugv_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.222991] (ugv_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.305573] (ugv_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libugv_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.317486] (-) TimerEvent: {}
+[4.385559] (ugv_msgs) StdoutLine: {'line': b'[ 20%] Built target ugv_msgs__rosidl_generator_c\n'}
+[4.406516] (ugv_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.406963] (ugv_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.407218] (ugv_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.417636] (-) TimerEvent: {}
+[4.518261] (-) TimerEvent: {}
+[4.618910] (-) TimerEvent: {}
+[4.719571] (-) TimerEvent: {}
+[4.729992] (ugv_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[4.816402] (ugv_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[4.819750] (-) TimerEvent: {}
+[4.902947] (ugv_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[4.919953] (-) TimerEvent: {}
+[4.927916] (ugv_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/man_ctrl__type_support.cpp.o\x1b[0m\n'}
+[5.004316] (ugv_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[5.020179] (-) TimerEvent: {}
+[5.022582] (ugv_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/man_ctrl__type_support.c.o\x1b[0m\n'}
+[5.068385] (ugv_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.068987] (ugv_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/man_ctrl__type_support_c.cpp.o\x1b[0m\n'}
+[5.095928] (ugv_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/auto_ctrl__type_support.c.o\x1b[0m\n'}
+[5.120400] (-) TimerEvent: {}
+[5.156475] (ugv_msgs) StdoutLine: {'line': b'[ 51%] Built target ugv_msgs__rosidl_typesupport_c\n'}
+[5.163475] (ugv_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking C shared library libugv_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.175747] (ugv_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[5.220329] (ugv_msgs) StdoutLine: {'line': b'[ 56%] Built target ugv_msgs__rosidl_typesupport_introspection_c\n'}
+[5.220823] (-) TimerEvent: {}
+[5.237695] (ugv_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[5.321077] (-) TimerEvent: {}
+[5.395653] (ugv_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/auto_ctrl__type_support.cpp.o\x1b[0m\n'}
+[5.421299] (-) TimerEvent: {}
+[5.522465] (-) TimerEvent: {}
+[5.623459] (-) TimerEvent: {}
+[5.694326] (ugv_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/auto_ctrl__type_support_c.cpp.o\x1b[0m\n'}
+[5.723676] (-) TimerEvent: {}
+[5.824680] (-) TimerEvent: {}
+[5.925678] (-) TimerEvent: {}
+[5.994602] (ugv_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.025906] (-) TimerEvent: {}
+[6.074164] (ugv_msgs) StdoutLine: {'line': b'[ 66%] Built target ugv_msgs__rosidl_typesupport_cpp\n'}
+[6.085316] (ugv_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.085789] (ugv_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.126083] (-) TimerEvent: {}
+[6.226789] (-) TimerEvent: {}
+[6.230454] (ugv_msgs) StdoutLine: {'line': b'[ 71%] Built target ugv_msgs__rosidl_typesupport_introspection_cpp\n'}
+[6.244115] (ugv_msgs) StdoutLine: {'line': b'[ 71%] Built target ugv_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[6.326974] (-) TimerEvent: {}
+[6.427660] (-) TimerEvent: {}
+[6.451918] (ugv_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.527953] (-) TimerEvent: {}
+[6.624840] (ugv_msgs) StdoutLine: {'line': b'[ 74%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.628010] (-) TimerEvent: {}
+[6.680571] (ugv_msgs) StdoutLine: {'line': b'[ 74%] Built target ugv_msgs\n'}
+[6.728349] (-) TimerEvent: {}
+[6.730067] (ugv_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.828441] (-) TimerEvent: {}
+[6.929006] (-) TimerEvent: {}
+[7.029570] (-) TimerEvent: {}
+[7.130166] (-) TimerEvent: {}
+[7.230673] (-) TimerEvent: {}
+[7.331170] (-) TimerEvent: {}
+[7.431889] (-) TimerEvent: {}
+[7.482842] (ugv_msgs) StdoutLine: {'line': b'[ 76%] Built target ugv_msgs__py\n'}
+[7.526022] (ugv_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o\x1b[0m\n'}
+[7.526693] (ugv_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o\x1b[0m\n'}
+[7.531922] (-) TimerEvent: {}
+[7.632502] (-) TimerEvent: {}
+[7.733349] (-) TimerEvent: {}
+[7.755933] (ugv_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[7.833455] (-) TimerEvent: {}
+[7.848452] (ugv_msgs) StdoutLine: {'line': b'[ 84%] Built target ugv_msgs__rosidl_generator_py\n'}
+[7.891616] (ugv_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.892209] (ugv_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.896758] (ugv_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.933646] (-) TimerEvent: {}
+[8.034363] (-) TimerEvent: {}
+[8.086049] (ugv_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[8.086818] (ugv_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[8.101112] (ugv_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[8.134576] (-) TimerEvent: {}
+[8.161382] (ugv_msgs) StdoutLine: {'line': b'[100%] Built target ugv_msgs__rosidl_typesupport_c__pyext\n'}
+[8.162886] (ugv_msgs) StdoutLine: {'line': b'[100%] Built target ugv_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.179080] (ugv_msgs) StdoutLine: {'line': b'[100%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.213132] (ugv_msgs) CommandEnded: {'returncode': 0}
+[8.216167] (ugv_msgs) JobProgress: {'identifier': 'ugv_msgs', 'progress': 'install'}
+[8.234755] (-) TimerEvent: {}
+[8.241025] (ugv_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs'], 'cwd': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ugv'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ugv'), ('OLDPWD', '/home/ugv'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2725'), ('SYSTEMD_EXEC_PID', '2893'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '15682'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ugv'), ('JOURNAL_STREAM', '8:47152'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ugv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/ugv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ugv/Luxonis/depthai/entrypoint:/home/ugv/Luxonis/depthai/entrypoint'), ('SESSION_MANAGER', 'local/ugv-desktop:@/tmp/.ICE-unix/2869,unix/ugv-desktop:/tmp/.ICE-unix/2869'), ('INVOCATION_ID', '3e01d8f9c7ae4048bbaffabe999de226'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d6ad82aa-52a0-481a-a365-5fec960d93d1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('JREHOME', '/usr/lib/jvm/java-11-openjdk-arm64'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.264986] (ugv_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.266391] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ament_index/resource_index/rosidl_interfaces/ugv_msgs\n'}
+[8.267660] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs\n'}
+[8.268015] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg\n'}
+[8.268290] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.h\n'}
+[8.268539] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.268827] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.h\n'}
+[8.269375] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail\n'}
+[8.269850] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.h\n'}
+[8.270251] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__functions.c\n'}
+[8.270673] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.h\n'}
+[8.271168] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.h\n'}
+[8.271384] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.h\n'}
+[8.271643] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__functions.h\n'}
+[8.271971] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__functions.c\n'}
+[8.272258] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__functions.h\n'}
+[8.272964] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/library_path.sh\n'}
+[8.273387] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/library_path.dsv\n'}
+[8.273895] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so\n'}
+[8.275017] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so" to ""\n'}
+[8.275247] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs\n'}
+[8.275472] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg\n'}
+[8.275637] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.275796] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail\n'}
+[8.275948] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[8.276072] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[8.276266] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[8.277539] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.277887] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs\n'}
+[8.278085] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg\n'}
+[8.278251] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.278413] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail\n'}
+[8.278608] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[8.278743] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.c\n'}
+[8.278925] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.c\n'}
+[8.279055] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[8.279247] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so\n'}
+[8.279741] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.279951] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so\n'}
+[8.280449] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so" to ""\n'}
+[8.280671] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs\n'}
+[8.280839] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg\n'}
+[8.281018] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.hpp\n'}
+[8.281184] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.hpp\n'}
+[8.281316] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.281500] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail\n'}
+[8.281627] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.hpp\n'}
+[8.281788] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__builder.hpp\n'}
+[8.281974] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__builder.hpp\n'}
+[8.282139] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.hpp\n'}
+[8.282355] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.hpp\n'}
+[8.282570] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__traits.hpp\n'}
+[8.282785] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__traits.hpp\n'}
+[8.283009] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.hpp\n'}
+[8.283270] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs\n'}
+[8.283436] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg\n'}
+[8.283623] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.283812] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail\n'}
+[8.283954] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps\n'}
+[8.284114] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.284311] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.284802] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.285597] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.285878] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs\n'}
+[8.286106] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg\n'}
+[8.286245] (ugv_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail\n'}
+[8.286415] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.cpp\n'}
+[8.286545] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.cpp\n'}
+[8.287166] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.287679] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.287851] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[8.288016] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.288163] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so\n'}
+[8.288529] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[8.288745] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.sh\n'}
+[8.288933] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.dsv\n'}
+[8.289195] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info\n'}
+[8.289535] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[8.289745] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[8.289973] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[8.290170] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[8.290441] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs\n'}
+[8.290638] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[8.290890] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py\n'}
+[8.291080] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.291341] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.291596] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.291843] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.292082] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg\n'}
+[8.292240] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl_s.c\n'}
+[8.292495] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py\n'}
+[8.292713] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py\n'}
+[8.292921] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py\n'}
+[8.293143] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl_s.c\n'}
+[8.293368] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.293623] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/libugv_msgs__rosidl_generator_py.so\n'}
+[8.334918] (-) TimerEvent: {}
+[8.369784] (ugv_msgs) StdoutLine: {'line': b"Listing '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs'...\n"}
+[8.370434] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py'...\n"}
+[8.370609] (ugv_msgs) StdoutLine: {'line': b"Listing '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg'...\n"}
+[8.370751] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py'...\n"}
+[8.371031] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py'...\n"}
+[8.371197] (ugv_msgs) StdoutLine: {'line': b"Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py'...\n"}
+[8.382854] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.383482] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[8.384038] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.385005] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[8.385459] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[8.386178] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[8.386428] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so\n'}
+[8.387119] (ugv_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so" to ""\n'}
+[8.387409] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.idl\n'}
+[8.387762] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.idl\n'}
+[8.388066] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.msg\n'}
+[8.388379] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.msg\n'}
+[8.388835] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ament_index/resource_index/package_run_dependencies/ugv_msgs\n'}
+[8.389296] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ament_index/resource_index/parent_prefix_path/ugv_msgs\n'}
+[8.389677] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.sh\n'}
+[8.390080] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.dsv\n'}
+[8.390409] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/path.sh\n'}
+[8.390730] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/environment/path.dsv\n'}
+[8.391063] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/local_setup.bash\n'}
+[8.391404] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/local_setup.sh\n'}
+[8.391764] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/local_setup.zsh\n'}
+[8.392084] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/local_setup.dsv\n'}
+[8.392398] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.dsv\n'}
+[8.392837] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ament_index/resource_index/packages/ugv_msgs\n'}
+[8.393344] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport.cmake\n'}
+[8.393709] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.394126] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.394510] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.394880] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.395228] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.395621] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport.cmake\n'}
+[8.395963] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.396326] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cppExport.cmake\n'}
+[8.396696] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.397080] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.397429] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.397799] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.398258] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[8.398619] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.398989] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport.cmake\n'}
+[8.399357] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.399697] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.400031] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.400351] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.400705] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.401041] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.401367] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.401719] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.402080] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig.cmake\n'}
+[8.402353] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig-version.cmake\n'}
+[8.402933] (ugv_msgs) StdoutLine: {'line': b'-- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.xml\n'}
+[8.411485] (ugv_msgs) CommandEnded: {'returncode': 0}
+[8.435177] (-) TimerEvent: {}
+[8.485465] (ugv_msgs) JobEnded: {'identifier': 'ugv_msgs', 'rc': 0}
+[8.487785] (ngcp_ugv) JobStarted: {'identifier': 'ngcp_ugv'}
+[8.535718] (-) TimerEvent: {}
+[8.636554] (-) TimerEvent: {}
+[8.737115] (-) TimerEvent: {}
+[8.837711] (-) TimerEvent: {}
+[8.938309] (-) TimerEvent: {}
+[9.038931] (-) TimerEvent: {}
+[9.139584] (-) TimerEvent: {}
+[9.240182] (-) TimerEvent: {}
+[9.340757] (-) TimerEvent: {}
+[9.441341] (-) TimerEvent: {}
+[9.541942] (-) TimerEvent: {}
+[9.642519] (-) TimerEvent: {}
+[9.743154] (-) TimerEvent: {}
+[9.776142] (ngcp_ugv) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ngcp_ugv', 'build', '--build-base', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build', 'install', '--record', '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ugv', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ugv', 'OLDPWD': '/home/ugv', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2725', 'SYSTEMD_EXEC_PID': '2893', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '15682', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'ugv', 'JOURNAL_STREAM': '8:47152', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ugv', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/ugv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ugv/Luxonis/depthai/entrypoint:/home/ugv/Luxonis/depthai/entrypoint', 'SESSION_MANAGER': 'local/ugv-desktop:@/tmp/.ICE-unix/2869,unix/ugv-desktop:/tmp/.ICE-unix/2869', 'INVOCATION_ID': '3e01d8f9c7ae4048bbaffabe999de226', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:d6ad82aa-52a0-481a-a365-5fec960d93d1', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'JREHOME': '/usr/lib/jvm/java-11-openjdk-arm64', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs'}, 'shell': False}
+[9.843281] (-) TimerEvent: {}
+[9.943836] (-) TimerEvent: {}
+[10.044422] (-) TimerEvent: {}
+[10.145004] (-) TimerEvent: {}
+[10.245559] (-) TimerEvent: {}
+[10.270033] (ngcp_ugv) StdoutLine: {'line': b'running egg_info\n'}
+[10.270964] (ngcp_ugv) StdoutLine: {'line': b'creating ../../build/ngcp_ugv/ngcp_ugv.egg-info\n'}
+[10.271405] (ngcp_ugv) StdoutLine: {'line': b'writing ../../build/ngcp_ugv/ngcp_ugv.egg-info/PKG-INFO\n'}
+[10.271962] (ngcp_ugv) StdoutLine: {'line': b'writing dependency_links to ../../build/ngcp_ugv/ngcp_ugv.egg-info/dependency_links.txt\n'}
+[10.272285] (ngcp_ugv) StdoutLine: {'line': b'writing entry points to ../../build/ngcp_ugv/ngcp_ugv.egg-info/entry_points.txt\n'}
+[10.272540] (ngcp_ugv) StdoutLine: {'line': b'writing requirements to ../../build/ngcp_ugv/ngcp_ugv.egg-info/requires.txt\n'}
+[10.272794] (ngcp_ugv) StdoutLine: {'line': b'writing top-level names to ../../build/ngcp_ugv/ngcp_ugv.egg-info/top_level.txt\n'}
+[10.273105] (ngcp_ugv) StdoutLine: {'line': b"writing manifest file '../../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'\n"}
+[10.276494] (ngcp_ugv) StdoutLine: {'line': b"reading manifest file '../../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'\n"}
+[10.278089] (ngcp_ugv) StdoutLine: {'line': b"writing manifest file '../../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'\n"}
+[10.278764] (ngcp_ugv) StdoutLine: {'line': b'running build\n'}
+[10.279330] (ngcp_ugv) StdoutLine: {'line': b'running build_py\n'}
+[10.279602] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build\n'}
+[10.279861] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib\n'}
+[10.280070] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv\n'}
+[10.280325] (ngcp_ugv) StdoutLine: {'line': b'copying ngcp_ugv/ugv_control_sub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv\n'}
+[10.280490] (ngcp_ugv) StdoutLine: {'line': b'copying ngcp_ugv/__init__.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv\n'}
+[10.280702] (ngcp_ugv) StdoutLine: {'line': b'copying ngcp_ugv/ugv_arm_sub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv\n'}
+[10.280842] (ngcp_ugv) StdoutLine: {'line': b'copying ngcp_ugv/ugv_control_pub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv\n'}
+[10.280970] (ngcp_ugv) StdoutLine: {'line': b'running install\n'}
+[10.281284] (ngcp_ugv) StdoutLine: {'line': b'running install_lib\n'}
+[10.283122] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv\n'}
+[10.283368] (ngcp_ugv) StdoutLine: {'line': b'copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/ugv_control_sub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv\n'}
+[10.283559] (ngcp_ugv) StdoutLine: {'line': b'copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/__init__.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv\n'}
+[10.283755] (ngcp_ugv) StdoutLine: {'line': b'copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/ugv_arm_sub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv\n'}
+[10.284026] (ngcp_ugv) StdoutLine: {'line': b'copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build/lib/ngcp_ugv/ugv_control_pub.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv\n'}
+[10.285127] (ngcp_ugv) StdoutLine: {'line': b'byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/ugv_control_sub.py to ugv_control_sub.cpython-310.pyc\n'}
+[10.287312] (ngcp_ugv) StdoutLine: {'line': b'byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/__init__.py to __init__.cpython-310.pyc\n'}
+[10.287696] (ngcp_ugv) StdoutLine: {'line': b'byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/ugv_arm_sub.py to ugv_arm_sub.cpython-310.pyc\n'}
+[10.288837] (ngcp_ugv) StdoutLine: {'line': b'byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/ugv_control_pub.py to ugv_control_pub.cpython-310.pyc\n'}
+[10.290595] (ngcp_ugv) StdoutLine: {'line': b'running install_data\n'}
+[10.290811] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index\n'}
+[10.290977] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index/resource_index\n'}
+[10.291135] (ngcp_ugv) StdoutLine: {'line': b'creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index/resource_index/packages\n'}
+[10.291292] (ngcp_ugv) StdoutLine: {'line': b'copying resource/ngcp_ugv -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ament_index/resource_index/packages\n'}
+[10.291450] (ngcp_ugv) StdoutLine: {'line': b'copying package.xml -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv\n'}
+[10.291609] (ngcp_ugv) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.295117] (ngcp_ugv) StdoutLine: {'line': b'Copying ../../build/ngcp_ugv/ngcp_ugv.egg-info to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv-0.0.0-py3.10.egg-info\n'}
+[10.297000] (ngcp_ugv) StdoutLine: {'line': b'running install_scripts\n'}
+[10.339661] (ngcp_ugv) StdoutLine: {'line': b'Installing ugv_arm_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/ngcp_ugv\n'}
+[10.340341] (ngcp_ugv) StdoutLine: {'line': b'Installing ugv_control_pub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/ngcp_ugv\n'}
+[10.340632] (ngcp_ugv) StdoutLine: {'line': b'Installing ugv_control_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/ngcp_ugv\n'}
+[10.341324] (ngcp_ugv) StdoutLine: {'line': b"writing list of installed files to '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/install.log'\n"}
+[10.345636] (-) TimerEvent: {}
+[10.410068] (ngcp_ugv) CommandEnded: {'returncode': 0}
+[10.433462] (ngcp_ugv) JobEnded: {'identifier': 'ngcp_ugv', 'rc': 0}
+[10.435900] (-) EventReactorShutdown: {}

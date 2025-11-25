@@ -1,0 +1,27 @@
+[1.377s] Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv': AMENT_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs LD_LIBRARY_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/build --no-deps symlink_data
+[1.960s] running develop
+[2.321s] running egg_info
+[2.322s] creating ngcp_ugv.egg-info
+[2.323s] writing ngcp_ugv.egg-info/PKG-INFO
+[2.324s] writing dependency_links to ngcp_ugv.egg-info/dependency_links.txt
+[2.325s] writing entry points to ngcp_ugv.egg-info/entry_points.txt
+[2.326s] writing requirements to ngcp_ugv.egg-info/requires.txt
+[2.326s] writing top-level names to ngcp_ugv.egg-info/top_level.txt
+[2.327s] writing manifest file 'ngcp_ugv.egg-info/SOURCES.txt'
+[2.332s] reading manifest file 'ngcp_ugv.egg-info/SOURCES.txt'
+[2.333s] writing manifest file 'ngcp_ugv.egg-info/SOURCES.txt'
+[2.338s] running build_ext
+[2.338s] Creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages/ngcp-ugv.egg-link (link to .)
+[2.340s] Installing ugv_arm_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[2.341s] Installing ugv_arm_sub2 script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[2.342s] Installing ugv_control_pub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[2.343s] Installing ugv_control_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[2.344s] 
+[2.344s] Installed /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv
+[2.344s] running symlink_data
+[2.345s] creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/share/ament_index
+[2.345s] creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/share/ament_index/resource_index
+[2.345s] creating /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/share/ament_index/resource_index/packages
+[2.345s] symbolically linking /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/resource/ngcp_ugv -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/share/ament_index/resource_index/packages
+[2.346s] symbolically linking /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/package.xml -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/share/ngcp_ugv
+[2.452s] Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv' returned '0': AMENT_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs LD_LIBRARY_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/build --no-deps symlink_data

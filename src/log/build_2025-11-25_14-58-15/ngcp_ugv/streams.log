@@ -1,0 +1,27 @@
+[1.350s] Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV': PYTHONPATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ngcp_ugv build --build-base /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/build install --record /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/install.log --single-version-externally-managed install_data
+[1.867s] running egg_info
+[1.868s] writing ../build/ngcp_ugv/ngcp_ugv.egg-info/PKG-INFO
+[1.869s] writing dependency_links to ../build/ngcp_ugv/ngcp_ugv.egg-info/dependency_links.txt
+[1.870s] writing entry points to ../build/ngcp_ugv/ngcp_ugv.egg-info/entry_points.txt
+[1.870s] writing requirements to ../build/ngcp_ugv/ngcp_ugv.egg-info/requires.txt
+[1.870s] writing top-level names to ../build/ngcp_ugv/ngcp_ugv.egg-info/top_level.txt
+[1.874s] reading manifest file '../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'
+[1.876s] writing manifest file '../build/ngcp_ugv/ngcp_ugv.egg-info/SOURCES.txt'
+[1.876s] running build
+[1.876s] running build_py
+[1.877s] copying ngcp_ugv/ugv_arm_sub2.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/build/lib/ngcp_ugv
+[1.880s] running install
+[1.881s] running install_lib
+[1.883s] copying /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/build/lib/ngcp_ugv/ugv_arm_sub2.py -> /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv
+[1.884s] byte-compiling /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv/ugv_arm_sub2.py to ugv_arm_sub2.cpython-310.pyc
+[1.887s] running install_data
+[1.887s] running install_egg_info
+[1.891s] removing '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv-0.0.0-py3.10.egg-info' (and everything under it)
+[1.892s] Copying ../build/ngcp_ugv/ngcp_ugv.egg-info to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages/ngcp_ugv-0.0.0-py3.10.egg-info
+[1.894s] running install_scripts
+[1.937s] Installing ugv_arm_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[1.938s] Installing ugv_arm_sub2 script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[1.938s] Installing ugv_control_pub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[1.938s] Installing ugv_control_sub script to /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/ngcp_ugv
+[1.939s] writing list of installed files to '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/install.log'
+[2.012s] Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV' returned '0': PYTHONPATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ngcp_ugv/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/ngcp_ugv build --build-base /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/build install --record /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ngcp_ugv/install.log --single-version-externally-managed install_data

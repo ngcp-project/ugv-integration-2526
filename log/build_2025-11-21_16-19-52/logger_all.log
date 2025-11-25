@@ -1,0 +1,578 @@
+[0.224s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.224s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff87831750>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff879566e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff879566e0>>, mixin_verb=('build',))
+[0.573s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.573s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.574s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'ignore_ament_install'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extensions ['colcon_pkg']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'colcon_pkg'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extensions ['colcon_meta']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'colcon_meta'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'ros'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extensions ['cmake', 'python']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'cmake'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'python'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extensions ['python_setup_py']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old) by extension 'python_setup_py'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'ignore'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'ignore_ament_install'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extensions ['colcon_pkg']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'colcon_pkg'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extensions ['colcon_meta']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'colcon_meta'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extensions ['ros']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'ros'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extensions ['cmake', 'python']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'cmake'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'python'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extensions ['python_setup_py']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/__pycache__) by extension 'python_setup_py'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extensions ['ignore', 'ignore_ament_install']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'ignore'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'ignore_ament_install'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extensions ['colcon_pkg']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'colcon_pkg'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extensions ['colcon_meta']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'colcon_meta'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extensions ['ros']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'ros'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extensions ['cmake', 'python']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'cmake'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'python'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extensions ['python_setup_py']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(manual_control_old/ugvgroundvehicle) by extension 'python_setup_py'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extension 'colcon_meta'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extensions ['ros']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/NGCP_UGV) by extension 'ros'
+[0.612s] DEBUG:colcon.colcon_core.package_identification:Package 'src/NGCP_UGV' with type 'ros.ament_python' and name 'ngcp_ugv'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'ignore'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'ignore_ament_install'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extensions ['colcon_pkg']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'colcon_pkg'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extensions ['colcon_meta']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'colcon_meta'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'ros'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extensions ['cmake', 'python']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'cmake'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'python'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extensions ['python_setup_py']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control) by extension 'python_setup_py'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'ignore_ament_install'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extensions ['colcon_pkg']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'colcon_pkg'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extensions ['colcon_meta']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'colcon_meta'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extensions ['ros']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'ros'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extensions ['cmake', 'python']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/__pycache__) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'colcon_pkg'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extensions ['colcon_meta']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extensions ['ros']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/old_manual_control/ugvgroundvehicle) by extension 'python_setup_py'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/ugv_msgs) by extension 'ros'
+[0.618s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ugv_msgs' with type 'ros.ament_cmake' and name 'ugv_msgs'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extensions ['cmake', 'python']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'cmake'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extensions ['python_setup_py']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration) by extension 'python_setup_py'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extensions ['colcon_meta']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extensions ['ros']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'ros'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extensions ['cmake', 'python']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'cmake'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'python'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'ignore'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'ignore_ament_install'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extensions ['colcon_pkg']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'colcon_pkg'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extensions ['colcon_meta']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'colcon_meta'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extensions ['ros']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'ros'
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extensions ['cmake', 'python']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'cmake'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'python'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extensions ['python_setup_py']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build) by extension 'python_setup_py'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'ignore'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'ignore_ament_install'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extensions ['colcon_pkg']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'colcon_pkg'
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extensions ['colcon_meta']
+[0.623s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'colcon_meta'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extensions ['ros']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'ros'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extensions ['cmake', 'python']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'cmake'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'python'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extensions ['python_setup_py']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs) by extension 'python_setup_py'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'ignore'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'ignore_ament_install'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extensions ['colcon_pkg']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'colcon_pkg'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extensions ['colcon_meta']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'colcon_meta'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extensions ['ros']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'ros'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extensions ['cmake', 'python']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'cmake'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'python'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extensions ['python_setup_py']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles) by extension 'python_setup_py'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extensions ['ignore', 'ignore_ament_install']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'ignore'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'ignore_ament_install'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'colcon_pkg'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extensions ['colcon_meta']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'colcon_meta'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extensions ['ros']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'ros'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extensions ['cmake', 'python']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'cmake'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'python'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extensions ['python_setup_py']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1) by extension 'python_setup_py'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'ignore_ament_install'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extensions ['colcon_pkg']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'colcon_pkg'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extensions ['colcon_meta']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extensions ['ros']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'ros'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extensions ['cmake', 'python']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'cmake'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'python'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extensions ['python_setup_py']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC) by extension 'python_setup_py'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'ignore'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'ignore_ament_install'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['colcon_pkg']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'colcon_pkg'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['colcon_meta']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'colcon_meta'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['ros']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'ros'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['cmake', 'python']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'cmake'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'python'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extensions ['python_setup_py']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdC/tmp) by extension 'python_setup_py'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ignore_ament_install'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['colcon_pkg']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'colcon_pkg'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['colcon_meta']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'colcon_meta'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['ros']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'ros'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['cmake', 'python']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'cmake'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'python'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extensions ['python_setup_py']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX) by extension 'python_setup_py'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['ros']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'ros'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['cmake', 'python']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'cmake'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'python'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extensions ['python_setup_py']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/3.22.1/CompilerIdCXX/tmp) by extension 'python_setup_py'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extensions ['ignore', 'ignore_ament_install']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'ignore_ament_install'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extensions ['colcon_pkg']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extensions ['ros']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'ros'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extensions ['cmake', 'python']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'cmake'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'python'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extensions ['python_setup_py']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/CMakeFiles/CMakeTmp) by extension 'python_setup_py'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extensions ['ignore', 'ignore_ament_install']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'ignore'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'ignore_ament_install'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extensions ['colcon_pkg']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'colcon_meta'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extensions ['ros']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'ros'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extensions ['cmake', 'python']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'cmake'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'python'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extensions ['python_setup_py']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_lint_cmake) by extension 'python_setup_py'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extensions ['ignore', 'ignore_ament_install']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'ignore'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'ignore_ament_install'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extensions ['colcon_pkg']
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'colcon_pkg'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extensions ['colcon_meta']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'colcon_meta'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extensions ['ros']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'ros'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extensions ['cmake', 'python']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'cmake'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'python'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/build/ugv_msgs/ament_xmllint) by extension 'python_setup_py'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extensions ['ignore', 'ignore_ament_install']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'ignore_ament_install'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extensions ['colcon_pkg']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'colcon_pkg'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extensions ['colcon_meta']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'colcon_meta'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extensions ['ros']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'ros'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extensions ['cmake', 'python']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'cmake'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'python'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extensions ['python_setup_py']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install) by extension 'python_setup_py'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'ignore'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'ignore_ament_install'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extensions ['colcon_pkg']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'colcon_pkg'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extensions ['colcon_meta']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'colcon_meta'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extensions ['ros']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'ros'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extensions ['cmake', 'python']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'cmake'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'python'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extensions ['python_setup_py']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs) by extension 'python_setup_py'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extensions ['ignore', 'ignore_ament_install']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'ignore'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'ignore_ament_install'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extensions ['colcon_pkg']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'colcon_pkg'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extensions ['colcon_meta']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'colcon_meta'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extensions ['ros']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'ros'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extensions ['cmake', 'python']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'cmake'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'python'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extensions ['python_setup_py']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include) by extension 'python_setup_py'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'ignore'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'ignore_ament_install'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extensions ['colcon_pkg']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'colcon_pkg'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extensions ['colcon_meta']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'colcon_meta'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extensions ['ros']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'ros'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extensions ['cmake', 'python']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'cmake'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'python'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extensions ['python_setup_py']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs) by extension 'python_setup_py'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'ignore_ament_install'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extensions ['colcon_pkg']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'colcon_pkg'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extensions ['colcon_meta']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'colcon_meta'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extensions ['ros']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'ros'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extensions ['cmake', 'python']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'cmake'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'python'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extensions ['python_setup_py']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs) by extension 'python_setup_py'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'ignore_ament_install'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extensions ['colcon_pkg']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'colcon_pkg'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extensions ['colcon_meta']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'colcon_meta'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extensions ['ros']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'ros'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extensions ['cmake', 'python']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'cmake'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'python'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extensions ['python_setup_py']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg) by extension 'python_setup_py'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extensions ['ignore', 'ignore_ament_install']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'ignore'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'ignore_ament_install'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'colcon_meta'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'ros'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extensions ['cmake', 'python']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'cmake'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'python'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extensions ['python_setup_py']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail) by extension 'python_setup_py'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'ignore'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'ignore_ament_install'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extensions ['colcon_pkg']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'colcon_pkg'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extensions ['colcon_meta']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'colcon_meta'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extensions ['ros']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'ros'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extensions ['cmake', 'python']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'cmake'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'python'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extensions ['python_setup_py']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(ugv-integration/NGCP/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/dds_fastrtps) by extension 'python_setup_py'
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.723s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.725s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'cmake_target' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'ugv_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.801s] DEBUG:colcon.colcon_core.verb:Building package 'ugv_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs', 'merge_install': False, 'path': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'cmake_target' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'cmake_clean_first' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'cmake_force_configure' from command line to 'False'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'ament_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.802s] Level 5:colcon.colcon_core.verb:set package 'ngcp_ugv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.802s] DEBUG:colcon.colcon_core.verb:Building package 'ngcp_ugv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv', 'merge_install': False, 'path': '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV', 'symlink_install': False, 'test_result_base': None}
+[0.802s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.805s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.805s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs' with build type 'ament_cmake'
+[0.806s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs'
+[0.810s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.811s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.811s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs -DCMAKE_INSTALL_PREFIX=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs
+[4.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs -DCMAKE_INSTALL_PREFIX=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs
+[4.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs -- -j6 -l6
+[9.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs -- -j6 -l6
+[9.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs
+[9.215s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_msgs)
+[9.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ugv_msgs
+[9.226s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs' for CMake module files
+[9.229s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs' for CMake config files
+[9.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_msgs', 'cmake_prefix_path')
+[9.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/cmake_prefix_path.ps1'
+[9.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/cmake_prefix_path.dsv'
+[9.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/cmake_prefix_path.sh'
+[9.239s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib'
+[9.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_msgs', 'ld_library_path_lib')
+[9.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/ld_library_path_lib.ps1'
+[9.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/ld_library_path_lib.dsv'
+[9.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/ld_library_path_lib.sh'
+[9.246s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/bin'
+[9.246s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/pkgconfig/ugv_msgs.pc'
+[9.247s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/python3.10/site-packages'
+[9.249s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/bin'
+[9.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.ps1'
+[9.253s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.dsv'
+[9.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.sh'
+[9.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.bash'
+[9.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.zsh'
+[9.263s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/colcon-core/packages/ugv_msgs)
+[9.266s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ugv_msgs)
+[9.267s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs' for CMake module files
+[9.269s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs' for CMake config files
+[9.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_msgs', 'cmake_prefix_path')
+[9.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/cmake_prefix_path.ps1'
+[9.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/cmake_prefix_path.dsv'
+[9.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/cmake_prefix_path.sh'
+[9.275s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib'
+[9.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('ugv_msgs', 'ld_library_path_lib')
+[9.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/ld_library_path_lib.ps1'
+[9.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/ld_library_path_lib.dsv'
+[9.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/hook/ld_library_path_lib.sh'
+[9.279s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/bin'
+[9.279s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/pkgconfig/ugv_msgs.pc'
+[9.280s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib/python3.10/site-packages'
+[9.280s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/bin'
+[9.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.ps1'
+[9.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.dsv'
+[9.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.sh'
+[9.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.bash'
+[9.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/ugv_msgs/package.zsh'
+[9.289s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/share/colcon-core/packages/ugv_msgs)
+[9.290s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV' with build type 'ament_python'
+[9.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('ngcp_ugv', 'ament_prefix_path')
+[9.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/hook/ament_prefix_path.ps1'
+[9.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/hook/ament_prefix_path.dsv'
+[9.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/hook/ament_prefix_path.sh'
+[9.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.858s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV'
+[9.858s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.859s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV': AMENT_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs LD_LIBRARY_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ngcp_ugv build --build-base /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build install --record /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/install.log --single-version-externally-managed install_data
+[11.215s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv' for CMake module files
+[11.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/NGCP_UGV' returned '0': AMENT_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs LD_LIBRARY_PATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages:/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ugv_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ngcp_ugv build --build-base /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/build install --record /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/build/ngcp_ugv/install.log --single-version-externally-managed install_data
+[11.218s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv' for CMake config files
+[11.219s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib'
+[11.220s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/bin'
+[11.220s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/pkgconfig/ngcp_ugv.pc'
+[11.221s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/lib/python3.10/site-packages'
+[11.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('ngcp_ugv', 'pythonpath')
+[11.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/hook/pythonpath.ps1'
+[11.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/hook/pythonpath.dsv'
+[11.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/hook/pythonpath.sh'
+[11.228s] Level 1:colcon.colcon_core.environment:checking '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/bin'
+[11.228s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ngcp_ugv)
+[11.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/package.ps1'
+[11.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/package.dsv'
+[11.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/package.sh'
+[11.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/package.bash'
+[11.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/ngcp_ugv/package.zsh'
+[11.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/ngcp_ugv/share/colcon-core/packages/ngcp_ugv)
+[11.238s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.239s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.240s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.240s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.262s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.263s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.263s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.314s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.316s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/local_setup.ps1'
+[11.319s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/_local_setup_util_ps1.py'
+[11.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/setup.ps1'
+[11.325s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/local_setup.sh'
+[11.326s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/_local_setup_util_sh.py'
+[11.327s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/setup.sh'
+[11.328s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/local_setup.bash'
+[11.329s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/setup.bash'
+[11.331s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/local_setup.zsh'
+[11.332s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/install/setup.zsh'

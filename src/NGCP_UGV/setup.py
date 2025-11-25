@@ -23,6 +23,7 @@ setup(
             'ugv_control_pub = ngcp_ugv.ugv_control_pub:main',
             'ugv_control_sub = ngcp_ugv.ugv_control_sub:main',
             'ugv_arm_sub = ngcp_ugv.ugv_arm_sub:main',
+            'ugv_arm_sub2 = ngcp_ugv.ugv_arm_sub2:main',
         ],
     },
 )

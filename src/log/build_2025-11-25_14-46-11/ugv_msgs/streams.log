@@ -1,0 +1,227 @@
+[0.019s] Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs
+[0.158s] -- The C compiler identification is GNU 11.4.0
+[0.284s] -- The CXX compiler identification is GNU 11.4.0
+[0.309s] -- Detecting C compiler ABI info
+[0.472s] -- Detecting C compiler ABI info - done
+[0.489s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.490s] -- Detecting C compile features
+[0.490s] -- Detecting C compile features - done
+[0.498s] -- Detecting CXX compiler ABI info
+[0.682s] -- Detecting CXX compiler ABI info - done
+[0.703s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.703s] -- Detecting CXX compile features
+[0.705s] -- Detecting CXX compile features - done
+[0.715s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.095s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.254s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.315s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.320s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.334s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.409s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.024s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.470s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.042s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.100s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.103s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.174s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.174s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.174s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.175s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.226s] -- Found PythonExtra: .so  
+[3.318s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.359s] -- Added test 'lint_cmake' to check CMake code style
+[3.361s] -- Added test 'xmllint' to check XML markup files
+[3.369s] -- Configuring done
+[3.430s] -- Generating done
+[3.450s] -- Build files have been written to: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs
+[3.466s] Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/ugv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs
+[3.471s] Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs -- -j6 -l6
+[3.562s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.580s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.602s] [  5%] Built target ament_cmake_python_symlink_ugv_msgs
+[4.127s] running egg_info
+[4.127s] creating ugv_msgs.egg-info
+[4.136s] writing ugv_msgs.egg-info/PKG-INFO
+[4.137s] writing dependency_links to ugv_msgs.egg-info/dependency_links.txt
+[4.138s] writing top-level names to ugv_msgs.egg-info/top_level.txt
+[4.138s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[4.144s] reading manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[4.146s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[4.207s] [  7%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/man_ctrl__functions.c.o[0m
+[4.207s] [ 10%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/auto_ctrl__functions.c.o[0m
+[4.220s] [ 10%] Built target ugv_msgs__cpp
+[4.242s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.244s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.247s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.256s] [ 17%] Built target ament_cmake_python_build_ugv_msgs_egg
+[4.319s] [ 20%] [32m[1mLinking C shared library libugv_msgs__rosidl_generator_c.so[0m
+[4.394s] [ 20%] Built target ugv_msgs__rosidl_generator_c
+[4.415s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.415s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.419s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.825s] [ 30%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/man_ctrl__type_support.cpp.o[0m
+[4.879s] [ 33%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/man_ctrl__type_support.cpp.o[0m
+[4.888s] [ 35%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/man_ctrl__type_support.cpp.o[0m
+[5.081s] [ 38%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/man_ctrl__type_support.c.o[0m
+[5.094s] [ 41%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/man_ctrl__type_support_c.cpp.o[0m
+[5.098s] [ 43%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/man_ctrl__type_support.cpp.o[0m
+[5.161s] [ 46%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/auto_ctrl__type_support.cpp.o[0m
+[5.224s] [ 48%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_c.so[0m
+[5.230s] [ 51%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/auto_ctrl__type_support.c.o[0m
+[5.316s] [ 53%] [32m[1mLinking C shared library libugv_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.324s] [ 53%] Built target ugv_msgs__rosidl_typesupport_c
+[5.341s] [ 56%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/auto_ctrl__type_support.cpp.o[0m
+[5.392s] [ 56%] Built target ugv_msgs__rosidl_typesupport_introspection_c
+[5.439s] [ 58%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/auto_ctrl__type_support.cpp.o[0m
+[5.519s] [ 61%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/auto_ctrl__type_support.cpp.o[0m
+[5.765s] [ 64%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/auto_ctrl__type_support_c.cpp.o[0m
+[6.162s] [ 66%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_cpp.so[0m
+[6.247s] [ 66%] Built target ugv_msgs__rosidl_typesupport_cpp
+[6.331s] [ 69%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.443s] [ 71%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.488s] [ 74%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.497s] [ 74%] Built target ugv_msgs__rosidl_typesupport_fastrtps_cpp
+[6.587s] [ 74%] Built target ugv_msgs__rosidl_typesupport_introspection_cpp
+[6.646s] [ 74%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c
+[6.693s] [ 74%] Built target ugv_msgs
+[6.739s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.545s] [ 76%] Built target ugv_msgs__py
+[7.597s] [ 82%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o[0m
+[7.598s] [ 82%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o[0m
+[7.823s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so[0m
+[7.919s] [ 84%] Built target ugv_msgs__rosidl_generator_py
+[7.964s] [ 89%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.964s] [ 89%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[7.964s] [ 92%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[8.151s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[8.161s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[8.165s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[8.221s] [100%] Built target ugv_msgs__rosidl_typesupport_c__pyext
+[8.237s] [100%] Built target ugv_msgs__rosidl_typesupport_introspection_c__pyext
+[8.242s] [100%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.273s] Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs -- -j6 -l6
+[8.299s] Invoking command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs
+[8.316s] -- Install configuration: ""
+[8.317s] -- Execute custom install script
+[8.318s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ament_index/resource_index/rosidl_interfaces/ugv_msgs
+[8.340s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.h
+[8.361s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__functions.h
+[8.384s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.h
+[8.407s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.h
+[8.426s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__functions.h
+[8.446s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.h
+[8.467s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.h
+[8.487s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.h
+[8.510s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.530s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/library_path.sh
+[8.554s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/library_path.dsv
+[8.575s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_c.h
+[8.600s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_c.h
+[8.620s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.641s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_c.h
+[8.661s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_c.h
+[8.681s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.702s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.hpp
+[8.723s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__builder.hpp
+[8.745s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.hpp
+[8.764s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__traits.hpp
+[8.783s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.hpp
+[8.802s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__builder.hpp
+[8.821s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.hpp
+[8.840s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__traits.hpp
+[8.859s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.hpp
+[8.880s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.hpp
+[8.902s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.922s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[8.941s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[8.961s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.984s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[9.006s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[9.027s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.sh
+[9.047s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.dsv
+[9.068s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[9.088s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.107s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.161s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[9.185s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py
+[9.207s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c
+[9.228s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.249s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.272s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/libugv_msgs__rosidl_generator_py.so
+[9.292s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py
+[9.316s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py
+[9.337s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl_s.c
+[9.359s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py
+[9.379s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl_s.c
+[9.402s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[9.424s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[9.446s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[9.469s] -- Up-to-date symlink: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[9.469s] -- Up-to-date symlink: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[9.469s] -- Up-to-date symlink: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[9.470s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.idl
+[9.499s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.idl
+[9.525s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.msg
+[9.548s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.msg
+[9.572s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ament_index/resource_index/package_run_dependencies/ugv_msgs
+[9.597s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ament_index/resource_index/parent_prefix_path/ugv_msgs
+[9.620s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.sh
+[9.645s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.dsv
+[9.666s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/path.sh
+[9.687s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/environment/path.dsv
+[9.709s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/local_setup.bash
+[9.729s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/local_setup.sh
+[9.749s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/local_setup.zsh
+[9.770s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/local_setup.dsv
+[9.790s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/package.dsv
+[9.810s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ament_index/resource_index/packages/ugv_msgs
+[9.828s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake-extras.cmake
+[9.846s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.866s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.888s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.909s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.931s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.950s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.971s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig.cmake
+[9.990s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig-version.cmake
+[10.013s] -- Symlinking: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/package.xml
+[10.035s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so
+[10.035s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so" to ""
+[10.035s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so
+[10.036s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.036s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so
+[10.037s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.037s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so
+[10.037s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so" to ""
+[10.037s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.038s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.038s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so
+[10.040s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.040s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so
+[10.041s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so" to ""
+[10.123s] Listing '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs'...
+[10.123s] Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py'...
+[10.123s] Listing '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg'...
+[10.123s] Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py'...
+[10.123s] Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py'...
+[10.123s] Compiling '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py'...
+[10.136s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so
+[10.136s] -- Set runtime path of "/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so" to ""
+[10.137s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport.cmake
+[10.137s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.137s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.138s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.138s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.138s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.139s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport.cmake
+[10.139s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.139s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cppExport.cmake
+[10.139s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.139s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.140s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.140s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.140s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport.cmake
+[10.140s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.141s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport.cmake
+[10.141s] -- Installing: /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.151s] Invoked command in '/home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ugv/NGCP/NGCP_25_26/ugv-integration-2526/src/build/ugv_msgs
