@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(find /home/ugv/ugv_ros2_ws/src -type f \\\\\\(-name *.conf -o -name *.config -o -name *.ini \\\\\\))"
-    ]
-  }
-}
