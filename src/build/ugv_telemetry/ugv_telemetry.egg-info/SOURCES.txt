@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../build/ugv_telemetry/ugv_telemetry.egg-info/PKG-INFO
+../build/ugv_telemetry/ugv_telemetry.egg-info/SOURCES.txt
+../build/ugv_telemetry/ugv_telemetry.egg-info/dependency_links.txt
+../build/ugv_telemetry/ugv_telemetry.egg-info/entry_points.txt
+../build/ugv_telemetry/ugv_telemetry.egg-info/requires.txt
+../build/ugv_telemetry/ugv_telemetry.egg-info/top_level.txt
+../build/ugv_telemetry/ugv_telemetry.egg-info/zip-safe
+launch/ugv_telemetry.launch.py
+resource/ugv_telemetry
+ugv_telemetry/__init__.py
+ugv_telemetry/telemetry_sub.py
+ugv_telemetry/xsens_data_conversion.py

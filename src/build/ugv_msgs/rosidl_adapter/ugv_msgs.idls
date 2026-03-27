@@ -1,0 +1,3 @@
+/home/ugv/ugv_ros2_ws/src/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/ManCtrl.idl
+/home/ugv/ugv_ros2_ws/src/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/AutoCtrl.idl
+/home/ugv/ugv_ros2_ws/src/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/UGVTelemetry.idl

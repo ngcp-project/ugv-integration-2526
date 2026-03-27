@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-57157203e6ae6904fb78.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "depthai_ros_msgs__py",
+					"jsonFile" : "directory-depthai_ros_msgs__py-bc7da167425455e70d5b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ugv/ugv_ros2_ws/build/depthai_ros_msgs/depthai_ros_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "depthai_ros_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_depthai_ros_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_depthai_ros_msgs_egg-dac6153d00f56dd74da6.json",
+					"name" : "ament_cmake_python_build_depthai_ros_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_depthai_ros_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_depthai_ros_msgs-153b0b5e3a167a25bc9a.json",
+					"name" : "ament_cmake_python_symlink_depthai_ros_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs-be5407118bbce67674b8.json",
+					"name" : "depthai_ros_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__cpp-91cdce97dcc7c0fd479a.json",
+					"name" : "depthai_ros_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "depthai_ros_msgs__py::@c6b700186dc878f2436c",
+					"jsonFile" : "target-depthai_ros_msgs__py-3ce808fe4b99aca16c08.json",
+					"name" : "depthai_ros_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_generator_c-76a0876cca1b990e432c.json",
+					"name" : "depthai_ros_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_generator_py-c1df8c7352fffc34a2a4.json",
+					"name" : "depthai_ros_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_c-bf9fea89592c82f2f7e8.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_c__pyext-29a590d4ddc4bc0d2ca7.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_cpp-c1d115dc49286567f167.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_fastrtps_c-fa56828e9addc24f029e.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_fastrtps_c__pyext-4976abfb595f7d4a8ca1.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_fastrtps_cpp-c8853a0e4d62c8e4760d.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_introspection_c-d55d94508b348aacc4f4.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_introspection_c__pyext-8f268b14a27de48ee8ea.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs__rosidl_typesupport_introspection_cpp-94496a40d8ebc5ad075c.json",
+					"name" : "depthai_ros_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_ros_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_ros_msgs_uninstall-885aca047d96b9dbf9e4.json",
+					"name" : "depthai_ros_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bbe4deeba712d574a193.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ugv/ugv_ros2_ws/build/depthai_ros_msgs",
+		"source" : "/home/ugv/ugv_ros2_ws/src/depthai-ros/depthai_ros_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,9 @@
+source;share/ugv_telemetry/hook/pythonpath.ps1
+source;share/ugv_telemetry/hook/pythonpath.dsv
+source;share/ugv_telemetry/hook/pythonpath.sh
+source;share/ugv_telemetry/hook/ament_prefix_path.ps1
+source;share/ugv_telemetry/hook/ament_prefix_path.dsv
+source;share/ugv_telemetry/hook/ament_prefix_path.sh
+source;../../build/ugv_telemetry/share/ugv_telemetry/hook/pythonpath_develop.ps1
+source;../../build/ugv_telemetry/share/ugv_telemetry/hook/pythonpath_develop.dsv
+source;../../build/ugv_telemetry/share/ugv_telemetry/hook/pythonpath_develop.sh

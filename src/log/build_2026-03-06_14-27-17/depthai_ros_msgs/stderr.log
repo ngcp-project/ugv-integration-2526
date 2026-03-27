@@ -1,0 +1,12 @@
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/depthai_ros_msgs/msg/detail/spatial_detection__builder.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/depthai_ros_msgs/msg/spatial_detection.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/depthai_ros_msgs/msg/detail/tracked_features__type_support.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/depthai_ros_msgs/msg/detail/tracked_features__traits.hpp'
+gmake[2]: *** [CMakeFiles/depthai_ros_msgs__cpp.dir/build.make:357: rosidl_generator_cpp/depthai_ros_msgs/msg/spatial_detection.hpp] Interrupt
+gmake[2]: *** [CMakeFiles/depthai_ros_msgs__cpp.dir/build.make:360: rosidl_generator_cpp/depthai_ros_msgs/msg/detail/spatial_detection__builder.hpp] Interrupt
+gmake[2]: *** [CMakeFiles/depthai_ros_msgs__cpp.dir/build.make:354: rosidl_generator_cpp/depthai_ros_msgs/msg/detail/tracked_features__type_support.hpp] Interrupt
+gmake[2]: *** [CMakeFiles/depthai_ros_msgs__rosidl_generator_c.dir/build.make:663: CMakeFiles/depthai_ros_msgs__rosidl_generator_c.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/depthai_ros_msgs__rosidl_generator_c.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/depthai_ros_msgs__cpp.dir/build.make:351: rosidl_generator_cpp/depthai_ros_msgs/msg/detail/tracked_features__traits.hpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/depthai_ros_msgs__cpp.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

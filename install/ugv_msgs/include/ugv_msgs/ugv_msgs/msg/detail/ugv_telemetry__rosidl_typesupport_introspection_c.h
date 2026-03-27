@@ -1,0 +1,1 @@
+/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/ugv_telemetry__rosidl_typesupport_introspection_c.h

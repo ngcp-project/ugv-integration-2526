@@ -1,0 +1,105 @@
+[0.041s] Invoking command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake /home/ugv/ugv_ros2_ws/src/ugv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ugv/ugv_ros2_ws/install/ugv_msgs
+[0.216s] -- The C compiler identification is GNU 11.4.0
+[0.339s] -- The CXX compiler identification is GNU 11.4.0
+[0.352s] -- Detecting C compiler ABI info
+[0.515s] -- Detecting C compiler ABI info - done
+[0.529s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.530s] -- Detecting C compile features
+[0.531s] -- Detecting C compile features - done
+[0.537s] -- Detecting CXX compiler ABI info
+[0.746s] -- Detecting CXX compiler ABI info - done
+[0.760s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.761s] -- Detecting CXX compile features
+[0.763s] -- Detecting CXX compile features - done
+[0.770s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.173s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.335s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.391s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.400s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.413s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.501s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.178s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.596s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.214s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.217s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.278s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.279s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.279s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.280s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.339s] -- Found PythonExtra: .so  
+[3.452s] -- Configuring done
+[3.521s] -- Generating done
+[3.543s] -- Build files have been written to: /home/ugv/ugv_ros2_ws/build/ugv_msgs
+[3.568s] Invoked command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake /home/ugv/ugv_ros2_ws/src/ugv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ugv/ugv_ros2_ws/install/ugv_msgs
+[3.571s] Invoking command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --build /home/ugv/ugv_ros2_ws/build/ugv_msgs -- -j6 -l6
+[3.682s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.705s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.753s] [  4%] Built target ament_cmake_python_symlink_ugv_msgs
+[4.519s] running egg_info
+[4.520s] creating ugv_msgs.egg-info
+[4.521s] writing ugv_msgs.egg-info/PKG-INFO
+[4.534s] writing dependency_links to ugv_msgs.egg-info/dependency_links.txt
+[4.534s] writing top-level names to ugv_msgs.egg-info/top_level.txt
+[4.535s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[4.540s] reading manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[4.541s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[4.644s] [  4%] Built target ament_cmake_python_build_ugv_msgs_egg
+[4.730s] [  6%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/man_ctrl__functions.c.o[0m
+[4.745s] [  8%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/auto_ctrl__functions.c.o[0m
+[4.790s] [ 10%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_c.dir/rosidl_generator_c/ugv_msgs/msg/detail/ugv_telemetry__functions.c.o[0m
+[4.865s] [ 10%] Built target ugv_msgs__cpp
+[4.895s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.940s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.948s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.044s] [ 19%] [32m[1mLinking C shared library libugv_msgs__rosidl_generator_c.so[0m
+[5.401s] [ 19%] Built target ugv_msgs__rosidl_generator_c
+[5.430s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.467s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.481s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.880s] [ 27%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/man_ctrl__type_support.cpp.o[0m
+[6.203s] [ 29%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/man_ctrl__type_support.cpp.o[0m
+[6.480s] [ 31%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/man_ctrl__type_support.cpp.o[0m
+[6.944s] [ 34%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/man_ctrl__type_support_c.cpp.o[0m
+[7.093s] [ 36%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/man_ctrl__type_support.c.o[0m
+[7.193s] [ 38%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/man_ctrl__type_support.cpp.o[0m
+[7.450s] [ 40%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/auto_ctrl__type_support.c.o[0m
+[7.455s] [ 42%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/auto_ctrl__type_support.cpp.o[0m
+[7.472s] [ 44%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/auto_ctrl__type_support.cpp.o[0m
+[7.652s] [ 46%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ugv_msgs/msg/detail/ugv_telemetry__type_support.c.o[0m
+[7.665s] [ 48%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ugv_msgs/msg/ugv_telemetry__type_support.cpp.o[0m
+[7.834s] [ 51%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_c.so[0m
+[7.839s] [ 53%] [32m[1mLinking C shared library libugv_msgs__rosidl_typesupport_introspection_c.so[0m
+[8.027s] [ 53%] Built target ugv_msgs__rosidl_typesupport_introspection_c
+[8.090s] [ 53%] Built target ugv_msgs__rosidl_typesupport_c
+[8.108s] [ 55%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/auto_ctrl__type_support_c.cpp.o[0m
+[8.155s] [ 57%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/auto_ctrl__type_support.cpp.o[0m
+[8.487s] [ 59%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ugv_msgs/msg/detail/ugv_telemetry__type_support.cpp.o[0m
+[8.625s] [ 61%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/auto_ctrl__type_support.cpp.o[0m
+[8.781s] [ 63%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ugv_msgs/msg/detail/ugv_telemetry__type_support_c.cpp.o[0m
+[9.155s] [ 65%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ugv_msgs/msg/ugv_telemetry__type_support.cpp.o[0m
+[9.946s] [ 68%] [32mBuilding CXX object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ugv_msgs/msg/detail/dds_fastrtps/ugv_telemetry__type_support.cpp.o[0m
+[10.707s] [ 70%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_cpp.so[0m
+[10.932s] [ 70%] Built target ugv_msgs__rosidl_typesupport_cpp
+[11.130s] [ 72%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[11.176s] [ 74%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[11.582s] [ 74%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c
+[11.683s] [ 74%] Built target ugv_msgs__rosidl_typesupport_introspection_cpp
+[12.226s] [ 76%] [32m[1mLinking CXX shared library libugv_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.544s] [ 76%] Built target ugv_msgs__rosidl_typesupport_fastrtps_cpp
+[12.678s] [ 76%] Built target ugv_msgs
+[12.795s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.262s] [ 78%] Built target ugv_msgs__py
+[14.304s] [ 80%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_man_ctrl_s.c.o[0m
+[14.528s] [ 82%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_ugv_telemetry_s.c.o[0m
+[14.748s] [ 85%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_generator_py.dir/rosidl_generator_py/ugv_msgs/msg/_auto_ctrl_s.c.o[0m
+[14.954s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/libugv_msgs__rosidl_generator_py.so[0m
+[15.033s] [ 87%] Built target ugv_msgs__rosidl_generator_py
+[15.075s] [ 89%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[15.286s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[15.353s] [ 91%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext
+[15.395s] [ 93%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[15.473s] gmake[2]: *** [CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/build.make:76: CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o] Interrupt
+[15.473s] gmake[1]: *** [CMakeFiles/Makefile2:564: CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/all] Interrupt
+[15.473s] gmake: *** [Makefile:146: all] Interrupt
+[15.474s] Invoked command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --build /home/ugv/ugv_ros2_ws/build/ugv_msgs -- -j6 -l6

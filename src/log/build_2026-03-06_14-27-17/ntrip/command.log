@@ -1,0 +1,3 @@
+Invoking command in '/home/ugv/ugv_ros2_ws/src/build/ntrip': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake /home/ugv/ugv_ros2_ws/src/ntrip -DCMAKE_INSTALL_PREFIX=/home/ugv/ugv_ros2_ws/src/install/ntrip
+Invoked command in '/home/ugv/ugv_ros2_ws/src/build/ntrip' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake /home/ugv/ugv_ros2_ws/src/ntrip -DCMAKE_INSTALL_PREFIX=/home/ugv/ugv_ros2_ws/src/install/ntrip
+Invoking command in '/home/ugv/ugv_ros2_ws/src/build/ntrip': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --build /home/ugv/ugv_ros2_ws/src/build/ntrip -- -j6 -l6

@@ -1,0 +1,58 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ugv/ugv_ros2_ws/src/build/depthai_descriptions
+-- Install configuration: ""
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/launch
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/launch/urdf_launch.py
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-S2.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-PRO.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-LR.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-CM4-POE.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-T.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-POE.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-SR-POE.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-S2-POE.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-SR.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-LITE.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-PRO-W.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-IOT-75.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-1.stl
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/depthai_descr.urdf.xacro
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/include
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/include/base_macro.urdf.xacro
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/include/depthai_macro.urdf.xacro
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/urdf/base_descr.urdf.xacro
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/environment/depthai_descriptions.sh
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/environment/depthai_descriptions.dsv
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/ament_index/resource_index/package_run_dependencies/depthai_descriptions
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/ament_index/resource_index/parent_prefix_path/depthai_descriptions
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/environment/ament_prefix_path.sh
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/environment/ament_prefix_path.dsv
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/environment/path.sh
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/environment/path.dsv
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/local_setup.bash
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/local_setup.sh
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/local_setup.zsh
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/local_setup.dsv
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/package.dsv
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/ament_index/resource_index/packages/depthai_descriptions
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/cmake/depthai_descriptionsConfig.cmake
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/cmake/depthai_descriptionsConfig-version.cmake
+-- Installing: /home/ugv/ugv_ros2_ws/src/install/depthai_descriptions/share/depthai_descriptions/package.xml

@@ -1,0 +1,4 @@
+source;share/depthai_descriptions/environment/ament_prefix_path.sh
+source;share/depthai_descriptions/environment/depthai_descriptions.sh
+source;share/depthai_descriptions/environment/path.sh
+source;share/depthai_descriptions/environment/depthai_descriptions.dsv

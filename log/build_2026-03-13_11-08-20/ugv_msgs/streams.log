@@ -1,0 +1,180 @@
+[0.051s] Invoking command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --build /home/ugv/ugv_ros2_ws/build/ugv_msgs -- -j6 -l6
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_generator_c[0m
+[0.185s] [ 10%] Built target ugv_msgs__rosidl_generator_c
+[0.196s] [ 12%] Built target ugv_msgs__cpp
+[0.218s] [ 12%] Built target ament_cmake_python_symlink_ugv_msgs
+[0.236s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_introspection_c[0m
+[0.265s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_c[0m
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.283s] [ 23%] Built target ugv_msgs__rosidl_typesupport_introspection_c
+[0.284s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.309s] [ 34%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c
+[0.328s] [ 44%] Built target ugv_msgs__rosidl_typesupport_c
+[0.337s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.350s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_cpp[0m
+[0.369s] [ 55%] Built target ugv_msgs__rosidl_typesupport_fastrtps_cpp
+[0.381s] [ 65%] Built target ugv_msgs__rosidl_typesupport_introspection_cpp
+[0.416s] [ 76%] Built target ugv_msgs__rosidl_typesupport_cpp
+[0.532s] [ 76%] Built target ugv_msgs
+[0.702s] [ 78%] Built target ugv_msgs__py
+[0.789s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_generator_py[0m
+[0.869s] [ 87%] Built target ugv_msgs__rosidl_generator_py
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.038s] [ 89%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.044s] [ 91%] [32mBuilding C object CMakeFiles/ugv_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[1.056s] [ 95%] Built target ugv_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.232s] running egg_info
+[1.246s] writing ugv_msgs.egg-info/PKG-INFO
+[1.247s] writing dependency_links to ugv_msgs.egg-info/dependency_links.txt
+[1.248s] writing top-level names to ugv_msgs.egg-info/top_level.txt
+[1.254s] reading manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[1.255s] writing manifest file 'ugv_msgs.egg-info/SOURCES.txt'
+[1.374s] [ 95%] Built target ament_cmake_python_build_ugv_msgs_egg
+[1.571s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[1.583s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[1.741s] [100%] Built target ugv_msgs__rosidl_typesupport_introspection_c__pyext
+[1.823s] [100%] Built target ugv_msgs__rosidl_typesupport_c__pyext
+[1.884s] Invoked command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --build /home/ugv/ugv_ros2_ws/build/ugv_msgs -- -j6 -l6
+[1.927s] Invoking command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --install /home/ugv/ugv_ros2_ws/build/ugv_msgs
+[1.976s] -- Install configuration: ""
+[1.977s] -- Execute custom install script
+[1.978s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ament_index/resource_index/rosidl_interfaces/ugv_msgs
+[2.038s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.h
+[2.084s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__functions.h
+[2.110s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.h
+[2.155s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.h
+[2.202s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__functions.h
+[2.233s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.h
+[2.262s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.h
+[2.280s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__functions.h
+[2.299s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__struct.h
+[2.318s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__type_support.h
+[2.338s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.h
+[2.402s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.461s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/ugv_telemetry.h
+[2.496s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/library_path.sh
+[2.518s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/library_path.dsv
+[2.566s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_c.h
+[2.612s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_c.h
+[2.677s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__rosidl_typesupport_fastrtps_c.h
+[2.726s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.767s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_c.h
+[2.815s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_c.h
+[2.874s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__rosidl_typesupport_introspection_c.h
+[2.906s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.926s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/auto_ctrl.hpp
+[2.945s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__builder.hpp
+[2.964s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__struct.hpp
+[2.983s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__traits.hpp
+[3.006s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__type_support.hpp
+[3.023s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__builder.hpp
+[3.043s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__struct.hpp
+[3.062s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__traits.hpp
+[3.081s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__type_support.hpp
+[3.100s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__builder.hpp
+[3.171s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__struct.hpp
+[3.219s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__traits.hpp
+[3.265s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__type_support.hpp
+[3.317s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/man_ctrl.hpp
+[3.371s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.415s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/ugv_telemetry.hpp
+[3.458s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[3.504s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[3.545s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__rosidl_typesupport_fastrtps_cpp.hpp
+[3.597s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.642s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/auto_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[3.688s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/man_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[3.742s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/include/ugv_msgs/ugv_msgs/msg/detail/ugv_telemetry__rosidl_typesupport_introspection_cpp.hpp
+[3.786s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.sh
+[3.825s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/pythonpath.dsv
+[3.878s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.930s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.980s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.038s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[4.090s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py
+[4.142s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_c.c
+[4.195s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.241s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/_ugv_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.293s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/libugv_msgs__rosidl_generator_py.so
+[4.341s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py
+[4.433s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py
+[4.508s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl_s.c
+[4.577s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py
+[4.629s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl_s.c
+[4.681s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_ugv_telemetry.py
+[4.739s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_ugv_telemetry_s.c
+[4.781s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[4.837s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[4.890s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[4.941s] -- Up-to-date symlink: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[4.941s] -- Up-to-date symlink: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[4.942s] -- Up-to-date symlink: /home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/ugv_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[4.942s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.idl
+[4.987s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.idl
+[5.038s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/msg/UGVTelemetry.idl
+[5.080s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/msg/ManCtrl.msg
+[5.124s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/msg/AutoCtrl.msg
+[5.172s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/msg/UGVTelemetry.msg
+[5.224s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ament_index/resource_index/package_run_dependencies/ugv_msgs
+[5.282s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ament_index/resource_index/parent_prefix_path/ugv_msgs
+[5.329s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.sh
+[5.381s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/ament_prefix_path.dsv
+[5.429s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/path.sh
+[5.477s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/environment/path.dsv
+[5.540s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/local_setup.bash
+[5.595s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/local_setup.sh
+[5.637s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/local_setup.zsh
+[5.693s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/local_setup.dsv
+[5.748s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/package.dsv
+[5.798s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ament_index/resource_index/packages/ugv_msgs
+[5.853s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake-extras.cmake
+[5.905s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.957s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.007s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.060s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.108s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.160s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.205s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig.cmake
+[6.257s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgsConfig-version.cmake
+[6.301s] -- Symlinking: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/package.xml
+[6.349s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so
+[6.350s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_c.so" to ""
+[6.350s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so
+[6.351s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[6.351s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so
+[6.352s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_c.so" to ""
+[6.352s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so
+[6.353s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_c.so" to ""
+[6.353s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.354s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.354s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so
+[6.355s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[6.355s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so
+[6.356s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_typesupport_cpp.so" to ""
+[6.558s] Listing '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs'...
+[6.558s] Compiling '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/__init__.py'...
+[6.558s] Listing '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg'...
+[6.558s] Compiling '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/__init__.py'...
+[6.558s] Compiling '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_auto_ctrl.py'...
+[6.558s] Compiling '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_man_ctrl.py'...
+[6.559s] Compiling '/home/ugv/ugv_ros2_ws/install/ugv_msgs/local/lib/python3.10/dist-packages/ugv_msgs/msg/_ugv_telemetry.py'...
+[6.590s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so
+[6.590s] -- Set runtime path of "/home/ugv/ugv_ros2_ws/install/ugv_msgs/lib/libugv_msgs__rosidl_generator_py.so" to ""
+[6.591s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport.cmake
+[6.591s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cExport-noconfig.cmake
+[6.592s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[6.592s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.592s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.593s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.593s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport.cmake
+[6.593s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[6.594s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_cppExport.cmake
+[6.594s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.594s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.595s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.595s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.595s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport.cmake
+[6.595s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/ugv_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[6.596s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport.cmake
+[6.596s] -- Installing: /home/ugv/ugv_ros2_ws/install/ugv_msgs/share/ugv_msgs/cmake/export_ugv_msgs__rosidl_generator_pyExport-noconfig.cmake
+[6.608s] Invoked command in '/home/ugv/ugv_ros2_ws/build/ugv_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --install /home/ugv/ugv_ros2_ws/build/ugv_msgs

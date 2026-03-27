@@ -1,0 +1,6 @@
+gmake[2]: *** [CMakeFiles/ntrip_lib.dir/build.make:90: CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ntrip_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

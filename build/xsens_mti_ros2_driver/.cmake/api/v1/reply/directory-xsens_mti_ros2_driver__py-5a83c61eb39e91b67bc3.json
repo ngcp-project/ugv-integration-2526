@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "xsens_mti_ros2_driver__py",
+		"source" : "/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py"
+	}
+}

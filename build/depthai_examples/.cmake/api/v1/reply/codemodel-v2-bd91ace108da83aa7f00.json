@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-91bb12cb8999a0f0c011.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "depthai_examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "crop_control_service::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crop_control_service-5e9ed100e618d624676c.json",
+					"name" : "crop_control_service",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "depthai_examples_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-depthai_examples_uninstall-72c4df7977f1f9f3702d.json",
+					"name" : "depthai_examples_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "feature_tracker::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-feature_tracker-55a4f1f9bd0ce4995eaf.json",
+					"name" : "feature_tracker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mobilenet_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mobilenet_node-abc076db5cc7b8f20615.json",
+					"name" : "mobilenet_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rgb_stereo_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rgb_stereo_node-226ab63e7adafbe64c82.json",
+					"name" : "rgb_stereo_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stereo_inertial_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stereo_inertial_node-225d429b21640b8f89c0.json",
+					"name" : "stereo_inertial_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stereo_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stereo_node-6da68ad7dca7b3607f4f.json",
+					"name" : "stereo_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tracker_yolov4_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tracker_yolov4_node-d495773801393fac08d8.json",
+					"name" : "tracker_yolov4_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tracker_yolov4_spatial_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tracker_yolov4_spatial_node-5876379fcc837b6d5959.json",
+					"name" : "tracker_yolov4_spatial_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-29b4ee9d96fc4b19b63f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yolov4_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yolov4_node-44afc7deb36f5da81b2b.json",
+					"name" : "yolov4_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yolov4_spatial_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yolov4_spatial_node-d5dfc857260bd8413a0b.json",
+					"name" : "yolov4_spatial_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ugv/ugv_ros2_ws/build/depthai_examples",
+		"source" : "/home/ugv/ugv_ros2_ws/src/depthai-ros/depthai_examples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
