@@ -23,6 +23,7 @@ setup(
         'console_scripts': [
             'xsens_data_conversion = ugv_telemetry.xsens_data_conversion:main',
             'gcs_telemetry_sender = ugv_telemetry.gcs_telemetry_sender:main',
+            'gcs_udp_listener = ugv_telemetry.gcs_udp_listener:main',
         ],
     },
 )
