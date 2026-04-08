@@ -15,12 +15,24 @@ def generate_launch_description():
             package='ugv_teleop',
             executable='ugv_control_pub',
             name='ugv_control_pub',
-            output='screen'
+            output='screen',
+            parameters=[{
+                'arm0_lower_limit': 0.0,
+                'arm0_upper_limit': 160.0,
+                'arm1_lower_limit': 75.0,
+                'arm1_upper_limit': 225.0,
+                'inc_dec_val': 5.0,
+            }]
         ),
         Node(
             package='ugv_teleop',
             executable='ugv_control_sub',
             name='ugv_control_sub',
-            output='screen'
+            output='screen',
+            parameters=[{
+                'client_ip': '192.168.20.21',
+                'client_port': 8,
+                'heartbeat_timeout': 3.0,
+            }]
         ),
     ])

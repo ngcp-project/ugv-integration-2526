@@ -1,19 +1,16 @@
 
-LOWER_ELBOW_SERV_LIM = -360.0
-UPPER_ELBOW_SERV_LIM = 360.0
-DEAD_ZONE_THRESH = 15/100
-UPPER_STEER_CMD_LIMIT = 1.0
-# step = 5
-
 def clamp(v, lo, high):
     return max(lo, min(v, high))
 
 class ArmController:
-    def __init__(self, num_joints = 5, inc_dec_val=5.0, limits=None):
+    def __init__(self, num_joints=2, inc_dec_val=5.0,
+                 joint0_limits=(0.0, 160.0),
+                 joint1_limits=(75.0, 225.0)):
         self.num_joints = num_joints
         self.inc_dec_val = inc_dec_val
-        self.limits = limits or [(float('-inf'), float('inf'))] * num_joints
-        self.joint_positions = [0.0] * num_joints
+        self.joint0_lo, self.joint0_hi = joint0_limits
+        self.joint1_lo, self.joint1_hi = joint1_limits
+        self.joint_positions = [0.0, self.joint1_lo]
 
     def get_positions(self):
         return self.joint_positions.copy()
@@ -24,46 +21,19 @@ class ArmController:
         self.joint_positions = positions.copy()
 
     def reset(self):
-        self.joint_positions = [0.0] * self.num_joints
+        self.joint_positions = [0.0, self.joint1_lo]
 
-    def update_joint(self, joint_index, delta, min_limit=float('-inf'), max_limit=float('inf')):
+    def update_joint(self, joint_index, delta, min_limit, max_limit):
         if not (0 <= joint_index < self.num_joints):
             raise ValueError(f"Joint index {joint_index} out of range")
         self.joint_positions[joint_index] += delta
         self.joint_positions[joint_index] = clamp(self.joint_positions[joint_index], min_limit, max_limit)
 
-    def process_left_trigger_mode(self, dt, ud_pad, lr_pad, a_btn, b_btn, x_btn, y_btn):
-        # D-pad controls joint 0 and 1
+    def process_arm_control(self, dt, ud_pad, lr_pad):
+        """LT held: D-pad left/right controls joint 0, D-pad up/down controls joint 1."""
         step = self.inc_dec_val * dt
-        self.update_joint(1, ud_pad * step, LOWER_ELBOW_SERV_LIM, UPPER_ELBOW_SERV_LIM)
-        self.update_joint(0, float(lr_pad) * step)
-
-        # A/B buttons control joint 2
-        if a_btn == 1:
-            self.update_joint(2, float(step))
-        if b_btn == 1:
-            self.update_joint(2, -float(step))
-
-        # X/Y buttons control joint 3
-        if x_btn == 1:
-            self.update_joint(3, float(step))
-        if y_btn == 1:
-            self.update_joint(3, -float(step))
-
-        return f"Left Trigger Mode - UD: {ud_pad}, LR: {lr_pad}"
-
-    def process_right_trigger_mode(self, dt, a_btn, b_btn):
-        step = self.inc_dec_val * dt
-        # A/B buttons control joint 4
-        if a_btn == 1:
-            self.update_joint(4, step)
-        if b_btn == 1:
-            self.update_joint(4, -step)
-
-        return "Right Trigger Mode - Controlling Joint 4"
+        self.update_joint(0, -float(lr_pad) * step, self.joint0_lo, self.joint0_hi)
+        self.update_joint(1, float(ud_pad) * step, self.joint1_lo, self.joint1_hi)
 
     def get_joint_status(self):
-        status = "Arm Joints: ["
-        status += ", ".join([f"{pos:.1f}" for pos in self.joint_positions])
-        status += "]"
-        return status
+        return f"Arm Joints: [{self.joint_positions[0]:.1f}, {self.joint_positions[1]:.1f}]"
