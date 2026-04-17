@@ -18,7 +18,7 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 'arm0_lower_limit': 0.0,
-                'arm0_upper_limit': 160.0,
+                'arm0_upper_limit': 170.0,
                 'arm1_lower_limit': 75.0,
                 'arm1_upper_limit': 225.0,
                 'inc_dec_val': 5.0,

@@ -19,7 +19,7 @@ class UgvControlNode(Node):
         self.declare_parameter('upper_steer_limit', 1.0)
         self.declare_parameter('inc_dec_val', 5.0)
         self.declare_parameter('arm0_lower_limit', 0.0)
-        self.declare_parameter('arm0_upper_limit', 160.0)
+        self.declare_parameter('arm0_upper_limit', 170.0)
         self.declare_parameter('arm1_lower_limit', 75.0)
         self.declare_parameter('arm1_upper_limit', 225.0)
         self.declare_parameter('watchdog_timeout', 0.25)
