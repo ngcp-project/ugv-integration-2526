@@ -30,7 +30,7 @@ def generate_launch_description():
             name='ugv_control_sub',
             output='screen',
             parameters=[{
-                'client_ip': '192.168.20.21',
+                'client_ip': '169.254.155.100',
                 'client_port': 8,
                 'heartbeat_timeout': 3.0,
             }]

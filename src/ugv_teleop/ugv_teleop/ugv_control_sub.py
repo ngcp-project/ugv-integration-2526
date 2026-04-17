@@ -15,7 +15,7 @@ class UgvControlSubNode(Node):
 
         self.declare_parameter('server_ip', '0.0.0.0')
         self.declare_parameter('server_port', 12345)
-        self.declare_parameter('client_ip', '192.168.20.21')
+        self.declare_parameter('client_ip', '169.254.155.100')
         self.declare_parameter('client_port', 8)
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
@@ -105,13 +105,13 @@ class UgvControlSubNode(Node):
             self.get_logger().debug('Manual suppressed (auto_en=True).')
             return
 
-        vel   = round(float(msg.linear_vel), 3)
-        steer = round(float(msg.steer_cmd), 3)
+        # vel   = round(float(msg.linear_vel), 3)
+        # steer = round(float(msg.steer_cmd), 3)
         arm0  = round(float(msg.arm_cmd[0]), 3)
         arm1  = round(float(msg.arm_cmd[1]), 3)
 
-        # Prefix "M" = manual, comma-separated, no spaces
-        payload = f'M,{vel},{steer},{arm0},{arm1}'.encode()
+        # add prefix later?
+        payload = f'{arm0},{arm1}'.encode()
         self._send(payload, 'MAN')
 
     # ------------------------------------------------------------------ #
@@ -122,8 +122,7 @@ class UgvControlSubNode(Node):
         if abs(heading_error) < 1e-6:
             return
 
-        # Prefix "A" = autonomous, comma-separated, no spaces
-        payload = f'A,{self.auto_vel:.3f},{self.auto_steer:.3f},{heading_error:.3f}'.encode()
+        payload = f'{self.auto_vel:.3f},{self.auto_steer:.3f},{heading_error:.3f}'.encode()
         self._send(payload, 'AUTO')
 
     # ------------------------------------------------------------------ #
