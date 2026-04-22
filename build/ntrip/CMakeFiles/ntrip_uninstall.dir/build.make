@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/ntrip
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/ntrip
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/ntrip
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/ntrip
 
 # Utility rule file for ntrip_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ntrip_uninstall.dir/compiler_depend.make
 include CMakeFiles/ntrip_uninstall.dir/progress.make
 
 CMakeFiles/ntrip_uninstall:
-	/usr/bin/cmake -P /home/ugv/ugv_ros2_ws/build/ntrip/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ugvjetson2025/ugv-integration-2526/build/ntrip/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ntrip_uninstall: CMakeFiles/ntrip_uninstall
 ntrip_uninstall: CMakeFiles/ntrip_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ntrip_uninstall.dir/clean:
 .PHONY : CMakeFiles/ntrip_uninstall.dir/clean
 
 CMakeFiles/ntrip_uninstall.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/ntrip && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/ntrip /home/ugv/ugv_ros2_ws/src/ntrip /home/ugv/ugv_ros2_ws/build/ntrip /home/ugv/ugv_ros2_ws/build/ntrip /home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles/ntrip_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/ntrip && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/ntrip /home/ugvjetson2025/ugv-integration-2526/src/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles/ntrip_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ntrip_uninstall.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 # Utility rule file for ament_cmake_python_build_xsens_mti_ros2_driver_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/compil
 include CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg:
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/ament_cmake_python/xsens_mti_ros2_driver && /usr/bin/python3 setup.py egg_info
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/ament_cmake_python/xsens_mti_ros2_driver && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_xsens_mti_ros2_driver_egg: CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg
 ament_cmake_python_build_xsens_mti_ros2_driver_egg: CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_xsens_mti_ros2_driver_egg.dir/depend
 

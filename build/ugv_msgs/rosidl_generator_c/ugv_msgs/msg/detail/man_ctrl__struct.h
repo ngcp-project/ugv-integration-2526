@@ -23,7 +23,7 @@ typedef struct ugv_msgs__msg__ManCtrl
   bool auto_en;
   float linear_vel;
   float steer_cmd;
-  float arm_cmd[5];
+  float arm_cmd[2];
 } ugv_msgs__msg__ManCtrl;
 
 // Struct for a sequence of ugv_msgs__msg__ManCtrl.

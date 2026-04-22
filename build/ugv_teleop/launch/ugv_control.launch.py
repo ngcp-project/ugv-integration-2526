@@ -1,1 +1,0 @@
-/home/ugv/ugv_ros2_ws/src/ugv_teleop/launch/ugv_control.launch.py

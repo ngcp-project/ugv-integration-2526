@@ -1,1 +1,19 @@
-/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/ManCtrl.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ugv_msgs/msg/ManCtrl.msg
+// generated code does not contain a copyright notice
+
+
+module ugv_msgs {
+  module msg {
+    typedef float float__2[2];
+    struct ManCtrl {
+      boolean auto_en;
+
+      float linear_vel;
+
+      float steer_cmd;
+
+      float__2 arm_cmd;
+    };
+  };
+};

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 # Utility rule file for xspublic.
 
@@ -76,52 +76,52 @@ CMakeFiles/xspublic-complete: xspublic/src/xspublic-stamp/xspublic-patch
 CMakeFiles/xspublic-complete: xspublic/src/xspublic-stamp/xspublic-configure
 CMakeFiles/xspublic-complete: xspublic/src/xspublic-stamp/xspublic-build
 CMakeFiles/xspublic-complete: xspublic/src/xspublic-stamp/xspublic-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'xspublic'"
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles
-	/usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles/xspublic-complete
-	/usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'xspublic'"
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles
+	/usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles/xspublic-complete
+	/usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-done
 
 xspublic/src/xspublic-stamp/xspublic-build: xspublic/src/xspublic-stamp/xspublic-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'xspublic'"
-	cd /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic && make
-	cd /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'xspublic'"
+	cd /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic && make
+	cd /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-build
 
 xspublic/src/xspublic-stamp/xspublic-configure: xspublic/tmp/xspublic-cfgcmd.txt
 xspublic/src/xspublic-stamp/xspublic-configure: xspublic/src/xspublic-stamp/xspublic-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'xspublic'"
-	cd /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E echo_append
-	cd /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'xspublic'"
+	cd /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E echo_append
+	cd /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-configure
 
 xspublic/src/xspublic-stamp/xspublic-download: xspublic/src/xspublic-stamp/xspublic-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'xspublic'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'xspublic'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-download
+	/usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-download
 
 xspublic/src/xspublic-stamp/xspublic-install: xspublic/src/xspublic-stamp/xspublic-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'xspublic'"
-	cd /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E echo_append
-	cd /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'xspublic'"
+	cd /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E echo_append
+	cd /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic && /usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-install
 
 xspublic/src/xspublic-stamp/xspublic-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'xspublic'"
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/tmp
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src
-	/usr/bin/cmake -E make_directory /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp
-	/usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'xspublic'"
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/tmp
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src
+	/usr/bin/cmake -E make_directory /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp
+	/usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-mkdir
 
 xspublic/src/xspublic-stamp/xspublic-patch: xspublic/src/xspublic-stamp/xspublic-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'xspublic'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'xspublic'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-patch
+	/usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-patch
 
 xspublic/src/xspublic-stamp/xspublic-update: xspublic/src/xspublic-stamp/xspublic-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'xspublic'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'xspublic'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-update
+	/usr/bin/cmake -E touch /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xspublic/src/xspublic-stamp/xspublic-update
 
 xspublic: CMakeFiles/xspublic
 xspublic: CMakeFiles/xspublic-complete
@@ -144,6 +144,6 @@ CMakeFiles/xspublic.dir/clean:
 .PHONY : CMakeFiles/xspublic.dir/clean
 
 CMakeFiles/xspublic.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles/xspublic.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles/xspublic.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xspublic.dir/depend
 

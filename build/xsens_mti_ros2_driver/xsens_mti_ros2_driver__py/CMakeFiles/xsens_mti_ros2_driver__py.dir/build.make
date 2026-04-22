@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 # Utility rule file for xsens_mti_ros2_driver__py.
 
@@ -122,8 +122,8 @@ rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typ
 rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xsens_mti_ros2_driver/_xsens_mti_ros2_driver_s.ep.rosidl_typesupport_introspection_c.c
@@ -163,10 +163,10 @@ xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/build: xsens_
 .PHONY : xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/build
 
 xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/clean:
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py && $(CMAKE_COMMAND) -P CMakeFiles/xsens_mti_ros2_driver__py.dir/cmake_clean.cmake
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py && $(CMAKE_COMMAND) -P CMakeFiles/xsens_mti_ros2_driver__py.dir/cmake_clean.cmake
 .PHONY : xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/clean
 
 xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xsens_mti_ros2_driver__py/CMakeFiles/xsens_mti_ros2_driver__py.dir/depend
 

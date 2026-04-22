@@ -1,1 +1,0 @@
-/home/ugv/ugv_ros2_ws/build/ugv_telemetry/launch/ugv_telemetry.launch.py

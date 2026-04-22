@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ugv/ugv_ros2_ws/build/ntrip/libntrip_lib.a" "/home/ugv/ugv_ros2_ws/build/ntrip/ntrip" "TARGETS" "ntrip_lib" "ntrip" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/ntrip")

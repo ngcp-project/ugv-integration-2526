@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 # Utility rule file for xsens_mti_ros2_driver.
 
@@ -66,8 +66,8 @@ include CMakeFiles/xsens_mti_ros2_driver.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/xsens_mti_ros2_driver.dir/progress.make
 
-CMakeFiles/xsens_mti_ros2_driver: /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/msg/XsStatusWord.msg
-CMakeFiles/xsens_mti_ros2_driver: /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/msg/ShipMotion.msg
+CMakeFiles/xsens_mti_ros2_driver: /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/msg/XsStatusWord.msg
+CMakeFiles/xsens_mti_ros2_driver: /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/msg/ShipMotion.msg
 CMakeFiles/xsens_mti_ros2_driver: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/xsens_mti_ros2_driver: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/xsens_mti_ros2_driver: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -112,6 +112,6 @@ CMakeFiles/xsens_mti_ros2_driver.dir/clean:
 .PHONY : CMakeFiles/xsens_mti_ros2_driver.dir/clean
 
 CMakeFiles/xsens_mti_ros2_driver.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles/xsens_mti_ros2_driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles/xsens_mti_ros2_driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xsens_mti_ros2_driver.dir/depend
 

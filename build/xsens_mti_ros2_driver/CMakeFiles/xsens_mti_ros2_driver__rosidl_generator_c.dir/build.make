@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 # Include any dependencies generated for this target.
 include CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/depend.make
@@ -116,8 +116,8 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/xs_status_word.h: /opt/ros/humble/s
 rosidl_generator_c/xsens_mti_ros2_driver/msg/xs_status_word.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_c/xsens_mti_ros2_driver/msg/xs_status_word.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/xsens_mti_ros2_driver/msg/xs_status_word.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.h: rosidl_generator_c/xsens_mti_ros2_driver/msg/xs_status_word.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.h
@@ -149,30 +149,30 @@ rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c: ro
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/flags.make
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o: rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o -c /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.o -c /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c > CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c > CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.i
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__functions.c.s
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/flags.make
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o: rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o -c /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.o -c /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c > CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c > CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.i
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c -o CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/ship_motion__functions.c.s
 
 # Object files for target xsens_mti_ros2_driver__rosidl_generator_c
 xsens_mti_ros2_driver__rosidl_generator_c_OBJECTS = \
@@ -190,7 +190,7 @@ libxsens_mti_ros2_driver__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_
 libxsens_mti_ros2_driver__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libxsens_mti_ros2_driver__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libxsens_mti_ros2_driver__rosidl_generator_c.so: CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libxsens_mti_ros2_driver__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libxsens_mti_ros2_driver__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -211,6 +211,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/depend: rosidl_generator_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support.h
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/depend: rosidl_generator_c/xsens_mti_ros2_driver/msg/ship_motion.h
 CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/depend: rosidl_generator_c/xsens_mti_ros2_driver/msg/xs_status_word.h
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xsens_mti_ros2_driver__rosidl_generator_c.dir/depend
 

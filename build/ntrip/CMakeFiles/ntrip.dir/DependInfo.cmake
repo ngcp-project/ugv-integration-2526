@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ugv/ugv_ros2_ws/src/ntrip/src/ntrip_client_node.cpp" "CMakeFiles/ntrip.dir/src/ntrip_client_node.cpp.o" "gcc" "CMakeFiles/ntrip.dir/src/ntrip_client_node.cpp.o.d"
+  "/home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/ntrip_client_node.cpp" "CMakeFiles/ntrip.dir/src/ntrip_client_node.cpp.o" "gcc" "CMakeFiles/ntrip.dir/src/ntrip_client_node.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles/ntrip_lib.dir/DependInfo.cmake"
+  "/home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles/ntrip_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

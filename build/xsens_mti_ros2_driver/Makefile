@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ xsens_mti_ros2_driver__rosidl_typesupport_cpp/fast:
 .PHONY : xsens_mti_ros2_driver__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_xsens_mti_ros2_driver
+# Target rules for targets named ament_cmake_python_copy_xsens_mti_ros2_driver
 
 # Build rule for target.
-ament_cmake_python_symlink_xsens_mti_ros2_driver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_xsens_mti_ros2_driver
-.PHONY : ament_cmake_python_symlink_xsens_mti_ros2_driver
+ament_cmake_python_copy_xsens_mti_ros2_driver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_xsens_mti_ros2_driver
+.PHONY : ament_cmake_python_copy_xsens_mti_ros2_driver
 
 # fast build rule for target.
-ament_cmake_python_symlink_xsens_mti_ros2_driver/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_xsens_mti_ros2_driver.dir/build.make CMakeFiles/ament_cmake_python_symlink_xsens_mti_ros2_driver.dir/build
-.PHONY : ament_cmake_python_symlink_xsens_mti_ros2_driver/fast
+ament_cmake_python_copy_xsens_mti_ros2_driver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_xsens_mti_ros2_driver.dir/build.make CMakeFiles/ament_cmake_python_copy_xsens_mti_ros2_driver.dir/build
+.PHONY : ament_cmake_python_copy_xsens_mti_ros2_driver/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_xsens_mti_ros2_driver_egg
@@ -1069,7 +1069,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_xsens_mti_ros2_driver_egg"
-	@echo "... ament_cmake_python_symlink_xsens_mti_ros2_driver"
+	@echo "... ament_cmake_python_copy_xsens_mti_ros2_driver"
 	@echo "... uninstall"
 	@echo "... xsens_mti_ros2_driver"
 	@echo "... xsens_mti_ros2_driver__cpp"

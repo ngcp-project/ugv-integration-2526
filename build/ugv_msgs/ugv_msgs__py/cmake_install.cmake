@@ -1,8 +1,8 @@
-# Install script for directory: /home/ugv/ugv_ros2_ws/build/ugv_msgs/ugv_msgs__py
+# Install script for directory: /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/ugv_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ugv/ugv_ros2_ws/install/ugv_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/ugvjetson2025/ugv-integration-2526/install/ugv_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

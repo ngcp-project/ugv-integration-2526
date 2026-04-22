@@ -55,7 +55,7 @@ ugv_msgs__msg__ManCtrl__are_equal(const ugv_msgs__msg__ManCtrl * lhs, const ugv_
     return false;
   }
   // arm_cmd
-  for (size_t i = 0; i < 5; ++i) {
+  for (size_t i = 0; i < 2; ++i) {
     if (lhs->arm_cmd[i] != rhs->arm_cmd[i]) {
       return false;
     }
@@ -78,7 +78,7 @@ ugv_msgs__msg__ManCtrl__copy(
   // steer_cmd
   output->steer_cmd = input->steer_cmd;
   // arm_cmd
-  for (size_t i = 0; i < 5; ++i) {
+  for (size_t i = 0; i < 2; ++i) {
     output->arm_cmd[i] = input->arm_cmd[i];
   }
   return true;

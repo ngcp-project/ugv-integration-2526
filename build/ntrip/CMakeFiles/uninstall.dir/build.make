@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/ntrip
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/ntrip
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/ntrip
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/ntrip
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/ntrip && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/ntrip /home/ugv/ugv_ros2_ws/src/ntrip /home/ugv/ugv_ros2_ws/build/ntrip /home/ugv/ugv_ros2_ws/build/ntrip /home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/ntrip && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/ntrip /home/ugvjetson2025/ugv-integration-2526/src/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

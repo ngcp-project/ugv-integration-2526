@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver
 
 # Include any dependencies generated for this target.
 include CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/depend.make
@@ -111,8 +111,8 @@ rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__r
 rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
-	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c__arguments.json
 
 rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp: rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp
@@ -126,30 +126,30 @@ rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o -c /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.o -c /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp > CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp > CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.i
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp.s
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o: CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o -c /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o -MF CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o.d -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.o -c /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp > CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp > CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.i
 
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp -o CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp.s
 
 # Object files for target xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c
 xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c_OBJECTS = \
@@ -166,7 +166,7 @@ libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: libxsens_mti_ros2_dr
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
+libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -174,7 +174,7 @@ libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so: CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libxsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/depend: rosi
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/ship_motion__type_support_c.cpp
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver/msg/detail/xs_status_word__type_support_c.cpp
-	cd /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xsens_mti_ros2_driver__rosidl_typesupport_fastrtps_c.dir/depend
 

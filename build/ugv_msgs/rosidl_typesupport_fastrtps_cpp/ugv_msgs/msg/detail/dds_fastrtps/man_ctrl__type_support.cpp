@@ -105,7 +105,7 @@ get_serialized_size(
   }
   // Member: arm_cmd
   {
-    size_t array_size = 5;
+    size_t array_size = 2;
     size_t item_size = sizeof(ros_message.arm_cmd[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
@@ -162,7 +162,7 @@ max_serialized_size_ManCtrl(
 
   // Member: arm_cmd
   {
-    size_t array_size = 5;
+    size_t array_size = 2;
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +

@@ -7,7 +7,6 @@
 
 #include <algorithm>
 #include <array>
-#include <cstdint>
 #include <memory>
 #include <string>
 #include <vector>
@@ -42,7 +41,7 @@ struct ManCtrl_
       this->auto_en = false;
       this->linear_vel = 0.0f;
       this->steer_cmd = 0.0f;
-      std::fill<typename std::array<float, 5>::iterator, float>(this->arm_cmd.begin(), this->arm_cmd.end(), 0.0f);
+      std::fill<typename std::array<float, 2>::iterator, float>(this->arm_cmd.begin(), this->arm_cmd.end(), 0.0f);
     }
   }
 
@@ -55,7 +54,7 @@ struct ManCtrl_
       this->auto_en = false;
       this->linear_vel = 0.0f;
       this->steer_cmd = 0.0f;
-      std::fill<typename std::array<float, 5>::iterator, float>(this->arm_cmd.begin(), this->arm_cmd.end(), 0.0f);
+      std::fill<typename std::array<float, 2>::iterator, float>(this->arm_cmd.begin(), this->arm_cmd.end(), 0.0f);
     }
   }
 
@@ -70,7 +69,7 @@ struct ManCtrl_
     float;
   _steer_cmd_type steer_cmd;
   using _arm_cmd_type =
-    std::array<float, 5>;
+    std::array<float, 2>;
   _arm_cmd_type arm_cmd;
 
   // setters for named parameter idiom
@@ -93,7 +92,7 @@ struct ManCtrl_
     return *this;
   }
   Type & set__arm_cmd(
-    const std::array<float, 5> & _arg)
+    const std::array<float, 2> & _arg)
   {
     this->arm_cmd = _arg;
     return *this;

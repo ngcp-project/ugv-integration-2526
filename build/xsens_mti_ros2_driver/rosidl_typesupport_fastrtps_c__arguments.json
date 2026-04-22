@@ -1,10 +1,10 @@
 {
   "package_name": "xsens_mti_ros2_driver",
-  "output_dir": "/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver",
+  "output_dir": "/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_typesupport_fastrtps_c/xsens_mti_ros2_driver",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver:msg/XsStatusWord.idl",
-    "/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver:msg/ShipMotion.idl"
+    "/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver:msg/XsStatusWord.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver:msg/ShipMotion.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -49,8 +49,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
-    "/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver/msg/XsStatusWord.idl",
-    "/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver/msg/ShipMotion.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver/msg/XsStatusWord.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/rosidl_adapter/xsens_mti_ros2_driver/msg/ShipMotion.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

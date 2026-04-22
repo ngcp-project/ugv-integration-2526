@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_GENERATOR_C_BUILDING_DLL_ugv_msgs -DROS_PACKAGE_NAME=\"ugv_msgs\"
 
-C_INCLUDES = -I/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
 C_FLAGS = -fPIC -Wall -std=gnu11
 

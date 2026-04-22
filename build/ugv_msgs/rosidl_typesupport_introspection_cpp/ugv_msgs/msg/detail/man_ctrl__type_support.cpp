@@ -40,20 +40,20 @@ void ManCtrl_fini_function(void * message_memory)
 size_t size_function__ManCtrl__arm_cmd(const void * untyped_member)
 {
   (void)untyped_member;
-  return 5;
+  return 2;
 }
 
 const void * get_const_function__ManCtrl__arm_cmd(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::array<float, 5> *>(untyped_member);
+    *reinterpret_cast<const std::array<float, 2> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__ManCtrl__arm_cmd(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::array<float, 5> *>(untyped_member);
+    *reinterpret_cast<std::array<float, 2> *>(untyped_member);
   return &member[index];
 }
 
@@ -133,7 +133,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ManCtrl_messa
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array
-    5,  // array size
+    2,  // array size
     false,  // is upper bound
     offsetof(ugv_msgs::msg::ManCtrl, arm_cmd),  // bytes offset in struct
     nullptr,  // default value

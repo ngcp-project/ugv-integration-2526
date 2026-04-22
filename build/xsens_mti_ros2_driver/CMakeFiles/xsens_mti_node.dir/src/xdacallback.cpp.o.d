@@ -1,7 +1,7 @@
 CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o: \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/src/xdacallback.cpp \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/src/xdacallback.cpp \
  /usr/include/stdc-predef.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/include/xdacallback.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/include/xdacallback.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -364,7 +364,6 @@ CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o: \
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -637,9 +636,9 @@ CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscallback.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscallbackplainc.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/pstdint.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscallback.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscallbackplainc.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/pstdint.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
@@ -648,61 +647,61 @@ CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsresultvalue.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypesconfig.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypedefs.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/pstdint.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsinforequest.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevicestate.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscontrollerconfig.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsarray.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevicestate_enum.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsconnectivitystate.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsprotocoltype.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/include/xsens_time_handler.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdatapacket.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmessage.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbytearray.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsarray.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsstring.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdataidentifier.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdataidentifiervalue.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsxbusmessageid.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsresultvalue.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbusid.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstimestamp.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstimeinfo.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsushortvector.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsscrdata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsscrdatafloat.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfloatvector.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xscalibrateddata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsvector3.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsvector.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmath.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsresultvalue.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypesconfig.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypedefs.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/pstdint.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsinforequest.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevicestate.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscontrollerconfig.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsarray.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevicestate_enum.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsconnectivitystate.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsprotocoltype.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/include/xsens_time_handler.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdatapacket.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmessage.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbytearray.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsarray.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsstring.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdataidentifier.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdataidentifiervalue.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsxbusmessageid.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsresultvalue.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbusid.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstimestamp.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstimeinfo.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsushortvector.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsscrdata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsscrdatafloat.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfloatvector.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xscalibrateddata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsvector3.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsvector.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmath.h \
  /usr/include/c++/11/math.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfloatmath.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmath2.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xspressure.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssdidata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsquaternion.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmatrix.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xseuler.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsanalogindata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsrawgnsspvtdata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsrawgnsssatinfo.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdeviceid.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xshandid.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypesdef.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsrange.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstriggerindicationdata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssnapshot.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsglovesnapshot.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsglovedata.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/include/high_rate_interpolator.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsquaternion.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsvector.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfloatmath.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmath2.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xspressure.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssdidata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsquaternion.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmatrix.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xseuler.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsanalogindata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsrawgnsspvtdata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsrawgnsssatinfo.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdeviceid.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xshandid.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypesdef.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsrange.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstriggerindicationdata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssnapshot.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsglovesnapshot.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsglovedata.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/include/high_rate_interpolator.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsquaternion.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsvector.h \
  /usr/include/eigen3/Eigen/Geometry /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -879,48 +878,48 @@ CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevice_def.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssyncrole.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsversion.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssimpleversion.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/packetstamper.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdeviceconfiguration.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbusid.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypedefs.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsexception.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xserrormode.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsresetmethod.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/callbackmanagerxda.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscallback.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsoption.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsrejectreason.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/communicator.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/openportstage.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/protocolmanager.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/messagelocation.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iprotocolmanager.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmessage.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/replyobject.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdeviceid.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscommon/xsens_mutex.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsthread.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstime.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevice_def.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssyncrole.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsversion.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xssimpleversion.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/packetstamper.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdeviceconfiguration.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbusid.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstypedefs.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsexception.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xserrormode.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsresetmethod.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/callbackmanagerxda.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xscallback.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsoption.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsrejectreason.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/communicator.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/openportstage.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/protocolmanager.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/messagelocation.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iprotocolmanager.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsmessage.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/replyobject.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdeviceid.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscommon/xsens_mutex.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsthread.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstime.h \
  /usr/include/semaphore.h /usr/include/aarch64-linux-gnu/bits/semaphore.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstimestamp.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iointerfacefile.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsplatform.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iointerface.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstime.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfilepos.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbytearray.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfile.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfilepos.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iprotocolhandler.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/serialinterface.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/streaminterface.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbaud.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbaudcode.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbaudrate.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstimestamp.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iointerfacefile.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsplatform.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iointerface.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xstime.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfilepos.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbytearray.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfile.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsfilepos.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/iprotocolhandler.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/serialinterface.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/streaminterface.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbaud.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbaudcode.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsbaudrate.h \
  /usr/include/termios.h /usr/include/aarch64-linux-gnu/bits/termios.h \
  /usr/include/aarch64-linux-gnu/bits/termios-struct.h \
  /usr/include/aarch64-linux-gnu/bits/termios-c_cc.h \
@@ -932,18 +931,18 @@ CMakeFiles/xsens_mti_node.dir/src/xdacallback.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/termios-tcflow.h \
  /usr/include/aarch64-linux-gnu/bits/termios-misc.h \
  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xscontrolline.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsalignmentframe.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsaccesscontrolmode.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/datapacketcache.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdeviceoptionflag.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsoutputconfigurationarray.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsoutputconfiguration.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/lastresultmanager.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsstring.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsgnssplatform.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsubloxgnssplatform.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsoperationalmode.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsleverarmtype.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevice_public.h \
- /home/ugv/ugv_ros2_ws/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevice_def.h
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xscontrolline.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsalignmentframe.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsaccesscontrolmode.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/datapacketcache.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsdeviceoptionflag.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsoutputconfigurationarray.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsoutputconfiguration.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/lastresultmanager.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xstypes/xsstring.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsgnssplatform.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsubloxgnssplatform.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsoperationalmode.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsleverarmtype.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevice_public.h \
+ /home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/lib/xspublic/xscontroller/xsdevice_def.h

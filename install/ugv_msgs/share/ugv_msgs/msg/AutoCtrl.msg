@@ -1,1 +1,2 @@
-/home/ugv/ugv_ros2_ws/src/ugv_msgs/msg/AutoCtrl.msg
+bool auto_en
+float32 heading_error

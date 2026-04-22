@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/ntrip
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/ntrip
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/ntrip
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/ntrip
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles /home/ugv/ugv_ros2_ws/build/ntrip//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles /home/ugvjetson2025/ugv-integration-2526/build/ntrip//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

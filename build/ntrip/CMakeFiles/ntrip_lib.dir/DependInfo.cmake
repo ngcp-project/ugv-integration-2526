@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ugv/ugv_ros2_ws/src/ntrip/src/ntrip_client.cpp" "CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o" "gcc" "CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o.d"
-  "/home/ugv/ugv_ros2_ws/src/ntrip/src/rtcm_parser.cpp" "CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o" "gcc" "CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o.d"
+  "/home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/ntrip_client.cpp" "CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o" "gcc" "CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o.d"
+  "/home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/rtcm_parser.cpp" "CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o" "gcc" "CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o.d"
   )
 
 # Targets to which this target links.

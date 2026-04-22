@@ -94,7 +94,7 @@ bool ugv_msgs__msg__man_ctrl__convert_from_py(PyObject * _pymsg, void * _ros_mes
       Py_INCREF(seq_field);
       assert(PyArray_NDIM(seq_field) == 1);
       assert(PyArray_TYPE(seq_field) == NPY_FLOAT32);
-      Py_ssize_t size = 5;
+      Py_ssize_t size = 2;
       float * dest = ros_message->arm_cmd;
       for (Py_ssize_t i = 0; i < size; ++i) {
         float tmp = *(npy_float32 *)PyArray_GETPTR1(seq_field, i);
@@ -174,7 +174,7 @@ PyObject * ugv_msgs__msg__man_ctrl__convert_to_py(void * raw_ros_message)
     assert(sizeof(npy_float32) == sizeof(float));
     npy_float32 * dst = (npy_float32 *)PyArray_GETPTR1(seq_field, 0);
     float * src = &(ros_message->arm_cmd[0]);
-    memcpy(dst, src, 5 * sizeof(float));
+    memcpy(dst, src, 2 * sizeof(float));
     Py_DECREF(field);
   }
 

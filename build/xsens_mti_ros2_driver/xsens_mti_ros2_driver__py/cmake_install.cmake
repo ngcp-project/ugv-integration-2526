@@ -1,8 +1,8 @@
-# Install script for directory: /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py
+# Install script for directory: /home/ugvjetson2025/ugv-integration-2526/build/xsens_mti_ros2_driver/xsens_mti_ros2_driver__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ugv/ugv_ros2_ws/install/xsens_mti_ros2_driver")
+  set(CMAKE_INSTALL_PREFIX "/home/ugvjetson2025/ugv-integration-2526/install/xsens_mti_ros2_driver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

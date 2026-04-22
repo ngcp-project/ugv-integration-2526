@@ -5,7 +5,7 @@
 
 module ugv_msgs {
   module msg {
-    typedef float float__5[5];
+    typedef float float__2[2];
     struct ManCtrl {
       boolean auto_en;
 
@@ -13,7 +13,7 @@ module ugv_msgs {
 
       float steer_cmd;
 
-      float__5 arm_cmd;
+      float__2 arm_cmd;
     };
   };
 };

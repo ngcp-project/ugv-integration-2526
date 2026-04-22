@@ -1,11 +1,11 @@
 {
   "package_name": "ugv_msgs",
-  "output_dir": "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_typesupport_cpp/ugv_msgs",
+  "output_dir": "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_typesupport_cpp/ugv_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
-    "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/ManCtrl.idl",
-    "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/AutoCtrl.idl",
-    "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/UGVTelemetry.idl"
+    "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/ManCtrl.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/AutoCtrl.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs:msg/UGVTelemetry.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
@@ -14,8 +14,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
-    "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/ManCtrl.idl",
-    "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/AutoCtrl.idl",
-    "/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/UGVTelemetry.idl"
+    "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/ManCtrl.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/AutoCtrl.idl",
+    "/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/UGVTelemetry.idl"
   ]
 }

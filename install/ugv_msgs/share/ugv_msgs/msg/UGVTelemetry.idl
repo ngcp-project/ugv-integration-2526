@@ -1,1 +1,24 @@
-/home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_adapter/ugv_msgs/msg/UGVTelemetry.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ugv_msgs/msg/UGVTelemetry.msg
+// generated code does not contain a copyright notice
+
+
+module ugv_msgs {
+  module msg {
+    struct UGVTelemetry {
+      float speed_fps;
+
+      float pitch_deg;
+
+      float yaw_deg;
+
+      float roll_deg;
+
+      float altitude_ft;
+
+      double latitude;
+
+      double longitude;
+    };
+  };
+};

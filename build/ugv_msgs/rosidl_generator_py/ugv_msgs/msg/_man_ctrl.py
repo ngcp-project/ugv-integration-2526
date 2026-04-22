@@ -70,14 +70,14 @@ class ManCtrl(metaclass=Metaclass_ManCtrl):
         'auto_en': 'boolean',
         'linear_vel': 'float',
         'steer_cmd': 'float',
-        'arm_cmd': 'float[5]',
+        'arm_cmd': 'float[2]',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 5),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('float'), 2),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -88,7 +88,7 @@ class ManCtrl(metaclass=Metaclass_ManCtrl):
         self.linear_vel = kwargs.get('linear_vel', float())
         self.steer_cmd = kwargs.get('steer_cmd', float())
         if 'arm_cmd' not in kwargs:
-            self.arm_cmd = numpy.zeros(5, dtype=numpy.float32)
+            self.arm_cmd = numpy.zeros(2, dtype=numpy.float32)
         else:
             self.arm_cmd = kwargs.get('arm_cmd')
 
@@ -189,8 +189,8 @@ class ManCtrl(metaclass=Metaclass_ManCtrl):
         if isinstance(value, numpy.ndarray):
             assert value.dtype == numpy.float32, \
                 "The 'arm_cmd' numpy.ndarray() must have the dtype of 'numpy.float32'"
-            assert value.size == 5, \
-                "The 'arm_cmd' numpy.ndarray() must have a size of 5"
+            assert value.size == 2, \
+                "The 'arm_cmd' numpy.ndarray() must have a size of 2"
             self._arm_cmd = value
             return
         if __debug__:
@@ -204,8 +204,8 @@ class ManCtrl(metaclass=Metaclass_ManCtrl):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 len(value) == 5 and
+                 len(value) == 2 and
                  all(isinstance(v, float) for v in value) and
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'arm_cmd' field must be a set or sequence with length 5 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+                "The 'arm_cmd' field must be a set or sequence with length 2 and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._arm_cmd = numpy.array(value, dtype=numpy.float32)

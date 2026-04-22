@@ -1,1 +1,0 @@
-Invoking command in '/home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ugv/ugv_ros2_ws/install/ugv_teleop:/home/ugv/ugv_ros2_ws/install/ugv_telemetry:/home/ugv/install/ugv_telemetry:/home/ugv/NGCP/NGCP_25_26/install/ngcp_ugv:/opt/ros/humble /usr/bin/cmake --build /home/ugv/ugv_ros2_ws/build/xsens_mti_ros2_driver -- -j6 -l6

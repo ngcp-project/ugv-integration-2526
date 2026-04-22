@@ -1,1 +1,0 @@
-/home/ugv/ugv_ros2_ws/install/depthai_descriptions/share/depthai_descriptions/launch/urdf_launch.py

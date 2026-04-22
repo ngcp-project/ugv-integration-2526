@@ -35,7 +35,7 @@ size_t ugv_msgs__msg__ManCtrl__rosidl_typesupport_introspection_c__size_function
   const void * untyped_member)
 {
   (void)untyped_member;
-  return 5;
+  return 2;
 }
 
 const void * ugv_msgs__msg__ManCtrl__rosidl_typesupport_introspection_c__get_const_function__ManCtrl__arm_cmd(
@@ -134,7 +134,7 @@ static rosidl_typesupport_introspection_c__MessageMember ugv_msgs__msg__ManCtrl_
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
-    5,  // array size
+    2,  // array size
     false,  // is upper bound
     offsetof(ugv_msgs__msg__ManCtrl, arm_cmd),  // bytes offset in struct
     NULL,  // default value

@@ -66,7 +66,7 @@ static bool _ManCtrl__cdr_serialize(
 
   // Field name: arm_cmd
   {
-    size_t size = 5;
+    size_t size = 2;
     auto array_ptr = ros_message->arm_cmd;
     cdr.serializeArray(array_ptr, size);
   }
@@ -102,7 +102,7 @@ static bool _ManCtrl__cdr_deserialize(
 
   // Field name: arm_cmd
   {
-    size_t size = 5;
+    size_t size = 2;
     auto array_ptr = ros_message->arm_cmd;
     cdr.deserializeArray(array_ptr, size);
   }
@@ -144,7 +144,7 @@ size_t get_serialized_size_ugv_msgs__msg__ManCtrl(
   }
   // field.name arm_cmd
   {
-    size_t array_size = 5;
+    size_t array_size = 2;
     auto array_ptr = ros_message->arm_cmd;
     (void)array_ptr;
     size_t item_size = sizeof(array_ptr[0]);
@@ -205,7 +205,7 @@ size_t max_serialized_size_ugv_msgs__msg__ManCtrl(
   }
   // member: arm_cmd
   {
-    size_t array_size = 5;
+    size_t array_size = 2;
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +

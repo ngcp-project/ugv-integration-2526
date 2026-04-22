@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/ugv_msgs
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/ugv_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/ugv_msgs
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs
 
 # Utility rule file for ugv_msgs__cpp.
 
@@ -101,8 +101,8 @@ rosidl_generator_cpp/ugv_msgs/msg/man_ctrl.hpp: /opt/ros/humble/share/rosidl_gen
 rosidl_generator_cpp/ugv_msgs/msg/man_ctrl.hpp: rosidl_adapter/ugv_msgs/msg/ManCtrl.idl
 rosidl_generator_cpp/ugv_msgs/msg/man_ctrl.hpp: rosidl_adapter/ugv_msgs/msg/AutoCtrl.idl
 rosidl_generator_cpp/ugv_msgs/msg/man_ctrl.hpp: rosidl_adapter/ugv_msgs/msg/UGVTelemetry.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ugv/ugv_ros2_ws/build/ugv_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/ugv_msgs/msg/detail/man_ctrl__builder.hpp: rosidl_generator_cpp/ugv_msgs/msg/man_ctrl.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ugv_msgs/msg/detail/man_ctrl__builder.hpp
@@ -174,6 +174,6 @@ CMakeFiles/ugv_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/ugv_msgs__cpp.dir/clean
 
 CMakeFiles/ugv_msgs__cpp.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/ugv_msgs /home/ugv/ugv_ros2_ws/src/ugv_msgs /home/ugv/ugv_ros2_ws/build/ugv_msgs /home/ugv/ugv_ros2_ws/build/ugv_msgs /home/ugv/ugv_ros2_ws/build/ugv_msgs/CMakeFiles/ugv_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/ugv_msgs /home/ugvjetson2025/ugv-integration-2526/src/ugv_msgs /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs /home/ugvjetson2025/ugv-integration-2526/build/ugv_msgs/CMakeFiles/ugv_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ugv_msgs__cpp.dir/depend
 

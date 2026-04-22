@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ugv/ugv_ros2_ws/src/ntrip
+CMAKE_SOURCE_DIR = /home/ugvjetson2025/ugv-integration-2526/src/ntrip
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ugv/ugv_ros2_ws/build/ntrip
+CMAKE_BINARY_DIR = /home/ugvjetson2025/ugv-integration-2526/build/ntrip
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ntrip_lib.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/ntrip_lib.dir/progress.make
 include CMakeFiles/ntrip_lib.dir/flags.make
 
 CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o: CMakeFiles/ntrip_lib.dir/flags.make
-CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o: /home/ugv/ugv_ros2_ws/src/ntrip/src/ntrip_client.cpp
+CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o: /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/ntrip_client.cpp
 CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o: CMakeFiles/ntrip_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o -MF CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o.d -o CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o -c /home/ugv/ugv_ros2_ws/src/ntrip/src/ntrip_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o -MF CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o.d -o CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o -c /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/ntrip_client.cpp
 
 CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugv/ugv_ros2_ws/src/ntrip/src/ntrip_client.cpp > CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/ntrip_client.cpp > CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.i
 
 CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugv/ugv_ros2_ws/src/ntrip/src/ntrip_client.cpp -o CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/ntrip_client.cpp -o CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.s
 
 CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o: CMakeFiles/ntrip_lib.dir/flags.make
-CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o: /home/ugv/ugv_ros2_ws/src/ntrip/src/rtcm_parser.cpp
+CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o: /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/rtcm_parser.cpp
 CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o: CMakeFiles/ntrip_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o -MF CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o.d -o CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o -c /home/ugv/ugv_ros2_ws/src/ntrip/src/rtcm_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o -MF CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o.d -o CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o -c /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/rtcm_parser.cpp
 
 CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugv/ugv_ros2_ws/src/ntrip/src/rtcm_parser.cpp > CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/rtcm_parser.cpp > CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.i
 
 CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugv/ugv_ros2_ws/src/ntrip/src/rtcm_parser.cpp -o CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ugvjetson2025/ugv-integration-2526/src/ntrip/src/rtcm_parser.cpp -o CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.s
 
 # Object files for target ntrip_lib
 ntrip_lib_OBJECTS = \
@@ -109,7 +109,7 @@ libntrip_lib.a: CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o
 libntrip_lib.a: CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o
 libntrip_lib.a: CMakeFiles/ntrip_lib.dir/build.make
 libntrip_lib.a: CMakeFiles/ntrip_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libntrip_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libntrip_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ntrip_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ntrip_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -122,6 +122,6 @@ CMakeFiles/ntrip_lib.dir/clean:
 .PHONY : CMakeFiles/ntrip_lib.dir/clean
 
 CMakeFiles/ntrip_lib.dir/depend:
-	cd /home/ugv/ugv_ros2_ws/build/ntrip && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugv/ugv_ros2_ws/src/ntrip /home/ugv/ugv_ros2_ws/src/ntrip /home/ugv/ugv_ros2_ws/build/ntrip /home/ugv/ugv_ros2_ws/build/ntrip /home/ugv/ugv_ros2_ws/build/ntrip/CMakeFiles/ntrip_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ugvjetson2025/ugv-integration-2526/build/ntrip && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ugvjetson2025/ugv-integration-2526/src/ntrip /home/ugvjetson2025/ugv-integration-2526/src/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip /home/ugvjetson2025/ugv-integration-2526/build/ntrip/CMakeFiles/ntrip_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ntrip_lib.dir/depend
 
