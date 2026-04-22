@@ -30,17 +30,22 @@ logging.basicConfig(
 def read_gps_fix() -> dict:
 
     # ── STUB: replace with real GPS driver ──────────────────────────────────
-    import random
-    fix = {
-        "latitude":    34.0522 + random.uniform(-0.001, 0.001),
-        "longitude":  -118.2437 + random.uniform(-0.001, 0.001),
-        "heading":     random.uniform(0, 360),
-    }
-    log.info(
-        "GPS fix: lat=%.6f lon=%.6f heading=%.1f°",
-        fix["latitude"], fix["longitude"], fix["heading"],
-    )
-    return fix
+    # import random
+    coords = []
+    with open('ntrip_coords.txt', 'r') as f:
+        for line in f:
+            lat, lon, z = map(float, line.strip().split(','))
+    coords.append({
+        "latitude":  lat,
+        "longitude": lon,
+        "heading":  z ,
+    })
+    print(coords)
+    # log.info(
+    #    "GPS fix: lat=%.6f lon=%.6f heading=%.1f°",
+    #   fix["latitude"], fix["longitude"], fix["heading"],
+    # )
+    # return fix
     # ── END STUB ─────────────────────────────────────────────────────────────
 
 
