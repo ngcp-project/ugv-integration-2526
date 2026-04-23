@@ -1,0 +1,9 @@
+[submodule "lib/gcs-infrastructure"]
+	path = lib/gcs-infrastructure
+	url = https://github.com/ngcp-project/gcs-infrastructure.git
+[submodule "lib/gcs-packet"]
+	path = lib/gcs-packet
+	url = https://github.com/ngcp-project/gcs-packet.git
+[submodule "lib/xbee-python"]
+	path = lib/xbee-python
+	url = https://github.com/ngcp-project/xbee-python.git

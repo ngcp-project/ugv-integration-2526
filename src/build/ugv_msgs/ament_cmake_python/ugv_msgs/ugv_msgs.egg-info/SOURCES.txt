@@ -1,6 +1,0 @@
-setup.py
-ugv_msgs/__init__.py
-ugv_msgs.egg-info/PKG-INFO
-ugv_msgs.egg-info/SOURCES.txt
-ugv_msgs.egg-info/dependency_links.txt
-ugv_msgs.egg-info/top_level.txt
