@@ -92,9 +92,7 @@ class XBeeCommandReceiver(Node):
         self._zone_pub    = self.create_publisher(String, '/ngcp/add_zone',          10)
 
         # Subscriber: real telemetry from Xsens / sensor fusion
-        self.create_subscription(
-            UGVTelemetry, '/ngcp/telemetry', self._on_telemetry, 10
-        )
+        self.create_subscription(UGVTelemetry, '/ngcp/telemetry', self._on_telemetry, 10)
 
         # Start XBee threads
         # Call launchVehicleXbee from infrascruture's launch vehicleXbee whic calls StartVehicleXBee which calls vehicleXbee 
@@ -119,6 +117,7 @@ class XBeeCommandReceiver(Node):
             self._latest_telemetry = msg
 
     def _command_loop(self):
+        # wait for XBee commands then sends them to _dispatch
         while not self._stop_event.is_set():
             try:
                 command = self._ReceiveCommand(self._DecodeFormat.Class)
@@ -128,8 +127,10 @@ class XBeeCommandReceiver(Node):
                 time.sleep(0.1)
 
     def _dispatch(self, command):
+        # receives XBee commands and publishes to ROS
+        
         if command is None:
-            self.get_logger().warn('Received unrecognised command ID (no handler for cmd 4 or 6)')
+            self.get_logger().warn('Received unrecognised command ID, ignoring')
             return
 
         if isinstance(command, self._Heartbeat):
