@@ -10,6 +10,10 @@ from ugv_teleop.ugv_arm import ArmController
 def clamp(v, lo, hi):
     return max(lo, min(hi, v))
 
+
+def normalize_zero(v, eps=1e-9):
+    return 0.0 if abs(v) < eps else v
+
 class UgvControlNode(Node):
     def __init__(self):
         super().__init__('ugv_control_pub')
@@ -77,11 +81,11 @@ class UgvControlNode(Node):
         self._last_timer_time = now
         dt = max(0.0, min(dt, 0.1))
 
-        self.man_obj.linear_vel = self.cmd_vel
-        self.man_obj.steer_cmd = clamp(
+        self.man_obj.linear_vel = normalize_zero(self.cmd_vel)
+        self.man_obj.steer_cmd = normalize_zero(clamp(
             self.cmd_steer,
             -self.upper_steer_limit, self.upper_steer_limit
-        )
+        ))
 
         # LT held = arm control mode (D-pad controls 2 joints)
         LT_ON = self.lt_val > 1000
@@ -111,8 +115,8 @@ class UgvControlNode(Node):
             )
             return
 
-        self.cmd_vel   = -msg.axes[1]
-        self.cmd_steer = -msg.axes[3]
+        self.cmd_vel   = normalize_zero(msg.axes[1])
+        self.cmd_steer = normalize_zero(-msg.axes[3])
 
         self.lt_val = int((1 - msg.axes[2]) * self.max_joy_val / 2)
         self.rt_val = int((1 - msg.axes[5]) * self.max_joy_val / 2)
