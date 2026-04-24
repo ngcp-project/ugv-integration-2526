@@ -1,4 +1,6 @@
 .claude
+.codex
+__pycache__/
 build/
 install/
 log/
