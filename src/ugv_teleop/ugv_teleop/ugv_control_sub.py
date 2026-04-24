@@ -15,7 +15,7 @@ class UgvControlSubNode(Node):
 
         self.declare_parameter('server_ip', '0.0.0.0')
         self.declare_parameter('server_port', 12345)
-        self.declare_parameter('client_ip', '169.254.155.100')
+        self.declare_parameter('client_ip', '169.254.155.100') # 169.254.155.100 STM IP
         self.declare_parameter('client_port', 8)
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)

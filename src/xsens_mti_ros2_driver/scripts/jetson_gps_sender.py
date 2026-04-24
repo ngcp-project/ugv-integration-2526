@@ -31,16 +31,15 @@ def read_gps_fix() -> dict:
 
     # ── STUB: replace with real GPS driver ──────────────────────────────────
     # import random
-    coords = []
+    # coords = []
     with open('ntrip_coords.txt', 'r') as f:
         for line in f:
-            lat, lon, z = map(float, line.strip().split(','))
-    coords.append({
+            lat, lon, z = map(float, line.strip().split(', '))
+    return({
         "latitude":  lat,
         "longitude": lon,
         "heading":  z ,
     })
-    print(coords)
     # log.info(
     #    "GPS fix: lat=%.6f lon=%.6f heading=%.1f°",
     #   fix["latitude"], fix["longitude"], fix["heading"],
