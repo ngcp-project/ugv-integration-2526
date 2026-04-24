@@ -1,4 +1,0 @@
-source;share/xsens_mti_ros2_driver/local_setup.bash
-source;share/xsens_mti_ros2_driver/local_setup.dsv
-source;share/xsens_mti_ros2_driver/local_setup.sh
-source;share/xsens_mti_ros2_driver/local_setup.zsh

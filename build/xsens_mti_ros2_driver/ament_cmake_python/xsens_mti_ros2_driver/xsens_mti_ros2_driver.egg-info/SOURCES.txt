@@ -1,6 +1,0 @@
-setup.py
-xsens_mti_ros2_driver/__init__.py
-xsens_mti_ros2_driver.egg-info/PKG-INFO
-xsens_mti_ros2_driver.egg-info/SOURCES.txt
-xsens_mti_ros2_driver.egg-info/dependency_links.txt
-xsens_mti_ros2_driver.egg-info/top_level.txt

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libntrip_lib.a CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o CMakeFiles/ntrip_lib.dir/src/rtcm_parser.cpp.o
-/usr/bin/ranlib libntrip_lib.a
