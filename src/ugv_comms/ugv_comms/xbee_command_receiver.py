@@ -24,9 +24,9 @@ def _add_lib_paths(workspace_root: str):
         if p_str not in sys.path:
             sys.path.insert(0, p_str)
 
-XBEE_PORT = '/dev/ttyUSB0'  
-GCS_MAC_ADDRESS = '1234'  
-VEHICLE_MAC_ADDRESS = '5678'  
+XBEE_PORT = 'COM3'  
+GCS_MAC_ADDRESS = '0013A200427EA7FC'  
+VEHICLE_MAC_ADDRESS = '0013A20042839F3E'  
 
 class XBeeCommandReceiver(Node):
     def __init__(self):
@@ -111,8 +111,8 @@ class XBeeCommandReceiver(Node):
         self._cmd_thread.start()
 
     # Callbacks 
-
     def _on_telemetry(self, msg: UGVTelemetry):
+    # every time ROS receives a new telemetry, we update out latest telem snapshot
         with self._telem_lock:
             self._latest_telemetry = msg
 
