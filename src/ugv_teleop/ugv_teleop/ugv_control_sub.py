@@ -15,7 +15,7 @@ class UgvControlSubNode(Node):
 
         self.declare_parameter('server_ip', '0.0.0.0')
         self.declare_parameter('server_port', 12345)
-        self.declare_parameter('client_ip', '169.254.155.100') # 169.254.155.100 STM IP
+        self.declare_parameter('client_ip', '169.254.155.100') # 169.254.155.100 STM IP (ARM)
         self.declare_parameter('client_port', 8)
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
@@ -60,9 +60,7 @@ class UgvControlSubNode(Node):
 
         self.get_logger().info('UGV CONTROL SUBSCRIBER STARTED')
 
-    # ------------------------------------------------------------------ #
-    #  Heartbeat: listen for any UDP packet from the STM32               #
-    # ------------------------------------------------------------------ #
+    #  Heartbeat: listen for any UDP packet from the STM32
     def _heartbeat_listener(self):
         """Background thread: any UDP packet received on our bound socket counts as a heartbeat."""
         while rclpy.ok():
@@ -97,26 +95,21 @@ class UgvControlSubNode(Node):
                     self.stm32_alive = True
                     self.get_logger().info('STM32 heartbeat recovered')
 
-    # ------------------------------------------------------------------ #
-    #  Manual control callback                                           #
-    # ------------------------------------------------------------------ #
+    #  Manual control callback                                           
     def on_man_ctrl(self, msg: ManCtrl):
         if getattr(msg, 'auto_en', False):
             self.get_logger().debug('Manual suppressed (auto_en=True).')
             return
 
-        # vel   = round(float(msg.linear_vel), 3)
-        # steer = round(float(msg.steer_cmd), 3)
+        vel   = round(float(msg.linear_vel), 3)
+        steer = round(float(msg.steer_cmd), 3)
         arm0  = round(float(msg.arm_cmd[0]), 3)
         arm1  = round(float(msg.arm_cmd[1]), 3)
 
-        # add prefix later?
-        payload = f'{arm0},{arm1}'.encode()
+        payload = f'{vel},{steer},{arm0},{arm1}'.encode()
         self._send(payload, 'MAN')
 
-    # ------------------------------------------------------------------ #
     #  Autonomous control callback                                       #
-    # ------------------------------------------------------------------ #
     def on_auto_ctrl(self, msg: AutoCtrl):
         heading_error = float(getattr(msg, 'heading_error', 0.0))
         if abs(heading_error) < 1e-6:
@@ -125,9 +118,7 @@ class UgvControlSubNode(Node):
         payload = f'{self.auto_vel:.3f},{self.auto_steer:.3f},{heading_error:.3f}'.encode()
         self._send(payload, 'AUTO')
 
-    # ------------------------------------------------------------------ #
     #  UDP send helper                                                   #
-    # ------------------------------------------------------------------ #
     def _send(self, payload: bytes, label: str):
         try:
             self.sock.sendto(payload, (self.client_ip, int(self.client_port)))
@@ -135,9 +126,7 @@ class UgvControlSubNode(Node):
         except Exception as ex:
             self.get_logger().warning(f'UDP send ({label}) failed: {ex}')
 
-    # ------------------------------------------------------------------ #
     #  Shutdown                                                          #
-    # ------------------------------------------------------------------ #
     def destroy_node(self):
         self.get_logger().info('Shutting down UDP subscriber node...')
         try:
