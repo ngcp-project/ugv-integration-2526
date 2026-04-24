@@ -15,16 +15,20 @@ class UgvControlSubNode(Node):
 
         self.declare_parameter('server_ip', '0.0.0.0')
         self.declare_parameter('server_port', 12345)
-        self.declare_parameter('client_ip', '169.254.155.100')
-        self.declare_parameter('client_port', 8)
+        self.declare_parameter('arm_ip', '169.254.155.100')
+        self.declare_parameter('arm_port', 8)
+        self.declare_parameter('drive_ip', '169.254.155.101')
+        self.declare_parameter('drive_port', 9)
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
         self.declare_parameter('heartbeat_timeout', 3.0)  # seconds before declaring STM32 unreachable
 
         server_ip        = self.get_parameter('server_ip').value
         server_port      = int(self.get_parameter('server_port').value)
-        self.client_ip   = self.get_parameter('client_ip').value
-        self.client_port = int(self.get_parameter('client_port').value)
+        self.arm_ip      = self.get_parameter('arm_ip').value
+        self.arm_port    = int(self.get_parameter('arm_port').value)
+        self.drive_ip    = self.get_parameter('drive_ip').value
+        self.drive_port  = int(self.get_parameter('drive_port').value)
         self.auto_vel    = float(self.get_parameter('auto_vel').value)
         self.auto_steer  = float(self.get_parameter('auto_steer').value)
         self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
@@ -35,7 +39,9 @@ class UgvControlSubNode(Node):
             self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             self.sock.bind((server_ip, server_port))
             self.get_logger().info(
-                f'UDP bound to {server_ip}:{server_port}, sending to {self.client_ip}:{self.client_port}'
+                f'UDP bound to {server_ip}:{server_port}\n'
+                f'  Arm MCU   -> {self.arm_ip}:{self.arm_port}\n'
+                f'  Drive MCU -> {self.drive_ip}:{self.drive_port}'
             )
         except Exception as ex:
             self.get_logger().error(f'UDP bind failed: {ex}')
@@ -105,14 +111,16 @@ class UgvControlSubNode(Node):
             self.get_logger().debug('Manual suppressed (auto_en=True).')
             return
 
-        # vel   = round(float(msg.linear_vel), 3)
-        # steer = round(float(msg.steer_cmd), 3)
+        vel   = round(float(msg.linear_vel), 3)
+        steer = round(float(msg.steer_cmd), 3)
         arm0  = round(float(msg.arm_cmd[0]), 3)
         arm1  = round(float(msg.arm_cmd[1]), 3)
 
-        # add prefix later?
-        payload = f'{arm0},{arm1}'.encode()
-        self._send(payload, 'MAN')
+        arm_payload = f'{arm0:.3f},{arm1:.3f}'.encode()
+        drive_payload = f'{steer:.3f},{vel:.3f}'.encode()
+
+        self._send(arm_payload, 'MAN ARM', self.arm_ip, self.arm_port)
+        self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
 
     # ------------------------------------------------------------------ #
     #  Autonomous control callback                                       #
@@ -123,15 +131,17 @@ class UgvControlSubNode(Node):
             return
 
         payload = f'{self.auto_vel:.3f},{self.auto_steer:.3f},{heading_error:.3f}'.encode()
-        self._send(payload, 'AUTO')
+        self._send(payload, 'AUTO DRIVE', self.drive_ip, self.drive_port)
 
     # ------------------------------------------------------------------ #
     #  UDP send helper                                                   #
     # ------------------------------------------------------------------ #
-    def _send(self, payload: bytes, label: str):
+    def _send(self, payload: bytes, label: str, target_ip: str, target_port: int):
         try:
-            self.sock.sendto(payload, (self.client_ip, int(self.client_port)))
-            self.get_logger().info(f'Sent {label}: {payload.decode()}')
+            self.sock.sendto(payload, (target_ip, int(target_port)))
+            self.get_logger().info(
+                f'Sent {label} -> {target_ip}:{target_port}: {payload.decode()}'
+            )
         except Exception as ex:
             self.get_logger().warning(f'UDP send ({label}) failed: {ex}')
 
