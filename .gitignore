@@ -1,6 +1,6 @@
+**/build/
+**/install/
+**/log/
 .claude
-build/
-install/
-log/
 .vscode/
 .DS_Store

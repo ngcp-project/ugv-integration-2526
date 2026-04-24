@@ -1,8 +1,0 @@
-{
-  "package_name": "ugv_msgs",
-  "non_idl_tuples": [
-    "/home/ugvjetson2025/ugv-integration-2526/src/ugv_msgs:msg/ManCtrl.msg",
-    "/home/ugvjetson2025/ugv-integration-2526/src/ugv_msgs:msg/AutoCtrl.msg",
-    "/home/ugvjetson2025/ugv-integration-2526/src/ugv_msgs:msg/UGVTelemetry.msg"
-  ]
-}

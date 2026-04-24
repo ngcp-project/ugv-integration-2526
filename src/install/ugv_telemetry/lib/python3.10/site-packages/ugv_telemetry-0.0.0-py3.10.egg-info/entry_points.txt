@@ -1,4 +1,0 @@
-[console_scripts]
-telemetry_sub = ugv_telemetry.telemetry_sub:main
-xsens_data_conversion = ugv_telemetry.xsens_data_conversion:main
-

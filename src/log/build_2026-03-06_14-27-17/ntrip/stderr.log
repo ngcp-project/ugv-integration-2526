@@ -1,6 +1,0 @@
-gmake[2]: *** [CMakeFiles/ntrip_lib.dir/build.make:76: CMakeFiles/ntrip_lib.dir/src/ntrip_client.cpp.o] Interrupt
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ntrip_lib.dir/all] Error 2
-gmake: *** [Makefile:146: all] Interrupt
