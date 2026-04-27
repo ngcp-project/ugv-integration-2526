@@ -1,6 +1,11 @@
 **/build/
 **/install/
 **/log/
-.claude
 .vscode/
 .DS_Store
+.venv
+.claude
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
