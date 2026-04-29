@@ -23,6 +23,8 @@ setup(
         'console_scripts': [
             'ugv_control_pub = ugv_teleop.ugv_control_pub:main',
             'ugv_control_sub = ugv_teleop.ugv_control_sub:main',
+            'ugv_control_pub_radiomaster = ugv_teleop.ugv_control_pub_radiomaster:main',
+            'ugv_control_sub_radiomaster = ugv_teleop.ugv_control_sub_radiomaster:main',
         ],
     },
 )
