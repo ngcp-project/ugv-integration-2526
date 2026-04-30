@@ -24,3 +24,19 @@ Markdown Tutorial* : https://www.markdownguide.org/basic-syntax/
 Wireshark Introduction* (our network analysis and debugging tool) : https://www.youtube.com/watch?v=lb1Dw0elw0Q&t=68s
 
 ## *IMPORTANT!
+
+
+## How to run XBees
+
+1) install the requirements 
+    pip install -r requirements.txt
+    pip install -e .
+
+2) Find the serial ports for both controller and jetson
+    on jetson 
+        * To see what appears when you plug in the device:
+```bash 
+dmesg -w
+```
+
+3) run the master role on gcs and slave on jetson

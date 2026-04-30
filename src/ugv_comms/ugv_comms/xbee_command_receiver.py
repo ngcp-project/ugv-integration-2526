@@ -1,9 +1,7 @@
-import os
-import sys
+
 import json
 import threading
 import time
-from pathlib import Path
 
 import rclpy
 from rclpy.node import Node
@@ -11,18 +9,18 @@ from std_msgs.msg import Bool, String
 from geometry_msgs.msg import Point
 from ugv_msgs.msg import UGVTelemetry
 
-# adding lib paths(submodules from gcs) so we can import.
-def _add_lib_paths(workspace_root: str):
-    root = Path(workspace_root)
-    paths = [
-        root / 'lib' / 'gcs-infrastructure' / 'Application',
-        root / 'lib' / 'gcs-packet' / 'Packet',
-        root / 'lib' / 'xbee-python' / 'src',
-    ]
-    for p in paths:
-        p_str = str(p)
-        if p_str not in sys.path:
-            sys.path.insert(0, p_str)
+# Normal imports. run pip install -e . in every submodule
+from Infrastructure.InfrastructureInterface import (
+    LaunchVehicleXBee, ReceiveCommand, SendTelemetry,
+)
+from Command.Heartbeat import Heartbeat
+from Command.EmergencyStop import EmergencyStop
+from Command.AddZone import AddZone
+from Command.PatientLocation import PatientLocation
+from Enum.DecodeFormat import DecodeFormat
+from Enum.Vehicle import Vehicle
+from PacketLibrary.PacketLibrary import PacketLibrary
+from Telemetry.Telemetry import Telemetry
 
 XBEE_PORT = 'COM3'  
 GCS_MAC_ADDRESS = '0013A200427EA7FC'  
@@ -36,29 +34,9 @@ class XBeeCommandReceiver(Node):
         self.declare_parameter('gcs_mac_address', GCS_MAC_ADDRESS)
         self.declare_parameter('vehicle_mac_address', VEHICLE_MAC_ADDRESS)
 
-        # Path to repo root; falls back to $UGV_WS_ROOT or ~/ugv-integration-2526
-        self.declare_parameter('workspace_root',os.environ.get('UGV_WS_ROOT', str(Path.home() / 'ugv-integration-2526')))
-
         xbee_port      = self.get_parameter('xbee_port').value
         gcs_mac        = self.get_parameter('gcs_mac_address').value
         vehicle_mac    = self.get_parameter('vehicle_mac_address').value
-        workspace_root = self.get_parameter('workspace_root').value
-
-        # Inject lib paths before any gcs-* imports
-        _add_lib_paths(workspace_root)
-
-        # Late imports — depend on sys.path being set above
-        from Infrastructure.InfrastructureInterface import (
-            LaunchVehicleXBee, ReceiveCommand, SendTelemetry,
-        )
-        from Command.Heartbeat import Heartbeat
-        from Command.EmergencyStop import EmergencyStop
-        from Command.AddZone import AddZone
-        from Command.PatientLocation import PatientLocation
-        from Enum.DecodeFormat import DecodeFormat
-        from Enum.Vehicle import Vehicle
-        from PacketLibrary.PacketLibrary import PacketLibrary
-        from Telemetry.Telemetry import Telemetry
 
         # Store refs so threads can reach them
         self._ReceiveCommand  = ReceiveCommand
@@ -94,8 +72,11 @@ class XBeeCommandReceiver(Node):
         # Subscriber: real telemetry from Xsens / sensor fusion
         self.create_subscription(UGVTelemetry, '/ngcp/telemetry', self._on_telemetry, 10)
 
+        # Stop event before any possible early return
+        self._stop_event = threading.Event()
+
         # Start XBee threads
-        # Call launchVehicleXbee from infrascruture's launch vehicleXbee whic calls StartVehicleXBee which calls vehicleXbee 
+        # Call launchVehicleXbee from infrascruture's launch vehicleXbee that calls StartVehicleXBee which then calls vehicleXbee 
         try:
             LaunchVehicleXBee(xbee_port)
             self.get_logger().info(f'XBee started on {xbee_port} with vehicle MAC address {vehicle_mac}')
@@ -104,15 +85,15 @@ class XBeeCommandReceiver(Node):
             return
 
         # ReceiveCommand blocks on Queue.get(), so it runs in its own thread
-        self._stop_event = threading.Event()
         self._cmd_thread = threading.Thread(
             target=self._command_loop, daemon=True, name='xbee_cmd_recv'
         )
         self._cmd_thread.start()
 
-    # Callbacks 
+    # Callbacks
+    
     def _on_telemetry(self, msg: UGVTelemetry):
-    # every time ROS receives a new telemetry, we update out latest telem snapshot
+        '''every time ROS receives a new telemetry, we update out latest telem snapshot'''
         with self._telem_lock:
             self._latest_telemetry = msg
 
@@ -128,7 +109,7 @@ class XBeeCommandReceiver(Node):
 
     def _dispatch(self, command):
         # receives XBee commands and publishes to ROS
-        
+
         if command is None:
             self.get_logger().warn('Received unrecognised command ID, ignoring')
             return
@@ -137,10 +118,9 @@ class XBeeCommandReceiver(Node):
             self.get_logger().info(
                 f'[CMD 1] Heartbeat — status: {command.CurrentConnectionStatus}'
             )
-            self._reply_telemetry()
+            self._reply_telemetry(command)
 
         elif isinstance(command, self._EmergencyStop):
-            # StopStatus 0 = ACTIVATE stop, 1 = RELEASE stop
             activate = (command.StopStatus == 0)
             self.get_logger().warn(
                 f'[CMD 2] EmergencyStop — {"ACTIVATE" if activate else "RELEASE"}'
@@ -148,7 +128,7 @@ class XBeeCommandReceiver(Node):
             msg = Bool()
             msg.data = activate
             self._estop_pub.publish(msg)
-            self._reply_telemetry()
+            self._reply_telemetry(command)
 
         elif isinstance(command, self._AddZone):
             self.get_logger().info(
@@ -163,6 +143,7 @@ class XBeeCommandReceiver(Node):
             msg = String()
             msg.data = json.dumps(payload)
             self._zone_pub.publish(msg)
+            self._reply_telemetry(command)
 
         elif isinstance(command, self._PatientLocation):
             self.get_logger().info(
@@ -174,17 +155,33 @@ class XBeeCommandReceiver(Node):
             msg.y = command.Coordinates[1]
             msg.z = 0.0
             self._patient_pub.publish(msg)
+            self._reply_telemetry(
+                command,
+                message_flag=2,
+                message_lat=command.Coordinates[0],
+                message_lon=command.Coordinates[1],
+            )
 
         else:
             self.get_logger().warn(f'Unhandled command type: {type(command).__name__}')
 
-    def _reply_telemetry(self):
-        """Build a Telemetry packet from the latest sensor data and queue it for XBee TX."""
+    def _reply_telemetry(self, command, message_flag=0,
+                         message_lat=0.0, message_lon=0.0, patient_status=0):
+        """Build a Telemetry packet from the latest Xsens sensor data and queue it for XBee TX.
+
+        Echoes back the command's COMMAND_ID and PacketID so the GCS can
+        correlate which command this telemetry is responding to.
+        """
+        cmd_id = getattr(command, 'COMMAND_ID', 0)
+        pkt_id = getattr(command, 'PacketID', 0)
+
         with self._telem_lock:
             src = self._latest_telemetry
 
         if src is not None:
             telem = self._Telemetry(
+                CommandID=cmd_id,
+                PacketID=pkt_id,
                 Speed=float(src.speed_fps),
                 Pitch=float(src.pitch_deg),
                 Yaw=float(src.yaw_deg),
@@ -193,13 +190,28 @@ class XBeeCommandReceiver(Node):
                 CurrentPosition=(float(src.latitude), float(src.longitude)),
                 BatteryLife=0.0,
                 VehicleStatus=1,
+                MessageFlag=message_flag,
+                MessageLat=message_lat,
+                MessageLon=message_lon,
+                PatientStatus=patient_status,
             )
         else:
-            # No telemetry data yet — send zeros so the GCS still gets a reply
-            telem = self._Telemetry(VehicleStatus=1)
+            telem = self._Telemetry(
+                CommandID=cmd_id,
+                PacketID=pkt_id,
+                VehicleStatus=1,
+                MessageFlag=message_flag,
+                MessageLat=message_lat,
+                MessageLon=message_lon,
+                PatientStatus=patient_status,
+            )
 
         try:
             self._SendTelemetry(telem)
+            self.get_logger().info(
+                f'Telemetry reply sent for CMD {cmd_id} (pkt {pkt_id}) — '
+                f'lat: {telem.CurrentPositionX:.6f}, lon: {telem.CurrentPositionY:.6f}'
+            )
         except Exception as e:
             self.get_logger().error(f'Failed to queue telemetry reply: {e}')
 

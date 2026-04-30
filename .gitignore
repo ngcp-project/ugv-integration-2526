@@ -4,3 +4,7 @@ install/
 log/
 .vscode/
 .DS_Store
+
+lib/gcs-infrastructure/.venv/
+
+docs/
