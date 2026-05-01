@@ -5,11 +5,15 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='joy',
-            executable='joy_node',
-            name='joy_node',
+        package='ugv_teleop',
+            executable='crsf_joy_node',
+            name='crsf_joy_node',
             output='screen',
-            parameters=[{'dev': '/dev/input/js0'}]
+            parameters=[{
+                'port': '/dev/ttyTHS1',
+                'baud': 420000,
+                'deadzone': 0.05,
+            }]
         ),
         Node(
             package='ugv_teleop',

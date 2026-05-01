@@ -12,3 +12,5 @@ lib/gcs-infrastructure/.venv/
 docs/
 
 .venv/
+Logs/
+
