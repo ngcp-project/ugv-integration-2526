@@ -10,3 +10,5 @@ __pycache__/
 lib/gcs-infrastructure/.venv/
 
 docs/
+
+.venv/
