@@ -98,8 +98,8 @@ class XBeeCommandReceiver(Node):
             self.get_logger().error(f'Failed to open XBee on {xbee_port} and mac address {vehicle_mac}: {e}')
             return
 
-        # Send joystick control data via XBee at 2 Hz
-        self.create_timer(0.5, self._periodic_telemetry)
+        # Send joystick control data via XBee at 1 Hz
+        self.create_timer(1.0, self._periodic_telemetry)
 
         # ReceiveCommand blocks on Queue.get(), so it runs in its own thread
         self._cmd_thread = threading.Thread(
@@ -125,33 +125,15 @@ class XBeeCommandReceiver(Node):
             steer = self._latest_steer
             arm = list(self._latest_arm)
 
-        with self._telem_lock:
-            src = self._latest_telemetry
-
-        if src is not None:
-            telem = self._Telemetry(
-                CommandID=0,
-                PacketID=0,
-                Speed=vel,
-                Pitch=float(src.pitch_deg),
-                Yaw=steer,
-                Roll=float(src.roll_deg),
-                Altitude=float(src.altitude_ft),
-                CurrentPosition=(float(src.latitude), float(src.longitude)),
-                BatteryLife=arm[0],
-                LastUpdated=int(arm[1]),
-                VehicleStatus=1,
-            )
-        else:
-            telem = self._Telemetry(
-                CommandID=0,
-                PacketID=0,
-                Speed=vel,
-                Yaw=steer,
-                BatteryLife=arm[0],
-                LastUpdated=int(arm[1]),
-                VehicleStatus=1,
-            )
+        telem = self._Telemetry(
+            CommandID=0,
+            PacketID=0,
+            Speed=vel,
+            Yaw=steer,
+            BatteryLife=arm[0],
+            LastUpdated=int(arm[1]),
+            VehicleStatus=1,
+        )
 
         try:
             self._SendTelemetry(telem)
