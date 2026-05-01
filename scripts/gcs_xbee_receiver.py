@@ -5,6 +5,7 @@ Usage:
     python scripts/gcs_xbee_receiver.py --xbee-port COM5 --vehicle-mac 0013A20042839F3E
 """
 import argparse
+import io
 import os
 import sys
 
@@ -27,7 +28,15 @@ def main():
     PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, args.vehicle_mac)
 
     print(f'Starting GCS XBee on {args.xbee_port}...')
-    LaunchGCSXBee(args.xbee_port)
+
+    # Suppress noisy print() calls from the XBee library during startup
+    real_stdout = sys.stdout
+    sys.stdout = io.StringIO()
+    try:
+        LaunchGCSXBee(args.xbee_port)
+    finally:
+        sys.stdout = real_stdout
+
     print(f'Listening for telemetry from vehicle {args.vehicle_mac}')
     print('Press Ctrl+C to stop\n')
 
