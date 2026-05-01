@@ -3,5 +3,6 @@
 **/log/
 .claude
 .codex
+__pycache__/
 .vscode/
 .DS_Store
