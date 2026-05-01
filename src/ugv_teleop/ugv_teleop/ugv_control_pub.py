@@ -10,6 +10,10 @@ from ugv_teleop.ugv_arm import ArmController
 def clamp(v, lo, hi):
     return max(lo, min(hi, v))
 
+
+def apply_deadzone(v, dead_zone):
+    return 0.0 if abs(v) < dead_zone else v
+
 class UgvControlNode(Node):
     def __init__(self):
         super().__init__('ugv_control_pub')
@@ -42,7 +46,7 @@ class UgvControlNode(Node):
 
         self.man_obj = ManCtrl()
         self.auto_obj = AutoCtrl()
-        self.man_obj.arm_cmd = [0.0, 0.0]
+        self.man_obj.arm_cmd = [0.0, self.arm1_lo]
         self.man_obj.linear_vel = 0.0
         self.man_obj.steer_cmd = 0.0
         self.man_obj.auto_en = False
@@ -108,8 +112,10 @@ class UgvControlNode(Node):
             self.get_logger().warn(f"Joy message too small: axes={len(msg.axes)} buttons={len(msg.buttons)}")
             return
 
-        self.cmd_vel = -msg.axes[1]
-        self.cmd_steer = -msg.axes[3]
+        raw_vel = float(msg.axes[1])
+        raw_steer = -float(msg.axes[3])
+        self.cmd_vel = apply_deadzone(raw_vel, self.dead_zone)
+        self.cmd_steer = apply_deadzone(raw_steer, self.dead_zone)
 
         self.lt_val = int((1 - msg.axes[2]) * self.max_joy_val / 2)
         self.rt_val = int((1 - msg.axes[5]) * self.max_joy_val / 2)

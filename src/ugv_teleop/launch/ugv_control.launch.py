@@ -30,8 +30,13 @@ def generate_launch_description():
             name='ugv_control_sub',
             output='screen',
             parameters=[{
-                'client_ip': '169.254.155.100',
-                'client_port': 8,
+                'arm_ip': '169.254.155.100',
+                'arm_port': 8,
+                'drive_ip': '169.254.155.101',
+                'drive_port': 9,
+                'steer_min_deg': 150.0,
+                'steer_max_deg': 210.0,
+                'speed_max_cmd': 90.0,
                 'heartbeat_timeout': 3.0,
             }]
         ),
