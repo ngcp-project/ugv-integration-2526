@@ -6,7 +6,6 @@ Usage:
     python scripts/gcs_command_simulator.py --xbee-port COM3 --vehicle-mac 0013A20042839F3E
 """
 import argparse
-import io
 import os
 import random
 import sys
@@ -28,6 +27,9 @@ from Enum.ConnectionStatus import ConnectionStatus
 from Enum.ZoneType import ZoneType
 from Enum.Vehicle import Vehicle
 from PacketLibrary.PacketLibrary import PacketLibrary
+
+# Send all our output to stderr so we can mute the XBee library's stdout spam
+out = sys.stderr
 
 
 def make_heartbeat():
@@ -86,10 +88,11 @@ def telemetry_listener():
                 f'Speed={telem.Speed:.3f}  Yaw={telem.Yaw:.3f}  '
                 f'Pos=({telem.CurrentPositionX:.6f}, {telem.CurrentPositionY:.6f})  '
                 f'Status={telem.VehicleStatus}  '
-                f'MsgFlag={telem.MessageFlag}'
+                f'MsgFlag={telem.MessageFlag}',
+                file=out,
             )
         except Exception as e:
-            print(f'  <- REPLY ERROR: {e}')
+            print(f'  <- REPLY ERROR: {e}', file=out)
             time.sleep(1)
 
 
@@ -104,17 +107,15 @@ def main():
 
     PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, args.vehicle_mac)
 
-    print(f'Starting GCS XBee on {args.xbee_port}...')
+    print(f'Starting GCS XBee on {args.xbee_port}...', file=out)
 
-    real_stdout = sys.stdout
-    sys.stdout = io.StringIO()
-    try:
-        LaunchGCSXBee(args.xbee_port)
-    finally:
-        sys.stdout = real_stdout
+    # Mute all stdout from XBee library background threads
+    sys.stdout = open(os.devnull, 'w')
 
-    print(f'Connected. Sending random commands every {args.interval}s to vehicle {args.vehicle_mac}')
-    print('Press Ctrl+C to stop\n')
+    LaunchGCSXBee(args.xbee_port)
+
+    print(f'Connected. Sending random commands every {args.interval}s to vehicle {args.vehicle_mac}', file=out)
+    print('Press Ctrl+C to stop\n', file=out)
 
     listener = threading.Thread(target=telemetry_listener, daemon=True)
     listener.start()
@@ -127,12 +128,12 @@ def main():
             cmd.Vehicle = Vehicle.MRA
             count += 1
 
-            print(f'[{count}] SEND -> {label}')
+            print(f'[{count}] SEND -> {label}', file=out)
             SendCommand(cmd, Vehicle.MRA)
 
             time.sleep(args.interval)
     except KeyboardInterrupt:
-        print('\nStopped.')
+        print('\nStopped.', file=out)
 
 
 if __name__ == '__main__':
