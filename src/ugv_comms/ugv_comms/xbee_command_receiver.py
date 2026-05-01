@@ -22,9 +22,14 @@ from Enum.Vehicle import Vehicle
 from PacketLibrary.PacketLibrary import PacketLibrary
 from Telemetry.Telemetry import Telemetry
 
+
+# ros2 launch ugv_comms ugv_comms.launch.py xbee_port:=/dev/ttyUSB0 \
+    gcs_mac_address:=0013A200427EA7FC \
+    vehicle_mac_address:=0013A20042839F3E
+    
 XBEE_PORT = 'COM3'  
-GCS_MAC_ADDRESS = '0013A200427EA7FC'  
-VEHICLE_MAC_ADDRESS = '0013A20042839F3E'  
+GCS_MAC_ADDRESS = '0013A200427EA7FC' # GCS xbee
+VEHICLE_MAC_ADDRESS = '0013A20042839F3E'  # Jetson xbee
 
 class XBeeCommandReceiver(Node):
     def __init__(self):
