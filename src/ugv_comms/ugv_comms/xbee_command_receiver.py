@@ -24,8 +24,8 @@ from Telemetry.Telemetry import Telemetry
 
 
 # ros2 launch ugv_comms ugv_comms.launch.py xbee_port:=/dev/ttyUSB0 \
-    gcs_mac_address:=0013A200427EA7FC \
-    vehicle_mac_address:=0013A20042839F3E
+#     gcs_mac_address:=0013A200427EA7FC \
+#     vehicle_mac_address:=0013A20042839F3E
 
 XBEE_PORT = 'COM3'  
 GCS_MAC_ADDRESS = '0013A200427EA7FC' # GCS xbee
