@@ -2,5 +2,6 @@
 **/install/
 **/log/
 .claude
+.codex
 .vscode/
 .DS_Store
