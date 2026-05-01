@@ -7,7 +7,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool, String
 from geometry_msgs.msg import Point
-from ugv_msgs.msg import UGVTelemetry
+from ugv_msgs.msg import UGVTelemetry, ManCtrl
 
 # Normal imports. run pip install -e . in every submodule
 from Infrastructure.InfrastructureInterface import (
@@ -26,7 +26,7 @@ from Telemetry.Telemetry import Telemetry
 # ros2 launch ugv_comms ugv_comms.launch.py xbee_port:=/dev/ttyUSB0 \
     gcs_mac_address:=0013A200427EA7FC \
     vehicle_mac_address:=0013A20042839F3E
-    
+
 XBEE_PORT = 'COM3'  
 GCS_MAC_ADDRESS = '0013A200427EA7FC' # GCS xbee
 VEHICLE_MAC_ADDRESS = '0013A20042839F3E'  # Jetson xbee
@@ -65,17 +65,26 @@ class XBeeCommandReceiver(Node):
         if vehicle_mac:
             PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, vehicle_mac)
 
-        #  Latest telemetry snapshot (updated by /ngcp/telemetry subscriber) 
+        #  Latest telemetry snapshot (updated by /ngcp/telemetry subscriber)
         self._latest_telemetry: UGVTelemetry | None = None
         self._telem_lock = threading.Lock()
 
-        # Publishers 
+        # Latest joystick control state (updated by man_ctrl subscriber)
+        self._latest_vel = 0.0
+        self._latest_steer = 0.0
+        self._latest_arm = [0.0, 0.0]
+        self._ctrl_lock = threading.Lock()
+
+        # Publishers
         self._estop_pub   = self.create_publisher(Bool,   '/ngcp/estop',            10)
         self._patient_pub = self.create_publisher(Point,  '/ngcp/patient_location',  10)
         self._zone_pub    = self.create_publisher(String, '/ngcp/add_zone',          10)
 
         # Subscriber: real telemetry from Xsens / sensor fusion
         self.create_subscription(UGVTelemetry, '/ngcp/telemetry', self._on_telemetry, 10)
+
+        # Subscriber: joystick control data
+        self.create_subscription(ManCtrl, 'man_ctrl', self._on_man_ctrl, 10)
 
         # Stop event before any possible early return
         self._stop_event = threading.Event()
@@ -89,6 +98,9 @@ class XBeeCommandReceiver(Node):
             self.get_logger().error(f'Failed to open XBee on {xbee_port} and mac address {vehicle_mac}: {e}')
             return
 
+        # Send joystick control data via XBee at 2 Hz
+        self.create_timer(0.5, self._periodic_telemetry)
+
         # ReceiveCommand blocks on Queue.get(), so it runs in its own thread
         self._cmd_thread = threading.Thread(
             target=self._command_loop, daemon=True, name='xbee_cmd_recv'
@@ -98,9 +110,57 @@ class XBeeCommandReceiver(Node):
     # Callbacks
     
     def _on_telemetry(self, msg: UGVTelemetry):
-        '''every time ROS receives a new telemetry, we update out latest telem snapshot'''
         with self._telem_lock:
             self._latest_telemetry = msg
+
+    def _on_man_ctrl(self, msg: ManCtrl):
+        with self._ctrl_lock:
+            self._latest_vel = float(msg.linear_vel)
+            self._latest_steer = float(msg.steer_cmd)
+            self._latest_arm = [float(msg.arm_cmd[0]), float(msg.arm_cmd[1])]
+
+    def _periodic_telemetry(self):
+        with self._ctrl_lock:
+            vel = self._latest_vel
+            steer = self._latest_steer
+            arm = list(self._latest_arm)
+
+        with self._telem_lock:
+            src = self._latest_telemetry
+
+        if src is not None:
+            telem = self._Telemetry(
+                CommandID=0,
+                PacketID=0,
+                Speed=vel,
+                Pitch=float(src.pitch_deg),
+                Yaw=steer,
+                Roll=float(src.roll_deg),
+                Altitude=float(src.altitude_ft),
+                CurrentPosition=(float(src.latitude), float(src.longitude)),
+                BatteryLife=arm[0],
+                LastUpdated=int(arm[1]),
+                VehicleStatus=1,
+            )
+        else:
+            telem = self._Telemetry(
+                CommandID=0,
+                PacketID=0,
+                Speed=vel,
+                Yaw=steer,
+                BatteryLife=arm[0],
+                LastUpdated=int(arm[1]),
+                VehicleStatus=1,
+            )
+
+        try:
+            self._SendTelemetry(telem)
+            self.get_logger().info(
+                f'[CTRL TX] vel={vel:.3f} steer={steer:.3f} '
+                f'arm=[{arm[0]:.1f}, {arm[1]:.1f}]'
+            )
+        except Exception as e:
+            self.get_logger().error(f'Periodic telemetry send failed: {e}')
 
     def _command_loop(self):
         # wait for XBee commands then sends them to _dispatch
