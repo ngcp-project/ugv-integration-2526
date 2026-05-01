@@ -1,15 +1,15 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix
-from geometry_msgs import Vector3Stamped
+from geometry_msgs.msg import Vector3Stamped
 
 class CoordDumper(Node):
     def __init__(self):
         super().__init__('coord_dumper')
-        self.gnss_sub = self.create_subscription(NavSatFix, '/gnss', self.gnss_sub, 10)
-        self.euler_sub = self.create_subscription(Vector3Stamped, '/filter/euler', self.euler_sub, 10)
+        self.gnss_sub = self.create_subscription(NavSatFix, '/gnss', self.gnss_callback, 10)
+        self.euler_sub = self.create_subscription(Vector3Stamped, '/filter/euler', self.euler_callback, 10)
         self.count = 0
-        self.latest_z = 0
+        self.latest_z = None
         open('ntrip_coords.txt', 'w').close()
 
     def euler_callback(self, msg):
@@ -23,7 +23,7 @@ class CoordDumper(Node):
             return
         if self.count < 3:
             with open('ntrip_coords.txt', 'a') as f:
-                f.write(f"{msg.latitude}, {msg.longitude}, {msg.latest_z}\n")
+                f.write(f"{msg.latitude}, {msg.longitude}, {self.latest_z}\n")
             self.count += 1
         else:
             rclpy.shutdown()
