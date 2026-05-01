@@ -189,15 +189,17 @@ class CrsfJoyNode(Node):
         # axes[2]/[5] default to 1.0 (trigger released)
         # axes[6]/[7] = 3-pos switches as dpad-style -1/0/1
         # buttons[4] = CH5 (left SA), buttons[5] = CH8 (right SA)
+        # axes[2] = LT (arm-enable). CH5 (left SA) high -> trigger "pressed".
+        lt_axis = -1.0 if ch[4] > 1500 else 1.0
         axes = [
             0.0,
             -normalize(ch[1], self.deadzone),
-            1.0,
+            lt_axis,
             -normalize(ch[0], self.deadzone),
             0.0,
             1.0,
-            switch3_axis(ch[5]),
             switch3_axis(ch[6]),
+            switch3_axis(ch[7]),
         ]
         buttons = [
             0,
