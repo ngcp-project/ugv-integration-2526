@@ -23,6 +23,7 @@ setup(
         'console_scripts': [
             'ugv_control_pub = ugv_teleop.ugv_control_pub:main',
             'ugv_control_sub = ugv_teleop.ugv_control_sub:main',
+            'crsf_joy_node = ugv_teleop.crsf_joy_node:main',
         ],
     },
 )

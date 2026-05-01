@@ -18,8 +18,8 @@ from typing import Any
 log = logging.getLogger(__name__)
 
 # ── Network defaults (override via environment or pass explicitly) ──────────
-JETSON_HOST = "192.168.1.10"   # Jetson's static IP on the Ethernet link
-RPI_HOST    = "192.168.1.20"   # Raspberry Pi's static IP on the Ethernet link
+JETSON_HOST = "169.254.155.1"   # Jetson's static IP on the Ethernet link
+RPI_HOST    = "169.254.155.2"   # Raspberry Pi's static IP on the Ethernet link
 
 GPS_PORT    = 5100   # RPi listens here for incoming GPS data from the Jetson
 RESULT_PORT = 5101   # Jetson listens here for results / reposition signals

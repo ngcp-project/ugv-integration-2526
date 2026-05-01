@@ -23,7 +23,7 @@ class CoordDumper(Node):
             return
         if self.count < 3:
             with open('ntrip_coords.txt', 'a') as f:
-                f.write(f"latitude: {msg.latitude}, longitude: {msg.longitude}, heading: {msg.latest_z}\n")
+                f.write(f"{msg.latitude}, {msg.longitude}, {msg.latest_z}\n")
             self.count += 1
         else:
             rclpy.shutdown()

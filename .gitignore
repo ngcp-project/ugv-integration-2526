@@ -1,7 +1,9 @@
+**/build/
+**/install/
+**/log/
 .claude
-build/
-install/
-log/
+.codex
+__pycache__/
 .vscode/
 .DS_Store
 

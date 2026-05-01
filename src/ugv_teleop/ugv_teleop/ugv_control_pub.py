@@ -10,6 +10,10 @@ from ugv_teleop.ugv_arm import ArmController
 def clamp(v, lo, hi):
     return max(lo, min(hi, v))
 
+
+def apply_deadzone(v, dead_zone):
+    return 0.0 if abs(v) < dead_zone else v
+
 class UgvControlNode(Node):
     def __init__(self):
         super().__init__('ugv_control_pub')
@@ -17,24 +21,24 @@ class UgvControlNode(Node):
         self.declare_parameter('max_joy_val', float(2**15))
         self.declare_parameter('dead_zone', 0.15)
         self.declare_parameter('upper_steer_limit', 1.0)
-        self.declare_parameter('inc_dec_val', 5.0)
+        self.declare_parameter('inc_dec_val', 8.0)
         self.declare_parameter('arm0_lower_limit', 0.0)
         self.declare_parameter('arm0_upper_limit', 170.0)
         self.declare_parameter('arm1_lower_limit', 75.0)
         self.declare_parameter('arm1_upper_limit', 225.0)
-        self.declare_parameter('watchdog_timeout', 0.25)
 
-        self.max_joy_val       = self.get_parameter('max_joy_val').value
-        self.dead_zone         = self.get_parameter('dead_zone').value
+        self.max_joy_val = self.get_parameter('max_joy_val').value
+        self.dead_zone = self.get_parameter('dead_zone').value
         self.upper_steer_limit = self.get_parameter('upper_steer_limit').value
-        self.inc_dec_val       = self.get_parameter('inc_dec_val').value
-        self.arm0_lo           = self.get_parameter('arm0_lower_limit').value
-        self.arm0_hi           = self.get_parameter('arm0_upper_limit').value
-        self.arm1_lo           = self.get_parameter('arm1_lower_limit').value
-        self.arm1_hi           = self.get_parameter('arm1_upper_limit').value
+        self.inc_dec_val = self.get_parameter('inc_dec_val').value
+        self.arm0_lo = self.get_parameter('arm0_lower_limit').value
+        self.arm0_hi = self.get_parameter('arm0_upper_limit').value
+        self.arm1_lo = self.get_parameter('arm1_lower_limit').value
+        self.arm1_hi = self.get_parameter('arm1_upper_limit').value
 
-        self.last_joy_time = time.monotonic()
         self._last_timer_time = time.monotonic()
+        self._last_debug_time = time.monotonic()
+        self._debug_interval = 0.5  # seconds
 
         self.man_pub = self.create_publisher(ManCtrl, 'man_ctrl', qos_profile_system_default)
         self.auto_pub = self.create_publisher(AutoCtrl, 'auto_ctrl', qos_profile_system_default)
@@ -103,33 +107,35 @@ class UgvControlNode(Node):
         self.man_pub.publish(self.man_obj)
 
     def on_joy(self, msg: Joy):
-        self.last_joy_time = time.monotonic()
-
+        # if controller is invalid:
         if len(msg.axes) < 8 or len(msg.buttons) < 6:
-            self.get_logger().warn(
-                f"Joy message too small: axes={len(msg.axes)} buttons={len(msg.buttons)}"
-            )
+            self.get_logger().warn(f"Joy message too small: axes={len(msg.axes)} buttons={len(msg.buttons)}")
             return
 
-        self.cmd_vel   = -msg.axes[1]
-        self.cmd_steer = -msg.axes[3]
+        raw_vel = float(msg.axes[1])
+        raw_steer = -float(msg.axes[3])
+        self.cmd_vel = apply_deadzone(raw_vel, self.dead_zone)
+        self.cmd_steer = apply_deadzone(raw_steer, self.dead_zone)
 
         self.lt_val = int((1 - msg.axes[2]) * self.max_joy_val / 2)
         self.rt_val = int((1 - msg.axes[5]) * self.max_joy_val / 2)
-        self.l_bumper  = int(msg.buttons[4])
-        self.r_bumper  = int(msg.buttons[5])
-        self.a_btn     = int(msg.buttons[0])
-        self.b_btn     = int(msg.buttons[1])
-        self.x_btn     = int(msg.buttons[2])
-        self.y_btn     = int(msg.buttons[3])
-        self.lr_dpad   = int(msg.axes[6])
-        self.ud_dpad   = int(msg.axes[7])
+        self.l_bumper = int(msg.buttons[4])
+        self.r_bumper = int(msg.buttons[5])
+        self.a_btn = int(msg.buttons[0])
+        self.b_btn = int(msg.buttons[1])
+        self.x_btn = int(msg.buttons[2])
+        self.y_btn = int(msg.buttons[3])
+        self.lr_dpad = int(msg.axes[6])
+        self.ud_dpad = int(msg.axes[7])
 
-        self.get_logger().debug(
-            f'vel={self.cmd_vel:.2f} steer={self.cmd_steer:.2f} '
-            f'lt={self.lt_val} rt={self.rt_val} '
-            f'dpad=({self.lr_dpad},{self.ud_dpad})'
-        )
+        now = time.monotonic()
+        if now - self._last_debug_time > self._debug_interval:
+            self._last_debug_time = now
+            self.get_logger().debug(
+                f'vel={self.cmd_vel:.2f} steer={self.cmd_steer:.2f} '
+                f'lt={self.lt_val} rt={self.rt_val} '
+                f'dpad=({self.lr_dpad},{self.ud_dpad})'
+            )
 
     def destroy_node(self):
         self.get_logger().info('Shutting down ugv_control_pub...')
