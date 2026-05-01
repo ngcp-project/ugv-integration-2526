@@ -9,10 +9,6 @@ from rclpy.qos import QoSProfile
 from ugv_msgs.msg import ManCtrl, AutoCtrl
 
 
-def clamp(v, lo, hi):
-    return max(lo, min(hi, v))
-
-
 class UgvControlSubNode(Node):
     def __init__(self):
         super().__init__('ugv_control_sub')
@@ -24,9 +20,6 @@ class UgvControlSubNode(Node):
         self.declare_parameter('drive_ip', '169.254.155.101')
         self.declare_parameter('drive_port', 9)
 
-        self.declare_parameter('steer_min_deg', 150.0)
-        self.declare_parameter('steer_max_deg', 210.0)
-        self.declare_parameter('speed_max_cmd', 90.0)
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
         self.declare_parameter('heartbeat_timeout', 3.0)  # seconds before declaring STM32 unreachable
@@ -37,10 +30,7 @@ class UgvControlSubNode(Node):
         self.arm_port    = int(self.get_parameter('arm_port').value)
         self.drive_ip    = self.get_parameter('drive_ip').value
         self.drive_port  = int(self.get_parameter('drive_port').value)
-        
-        self.steer_min_deg = float(self.get_parameter('steer_min_deg').value)
-        self.steer_max_deg = float(self.get_parameter('steer_max_deg').value)
-        self.speed_max_cmd = float(self.get_parameter('speed_max_cmd').value)
+
         self.auto_vel    = float(self.get_parameter('auto_vel').value)
         self.auto_steer  = float(self.get_parameter('auto_steer').value)
         self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
@@ -125,9 +115,7 @@ class UgvControlSubNode(Node):
         arm1  = round(float(msg.arm_cmd[1]), 3)
 
         arm_payload = f'{arm0:.3f},{arm1:.3f}'.encode()
-        steer_cmd = self._scale_steer(steer)
-        speed_cmd = self._scale_speed(vel)
-        drive_payload = f'{steer_cmd:.3f},{speed_cmd:.3f}'.encode()
+        drive_payload = f'{steer:.3f},{vel:.3f}'.encode()
 
         # Send arm and drive commands via UDP to respective MCUs
         self._send(arm_payload, 'MAN ARM', self.arm_ip, self.arm_port)
@@ -141,17 +129,6 @@ class UgvControlSubNode(Node):
 
         payload = f'{self.auto_vel:.3f},{self.auto_steer:.3f},{heading_error:.3f}'.encode()
         self._send(payload, 'AUTO DRIVE', self.drive_ip, self.drive_port)
-
-    #  UDP send helper functions                                                   #
-    def _scale_steer(self, steer_norm: float) -> float:
-        steer_norm = clamp(steer_norm, -1.0, 1.0)
-        center = 0.5 * (self.steer_min_deg + self.steer_max_deg)
-        half_span = 0.5 * (self.steer_max_deg - self.steer_min_deg)
-        return center + steer_norm * half_span
-
-    def _scale_speed(self, vel_norm: float) -> float:
-        vel_norm = clamp(abs(vel_norm), 0.0, 1.0)
-        return vel_norm * self.speed_max_cmd
 
     def _send(self, payload: bytes, label: str, target_ip: str, target_port: int):
         try:
