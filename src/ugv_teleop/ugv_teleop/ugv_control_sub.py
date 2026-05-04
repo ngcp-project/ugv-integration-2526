@@ -23,6 +23,7 @@ class UgvControlSubNode(Node):
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
         self.declare_parameter('heartbeat_timeout', 3.0)  # seconds before declaring STM32 unreachable
+        self.declare_parameter('arm_refresh_interval', 0.5)  # resend arm even if unchanged this often
 
         server_ip        = self.get_parameter('server_ip').value
         server_port      = int(self.get_parameter('server_port').value)
@@ -34,6 +35,10 @@ class UgvControlSubNode(Node):
         self.auto_vel    = float(self.get_parameter('auto_vel').value)
         self.auto_steer  = float(self.get_parameter('auto_steer').value)
         self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
+        self.arm_refresh_interval = float(self.get_parameter('arm_refresh_interval').value)
+
+        self._last_arm_payload = None
+        self._last_arm_send_time = 0.0
 
         # --- UDP socket setup ---
         try:
@@ -52,6 +57,7 @@ class UgvControlSubNode(Node):
         # --- Heartbeat state ---
         self.last_heartbeat = 0.0  # no heartbeat received yet
         self.stm32_alive = False
+        self._hb_warned_offline = False
         self._hb_lock = threading.Lock()
 
         # Start background thread listening for heartbeat packets from STM32
@@ -89,7 +95,9 @@ class UgvControlSubNode(Node):
         """Timer callback (1 Hz): warn if no heartbeat within timeout window."""
         with self._hb_lock:
             if self.last_heartbeat == 0.0:
-                self.get_logger().warn('No heartbeat from STM32 yet — device may be offline')
+                if not self._hb_warned_offline:
+                    self._hb_warned_offline = True
+                    self.get_logger().warn('No heartbeat from STM32 yet — device may be offline')
                 return
             elapsed = time.monotonic() - self.last_heartbeat
             if elapsed > self.heartbeat_timeout:
@@ -117,8 +125,13 @@ class UgvControlSubNode(Node):
         arm_payload = f'{arm0:.3f},{arm1:.3f}'.encode()
         drive_payload = f'{steer:.3f},{vel:.3f}'.encode()
 
-        # Send arm and drive commands via UDP to respective MCUs
-        self._send(arm_payload, 'MAN ARM', self.arm_ip, self.arm_port)
+        now = time.monotonic()
+        if (arm_payload != self._last_arm_payload
+                or now - self._last_arm_send_time >= self.arm_refresh_interval):
+            self._send(arm_payload, 'MAN ARM', self.arm_ip, self.arm_port)
+            self._last_arm_payload = arm_payload
+            self._last_arm_send_time = now
+
         self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
 
     #  Autonomous control callback                                       #

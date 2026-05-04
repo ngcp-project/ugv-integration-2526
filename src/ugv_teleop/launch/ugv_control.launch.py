@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-        package='ugv_teleop',
+            package='ugv_teleop',
             executable='crsf_joy_node',
             name='crsf_joy_node',
             output='screen',
@@ -27,6 +27,7 @@ def generate_launch_description():
                 'arm1_upper_limit': 225.0,
                 'inc_dec_val': 8.0,
                 'publish_rate': 50.0,
+                'log_interval': 0.5,
             }]
         ),
         Node(
@@ -39,10 +40,8 @@ def generate_launch_description():
                 'arm_port': 8,
                 'drive_ip': '169.254.155.101',
                 'drive_port': 9,
-                'steer_min_deg': 150.0,
-                'steer_max_deg': 210.0,
-                'speed_max_cmd': 90.0,
                 'heartbeat_timeout': 3.0,
+                'arm_refresh_interval': 0.5,
             }]
         ),
     ])

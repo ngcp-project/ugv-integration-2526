@@ -59,14 +59,8 @@ class UgvControlNode(Node):
 
         self.cmd_vel = 0.0
         self.cmd_steer = 0.0
-        self.l_bumper = 0
-        self.r_bumper = 0
         self.ud_dpad = 0
         self.lr_dpad = 0
-        self.a_btn = 0
-        self.b_btn = 0
-        self.x_btn = 0
-        self.y_btn = 0
         self.lt_val = 0
         self.rt_val = 0
 
@@ -77,10 +71,9 @@ class UgvControlNode(Node):
             joint1_limits=(self.arm1_lo, self.arm1_hi),
         )
 
-        #self.timer = self.create_timer(0.02, self.timer_callback)  # 50 Hz
         rate = float(self.get_parameter('publish_rate').value)
         self.timer = self.create_timer(1.0 / rate, self.timer_callback)
-        self.get_logger().info('UGV CONTROL PUBLISHER STARTED AT 50 HZ')
+        self.get_logger().info(f'UGV CONTROL PUBLISHER STARTED AT {rate} HZ')
 
     def timer_callback(self):
         now = time.monotonic()
@@ -106,7 +99,7 @@ class UgvControlNode(Node):
         positions = self.arm_controller.get_positions()
         self.man_obj.arm_cmd = positions
 
-        if now - self._last_log_time >= self.man_obj.linear_vel:
+        if now - self._last_log_time >= self._log_interval:
             self._last_log_time = now 
             self.get_logger().info(
                 f'PUB MAN vel={self.man_obj.linear_vel:.3f}, '
@@ -128,12 +121,6 @@ class UgvControlNode(Node):
 
         self.lt_val = int((1 - msg.axes[2]) * self.max_joy_val / 2)
         self.rt_val = int((1 - msg.axes[5]) * self.max_joy_val / 2)
-        self.l_bumper = int(msg.buttons[4])
-        self.r_bumper = int(msg.buttons[5])
-        self.a_btn = int(msg.buttons[0])
-        self.b_btn = int(msg.buttons[1])
-        self.x_btn = int(msg.buttons[2])
-        self.y_btn = int(msg.buttons[3])
         self.lr_dpad = int(msg.axes[6])
         self.ud_dpad = int(msg.axes[7])
 

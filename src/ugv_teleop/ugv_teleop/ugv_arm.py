@@ -9,7 +9,7 @@ class ArmController:
         self.inc_dec_val = inc_dec_val
         self.joint0_lo, self.joint0_hi = joint0_limits
         self.joint1_lo, self.joint1_hi = joint1_limits
-        self.joint_positions = [0.0, self.joint1_lo]
+        self.joint_positions = [0.0, self.joint1_hi]
 
     def get_positions(self):
         return self.joint_positions.copy()
@@ -20,7 +20,7 @@ class ArmController:
         self.joint_positions = positions.copy()
 
     def reset(self):
-        self.joint_positions = [0.0, self.joint1_lo]
+        self.joint_positions = [0.0, self.joint1_hi]
 
     def update_joint(self, joint_index, delta, min_limit, max_limit):
         if not (0 <= joint_index < self.num_joints):
