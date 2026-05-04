@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix
-from geometry_msgs import Vector3Stamped
+from geometry_msgs.msg import Vector3Stamped
 
 class CoordDumper(Node):
     def __init__(self):

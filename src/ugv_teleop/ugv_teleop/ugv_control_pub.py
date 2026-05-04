@@ -26,6 +26,8 @@ class UgvControlNode(Node):
         self.declare_parameter('arm0_upper_limit', 170.0)
         self.declare_parameter('arm1_lower_limit', 75.0)
         self.declare_parameter('arm1_upper_limit', 225.0)
+        self.declare_parameter('publish_rate', 50.0)
+        self.declare_parameter('log_interval', 0.5)
 
         self.max_joy_val = self.get_parameter('max_joy_val').value
         self.dead_zone = self.get_parameter('dead_zone').value
@@ -39,6 +41,9 @@ class UgvControlNode(Node):
         self._last_timer_time = time.monotonic()
         self._last_debug_time = time.monotonic()
         self._debug_interval = 0.5  # seconds
+        self._last_log_time = 0.0
+        self._log_interval = float(self.get_parameter('log_interval').value)
+
 
         self.man_pub = self.create_publisher(ManCtrl, 'man_ctrl', qos_profile_system_default)
         self.auto_pub = self.create_publisher(AutoCtrl, 'auto_ctrl', qos_profile_system_default)
@@ -46,7 +51,7 @@ class UgvControlNode(Node):
 
         self.man_obj = ManCtrl()
         self.auto_obj = AutoCtrl()
-        self.man_obj.arm_cmd = [0.0, self.arm1_lo]
+        self.man_obj.arm_cmd = [0.0, self.arm1_hi]
         self.man_obj.linear_vel = 0.0
         self.man_obj.steer_cmd = 0.0
         self.man_obj.auto_en = False
@@ -72,7 +77,9 @@ class UgvControlNode(Node):
             joint1_limits=(self.arm1_lo, self.arm1_hi),
         )
 
-        self.timer = self.create_timer(0.02, self.timer_callback)  # 50 Hz
+        #self.timer = self.create_timer(0.02, self.timer_callback)  # 50 Hz
+        rate = float(self.get_parameter('publish_rate').value)
+        self.timer = self.create_timer(1.0 / rate, self.timer_callback)
         self.get_logger().info('UGV CONTROL PUBLISHER STARTED AT 50 HZ')
 
     def timer_callback(self):
@@ -99,11 +106,13 @@ class UgvControlNode(Node):
         positions = self.arm_controller.get_positions()
         self.man_obj.arm_cmd = positions
 
-        self.get_logger().info(
-            f'PUB MAN vel={self.man_obj.linear_vel:.3f}, '
-            f'steer={self.man_obj.steer_cmd:.3f}, '
-            f'arm=[{positions[0]:.3f},{positions[1]:.3f}]'
-        )
+        if now - self._last_log_time >= self.man_obj.linear_vel:
+            self._last_log_time = now 
+            self.get_logger().info(
+                f'PUB MAN vel={self.man_obj.linear_vel:.3f}, '
+                f'steer={self.man_obj.steer_cmd:.3f}, '
+                f'arm=[{positions[0]:.3f},{positions[1]:.3f}]'
+            )
         self.man_pub.publish(self.man_obj)
 
     def on_joy(self, msg: Joy):
@@ -112,7 +121,7 @@ class UgvControlNode(Node):
             self.get_logger().warn(f"Joy message too small: axes={len(msg.axes)} buttons={len(msg.buttons)}")
             return
 
-        raw_vel = float(msg.axes[1])
+        raw_vel = -float(msg.axes[1])
         raw_steer = -float(msg.axes[3])
         self.cmd_vel = apply_deadzone(raw_vel, self.dead_zone)
         self.cmd_steer = apply_deadzone(raw_steer, self.dead_zone)
