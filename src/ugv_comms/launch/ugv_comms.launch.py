@@ -30,7 +30,7 @@ def generate_launch_description():
     xbee_node = Node(
         package='ugv_comms',
         executable='xbee_command_receiver',
-        name='xb-r',
+        name='xb_r',
         output='screen',
         parameters=[{
             'xbee_port':         LaunchConfiguration('xbee_port'),
