@@ -33,7 +33,7 @@ VEHICLE_MAC_ADDRESS = '0013A20042839F3E'  # Jetson xbee
 
 class XBeeCommandReceiver(Node):
     def __init__(self):
-        super().__init__('xbee_command_receiver')
+        super().__init__('xb-r')
 
         self.declare_parameter('xbee_port', XBEE_PORT)
         self.declare_parameter('gcs_mac_address', GCS_MAC_ADDRESS)
