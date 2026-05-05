@@ -39,4 +39,19 @@ Wireshark Introduction* (our network analysis and debugging tool) : https://www.
 dmesg -w
 ```
 
-3) run the master role on gcs and slave on jetson
+3) Send commands from the GCS and run the launcher on the Jetson
+
+* on the Jetson side
+      ros2 launch ugv_comms ugv_all.launch.py
+
+### It launches all three (xsens driver on USB2, data conversion, and XBee comms on USB3 with your MAC addresses hardcoded as defaults). You can still override if needed:
+
+  ros2 launch ugv_comms ugv_all.launch.py xbee_port:=/dev/ttyUSB1
+
+
+* On GCS:
+	Run commands automatically:
+		python scripts/gcs_command_simulator.py --xbee-port COM3 --vehicle-mac 0013A20042839F3E
+	Run commands manually:
+		python scripts/gcs_command_manual.py --xbee-port COM3 --vehicle-mac 0013A20042839F3E
+
