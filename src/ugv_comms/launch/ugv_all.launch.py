@@ -51,7 +51,7 @@ def generate_launch_description():
         # XBee comms
         Node(
             package='ugv_comms',
-            executable='xbee_command_receiver',
+            executable='xb_r',
             name='xb_r',
             output='screen',
             parameters=[{

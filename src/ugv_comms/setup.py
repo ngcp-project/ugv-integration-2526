@@ -22,6 +22,7 @@ setup(
     entry_points={
         'console_scripts': [
             'xbee_command_receiver = ugv_comms.xbee_command_receiver:main',
+            'xb_r = ugv_comms.xbee_command_receiver:main',
         ],
     },
 )
