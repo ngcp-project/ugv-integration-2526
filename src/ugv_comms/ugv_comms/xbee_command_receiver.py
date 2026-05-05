@@ -182,8 +182,9 @@ class XBeeCommandReceiver(Node):
                 f'[CMD 3] AddZone — type: {command.Zone}, '
                 f'zone_id: {command.ZoneID}, coords: {command.Coordinates}'
             )
+            zone_val = command.Zone.value if hasattr(command.Zone, 'value') else command.Zone
             payload = {
-                'zone_type':   command.Zone.value,
+                'zone_type':   zone_val,
                 'zone_id':     command.ZoneID,
                 'coordinates': list(command.Coordinates),
             }

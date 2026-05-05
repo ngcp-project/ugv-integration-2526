@@ -59,18 +59,21 @@ class XsensDataConversion(Node):
         self._position = msg.vector
 
     def _publish(self):
-        if self._velocity is None or self._euler is None or self._position is None:
+        if self._velocity is None and self._euler is None and self._position is None:
             return
 
-        speed_fps   = math.sqrt(self._velocity.x ** 2 + self._velocity.y ** 2) * M_PER_S_TO_FT_PER_S
-        pitch_deg   = float(self._euler.y)
-        yaw_deg     = float(self._euler.z)
-        roll_deg    = float(self._euler.x)
-        altitude_ft = float(self._position.z * METERS_TO_FEET)
-        latitude    = float(self._position.x)
-        longitude   = float(self._position.y)
+        vel = self._velocity
+        eul = self._euler
+        pos = self._position
 
-        # ROS2 message
+        speed_fps   = math.sqrt(vel.x ** 2 + vel.y ** 2) * M_PER_S_TO_FT_PER_S if vel else 0.0
+        pitch_deg   = float(eul.y) if eul else 0.0
+        yaw_deg     = float(eul.z) if eul else 0.0
+        roll_deg    = float(eul.x) if eul else 0.0
+        altitude_ft = float(pos.z * METERS_TO_FEET) if pos else 0.0
+        latitude    = float(pos.x) if pos else 0.0
+        longitude   = float(pos.y) if pos else 0.0
+
         out = UGVTelemetry()
         out.speed_fps   = float(speed_fps)
         out.pitch_deg   = pitch_deg
@@ -80,21 +83,6 @@ class XsensDataConversion(Node):
         out.latitude    = latitude
         out.longitude   = longitude
         self._pub.publish(out)
-
-        # TODO: uncomment when GCS IP and port are configured
-        # packet = struct.pack(
-        #     PACKET_FORMAT,
-        #     float(speed_fps), pitch_deg, yaw_deg, roll_deg, altitude_ft,
-        #     latitude, longitude
-        # )
-        # self._sock.sendto(packet, self._gcs_addr)
-
-        self.get_logger().info(
-            f'Telemetry | Speed: {speed_fps:.2f} ft/s  '
-            f'Pitch: {pitch_deg:.2f}°  Yaw: {yaw_deg:.2f}°  Roll: {roll_deg:.2f}°  '
-            f'Alt: {altitude_ft:.2f} ft  '
-            f'Pos: ({latitude:.6f}, {longitude:.6f})'
-        )
 
 
 def main(args=None):
