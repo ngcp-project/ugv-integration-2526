@@ -24,7 +24,6 @@ class UgvControlSubNode(Node):
         self.declare_parameter('auto_steer', 0.0)
         # self.declare_parameter('heartbeat_timeout', 3.0)  # heartbeat disabled
         self.declare_parameter('arm_refresh_interval', 0.2)  # resend arm even if unchanged this often
-        self.declare_parameter('drive_refresh_interval', 0.2)  # resend drive even if unchanged this often
 
         server_ip        = self.get_parameter('server_ip').value
         server_port      = int(self.get_parameter('server_port').value)
@@ -37,12 +36,9 @@ class UgvControlSubNode(Node):
         self.auto_steer  = float(self.get_parameter('auto_steer').value)
         # self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
         self.arm_refresh_interval = float(self.get_parameter('arm_refresh_interval').value)
-        self.drive_refresh_interval = float(self.get_parameter('drive_refresh_interval').value)
 
         self._last_arm_payload = None
         self._last_arm_send_time = 0.0
-        self._last_drive_payload = None
-        self._last_drive_send_time = 0.0
 
         # --- UDP socket setup ---
         try:
@@ -128,11 +124,7 @@ class UgvControlSubNode(Node):
             self._last_arm_payload = arm_payload
             self._last_arm_send_time = now
 
-        if (drive_payload != self._last_drive_payload
-                or now - self._last_drive_send_time >= self.drive_refresh_interval):
-            self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
-            self._last_drive_payload = drive_payload
-            self._last_drive_send_time = now
+        self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
 
     #  Autonomous control callback                                       #
     def on_auto_ctrl(self, msg: AutoCtrl):

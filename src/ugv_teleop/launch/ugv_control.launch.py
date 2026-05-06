@@ -41,7 +41,6 @@ def generate_launch_description():
                 'drive_ip': '169.254.155.101',
                 'drive_port': 9,
                 'arm_refresh_interval': 0.2,
-                'drive_refresh_interval': 0.2,
             }]
         ),
     ])
