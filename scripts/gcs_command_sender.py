@@ -23,7 +23,7 @@ Commands:
   4 - EmergencyStop (RELEASE)
   5 - AddZone (KeepIn)
   6 - AddZone (KeepOut)
-  7 - PatientLocation
+  7 - PatientLocation (uses Jetson GPS position)
   q - Quit
 > """
 
@@ -79,26 +79,6 @@ def prompt_coordinates():
     return coords if len(coords) >= 3 else None
 
 
-def prompt_patient_location():
-    print('Enter patient location as "lat,lon" (or "c" to cancel):')
-    while True:
-        try:
-            line = input('  > ').strip()
-        except (KeyboardInterrupt, EOFError):
-            print('\nCancelled.')
-            return None, None
-        if line.lower() == 'c':
-            print('Cancelled.')
-            return None, None
-        try:
-            parts = line.split(',')
-            if len(parts) != 2:
-                raise ValueError
-            return float(parts[0].strip()), float(parts[1].strip())
-        except ValueError:
-            print('  Invalid format. Use: lat,lon  (e.g. 33.8825,-117.8827)')
-
-
 def main():
     parser = argparse.ArgumentParser(description='GCS command sender')
     parser.add_argument('--port', type=int, default=DEFAULT_PORT,
@@ -142,11 +122,8 @@ def main():
                     continue
                 request = {'cmd': 6, 'coordinates': coords}
             elif choice == '7':
-                lat, lon = prompt_patient_location()
-                if lat is None:
-                    print(MENU, end='')
-                    continue
-                request = {'cmd': 7, 'lat': lat, 'lon': lon}
+                print('  Requesting patient location from Jetson GPS...')
+                request = {'cmd': 7}
             elif choice in ('q', 'Q'):
                 break
             else:

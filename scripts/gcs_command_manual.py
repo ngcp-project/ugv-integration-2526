@@ -84,10 +84,8 @@ def execute_command(request):
         cmd = AddZone(ZoneType.KeepOut, coords)
         label = f'AddZone (KeepOut, {len(coords)} coords)'
     elif cmd_id == 7:
-        lat = request.get('lat', 0.0)
-        lon = request.get('lon', 0.0)
-        cmd = PatientLocation((lat, lon))
-        label = f'PatientLocation (lat={lat:.6f}, lon={lon:.6f})'
+        cmd = PatientLocation((0.0, 0.0))
+        label = 'PatientLocation (Jetson will use Xsens GPS)'
     else:
         return {'ok': False, 'error': f'Unknown command: {cmd_id}'}
 
@@ -158,10 +156,12 @@ def main():
     PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, args.vehicle_mac)
 
     display(f'Starting GCS XBee on {args.xbee_port}...')
-    real_stdout = sys.stdout
     sys.stdout = open(os.devnull, 'w')
-    LaunchGCSXBee(args.xbee_port)
-    sys.stdout = real_stdout
+    try:
+        LaunchGCSXBee(args.xbee_port)
+    except Exception as e:
+        display(f'ERROR: Failed to open XBee on {args.xbee_port}: {e}')
+        sys.exit(1)
     display(f'XBee connected. Vehicle MAC: {args.vehicle_mac}\n')
 
     threading.Thread(target=telemetry_listener, daemon=True).start()

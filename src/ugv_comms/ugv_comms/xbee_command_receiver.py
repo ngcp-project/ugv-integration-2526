@@ -194,20 +194,31 @@ class XBeeCommandReceiver(Node):
             self._reply_telemetry(command)
 
         elif isinstance(command, self._PatientLocation):
+            with self._telem_lock:
+                src = self._latest_telemetry
+
+            if src is None:
+                self.get_logger().error(
+                    '[CMD 5] PatientLocation — no Xsens data yet, cannot determine position'
+                )
+                self._reply_telemetry(command)
+                return
+
+            lat = float(src.latitude)
+            lon = float(src.longitude)
             self.get_logger().info(
-                f'[CMD 5] PatientLocation — lat: {command.Coordinates[0]}, '
-                f'lon: {command.Coordinates[1]}'
+                f'[CMD 5] PatientLocation — Xsens position: lat={lat:.6f}, lon={lon:.6f}'
             )
             msg = Point()
-            msg.x = command.Coordinates[0]
-            msg.y = command.Coordinates[1]
+            msg.x = lat
+            msg.y = lon
             msg.z = 0.0
             self._patient_pub.publish(msg)
             self._reply_telemetry(
                 command,
                 message_flag=2,
-                message_lat=command.Coordinates[0],
-                message_lon=command.Coordinates[1],
+                message_lat=lat,
+                message_lon=lon,
             )
 
         else:
