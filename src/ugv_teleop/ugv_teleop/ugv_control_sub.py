@@ -24,6 +24,7 @@ class UgvControlSubNode(Node):
         self.declare_parameter('auto_steer', 0.0)
         # self.declare_parameter('heartbeat_timeout', 3.0)  # heartbeat disabled
         self.declare_parameter('arm_refresh_interval', 0.2)  # resend arm even if unchanged this often
+        self.declare_parameter('arm_drive_stagger', 0.015)  # delay between arm and drive sends to give firmware time to process
 
         server_ip        = self.get_parameter('server_ip').value
         server_port      = int(self.get_parameter('server_port').value)
@@ -36,6 +37,7 @@ class UgvControlSubNode(Node):
         self.auto_steer  = float(self.get_parameter('auto_steer').value)
         # self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
         self.arm_refresh_interval = float(self.get_parameter('arm_refresh_interval').value)
+        self.arm_drive_stagger = float(self.get_parameter('arm_drive_stagger').value)
 
         self._last_arm_payload = None
         self._last_arm_send_time = 0.0
@@ -118,11 +120,16 @@ class UgvControlSubNode(Node):
         drive_payload = f'{steer:.3f},{vel:.3f}'.encode()
 
         now = time.monotonic()
+        arm_sent = False
         if (arm_payload != self._last_arm_payload
                 or now - self._last_arm_send_time >= self.arm_refresh_interval):
             self._send(arm_payload, 'MAN ARM', self.arm_ip, self.arm_port)
             self._last_arm_payload = arm_payload
             self._last_arm_send_time = now
+            arm_sent = True
+
+        if arm_sent and self.arm_drive_stagger > 0.0:
+            time.sleep(self.arm_drive_stagger)
 
         self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
 
