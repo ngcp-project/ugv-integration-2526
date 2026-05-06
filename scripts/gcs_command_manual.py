@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""GCS display — starts the XBee link and shows all sent commands and Jetson replies.
+"""GCS display + command input.
 
-Run gcs_command_sender.py in a separate terminal to send commands.
+Can be used standalone (type commands directly) or with gcs_command_sender.py
+in a second terminal for a split display/input setup.
 
 Usage:
     python scripts/gcs_command_manual.py --xbee-port COM3 --vehicle-mac 0013A20042839F3E
@@ -32,12 +33,26 @@ from PacketLibrary.PacketLibrary import PacketLibrary
 
 DEFAULT_CMD_PORT = 5556
 
+out = sys.stderr
+
 _count = 0
 _count_lock = threading.Lock()
 
+MENU = """
+Commands:
+  1 - Heartbeat (Connected)
+  2 - Heartbeat (Disconnected)
+  3 - EmergencyStop (ACTIVATE)
+  4 - EmergencyStop (RELEASE)
+  5 - AddZone (KeepIn)
+  6 - AddZone (KeepOut)
+  7 - PatientLocation (uses Jetson GPS position)
+  q - Quit
+> """
+
 
 def display(msg):
-    print(msg, file=sys.stderr, flush=True)
+    print(msg, file=out, flush=True)
 
 
 def telemetry_listener():
@@ -57,8 +72,14 @@ def telemetry_listener():
             time.sleep(1)
 
 
-def execute_command(request):
+def next_seq():
     global _count
+    with _count_lock:
+        _count += 1
+        return _count
+
+
+def execute_command(request):
     cmd_id = request.get('cmd')
     cmd = None
     label = ''
@@ -92,17 +113,89 @@ def execute_command(request):
     cmd.Vehicle = Vehicle.MRA
     SendCommand(cmd, Vehicle.MRA)
 
-    with _count_lock:
-        _count += 1
-        seq = _count
-
-    display(f'\n[{seq}] SENT -> {label}')
+    seq = next_seq()
+    display(f'[{seq}] SENT -> {label}')
     if cmd_id in (5, 6):
         for i, c in enumerate(request.get('coordinates', [])):
             display(f'       coord {i+1}: ({c[0]:.6f}, {c[1]:.6f})')
 
     return {'ok': True, 'label': label}
 
+
+# ── Direct keyboard input (main thread) ──────────────────────────────
+
+def prompt_coordinates():
+    coords = []
+    print('Enter 3-6 coordinates as "lat,lon". Type "d" when done, "c" to cancel.', file=out)
+    while len(coords) < 6:
+        print(f'  Coord {len(coords)+1}> ', file=out, end='', flush=True)
+        try:
+            line = input('').strip()
+        except (KeyboardInterrupt, EOFError):
+            return None
+        if line.lower() == 'c':
+            return None
+        if line.lower() == 'd':
+            if len(coords) < 3:
+                print(f'  Need at least 3 ({len(coords)} so far).', file=out)
+                continue
+            break
+        try:
+            parts = line.split(',')
+            if len(parts) != 2:
+                raise ValueError
+            lat, lon = float(parts[0].strip()), float(parts[1].strip())
+            coords.append([lat, lon])
+            print(f'  Added ({lat:.6f}, {lon:.6f})', file=out)
+        except ValueError:
+            print('  Invalid. Use: lat,lon  (e.g. 33.8830,-117.8830)', file=out)
+    if len(coords) == 6:
+        print('  Maximum 6 coordinates reached.', file=out)
+    return coords if len(coords) >= 3 else None
+
+
+def keyboard_loop():
+    print(MENU, file=out, end='')
+    while True:
+        try:
+            choice = input('').strip()
+        except (KeyboardInterrupt, EOFError):
+            break
+
+        request = None
+
+        if choice == '1':
+            request = {'cmd': 1}
+        elif choice == '2':
+            request = {'cmd': 2}
+        elif choice == '3':
+            request = {'cmd': 3}
+        elif choice == '4':
+            request = {'cmd': 4}
+        elif choice in ('5', '6'):
+            coords = prompt_coordinates()
+            if coords is None:
+                print(MENU, file=out, end='')
+                continue
+            request = {'cmd': int(choice), 'coordinates': coords}
+        elif choice == '7':
+            request = {'cmd': 7}
+        elif choice in ('q', 'Q'):
+            break
+        else:
+            print(f'Unknown option: {choice}', file=out)
+            print(MENU, file=out, end='')
+            continue
+
+        resp = execute_command(request)
+        if not resp.get('ok'):
+            print(f'  Error: {resp.get("error")}', file=out)
+        print('> ', file=out, end='', flush=True)
+
+    display('\nStopped.')
+
+
+# ── TCP server for gcs_command_sender.py (background) ────────────────
 
 def handle_client(conn):
     buf = ''
@@ -132,20 +225,26 @@ def handle_client(conn):
 
 
 def command_server(port):
-    srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    srv.bind(('127.0.0.1', port))
-    srv.listen(1)
-    display(f'Waiting for command sender on port {port}...\n')
+    try:
+        srv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        srv.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        srv.bind(('127.0.0.1', port))
+        srv.listen(1)
+        display(f'Also listening for gcs_command_sender.py on port {port}\n')
+    except Exception as e:
+        display(f'TCP server failed to start: {e} (keyboard input still works)\n')
+        return
 
     while True:
         conn, addr = srv.accept()
-        display(f'Command sender connected.')
+        display('Command sender connected.')
         threading.Thread(target=handle_client, args=(conn,), daemon=True).start()
 
 
+# ── Main ─────────────────────────────────────────────────────────────
+
 def main():
-    parser = argparse.ArgumentParser(description='GCS display — shows sent commands and telemetry')
+    parser = argparse.ArgumentParser(description='GCS display + command input')
     parser.add_argument('--xbee-port', required=True, help='Serial port for GCS XBee (e.g. COM3)')
     parser.add_argument('--vehicle-mac', default='0013A20042839F3E',
                         help='64-bit MAC of the vehicle XBee')
@@ -160,18 +259,14 @@ def main():
     try:
         LaunchGCSXBee(args.xbee_port)
     except Exception as e:
-        display(f'ERROR: Failed to open XBee on {args.xbee_port}: {e}')
+        print(f'ERROR: Failed to open XBee on {args.xbee_port}: {e}', file=out)
         sys.exit(1)
-    display(f'XBee connected. Vehicle MAC: {args.vehicle_mac}\n')
+    display(f'XBee connected. Vehicle MAC: {args.vehicle_mac}')
 
     threading.Thread(target=telemetry_listener, daemon=True).start()
     threading.Thread(target=command_server, args=(args.cmd_port,), daemon=True).start()
 
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        display('\nStopped.')
+    keyboard_loop()
 
 
 if __name__ == '__main__':
