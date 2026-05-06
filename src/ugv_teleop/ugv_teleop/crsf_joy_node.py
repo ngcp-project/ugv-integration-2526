@@ -198,8 +198,8 @@ class CrsfJoyNode(Node):
             -normalize(ch[0], self.deadzone),
             0.0,
             1.0,
+            switch3_axis(ch[5]),
             switch3_axis(ch[6]),
-            switch3_axis(ch[7]),
         ]
         buttons = [
             0,
