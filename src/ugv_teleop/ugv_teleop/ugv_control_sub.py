@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import socket
-import threading
+# import threading  # heartbeat disabled
 import time
 import rclpy
 from rclpy.node import Node
@@ -22,8 +22,9 @@ class UgvControlSubNode(Node):
 
         self.declare_parameter('auto_vel', -1.0)
         self.declare_parameter('auto_steer', 0.0)
-        self.declare_parameter('heartbeat_timeout', 3.0)  # seconds before declaring STM32 unreachable
-        self.declare_parameter('arm_refresh_interval', 0.5)  # resend arm even if unchanged this often
+        # self.declare_parameter('heartbeat_timeout', 3.0)  # heartbeat disabled
+        self.declare_parameter('arm_refresh_interval', 0.2)  # resend arm even if unchanged this often
+        self.declare_parameter('drive_refresh_interval', 0.2)  # resend drive even if unchanged this often
 
         server_ip        = self.get_parameter('server_ip').value
         server_port      = int(self.get_parameter('server_port').value)
@@ -34,11 +35,14 @@ class UgvControlSubNode(Node):
 
         self.auto_vel    = float(self.get_parameter('auto_vel').value)
         self.auto_steer  = float(self.get_parameter('auto_steer').value)
-        self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
+        # self.heartbeat_timeout = float(self.get_parameter('heartbeat_timeout').value)
         self.arm_refresh_interval = float(self.get_parameter('arm_refresh_interval').value)
+        self.drive_refresh_interval = float(self.get_parameter('drive_refresh_interval').value)
 
         self._last_arm_payload = None
         self._last_arm_send_time = 0.0
+        self._last_drive_payload = None
+        self._last_drive_send_time = 0.0
 
         # --- UDP socket setup ---
         try:
@@ -54,18 +58,14 @@ class UgvControlSubNode(Node):
             self.get_logger().error(f'UDP bind failed: {ex}')
             raise
 
-        # --- Heartbeat state ---
-        self.last_heartbeat = 0.0  # no heartbeat received yet
-        self.stm32_alive = False
-        self._hb_warned_offline = False
-        self._hb_lock = threading.Lock()
-
-        # Start background thread listening for heartbeat packets from STM32
-        self._hb_thread = threading.Thread(target=self._heartbeat_listener, daemon=True)
-        self._hb_thread.start()
-
-        # Periodic timer to check heartbeat staleness (1 Hz)
-        self.create_timer(1.0, self._check_heartbeat)
+        # --- Heartbeat state (disabled) ---
+        # self.last_heartbeat = 0.0
+        # self.stm32_alive = False
+        # self._hb_warned_offline = False
+        # self._hb_lock = threading.Lock()
+        # self._hb_thread = threading.Thread(target=self._heartbeat_listener, daemon=True)
+        # self._hb_thread.start()
+        # self.create_timer(1.0, self._check_heartbeat)
 
         # --- Subscriptions ---
         qos = QoSProfile(depth=10)
@@ -74,44 +74,40 @@ class UgvControlSubNode(Node):
 
         self.get_logger().info('UGV CONTROL SUBSCRIBER STARTED')
 
-    #  Heartbeat: listen for any UDP packet from the STM32
-    def _heartbeat_listener(self):
-        """Background thread: any UDP packet received on our bound socket counts as a heartbeat."""
-        while rclpy.ok():
-            try:
-                self.sock.settimeout(1.0)
-                data, addr = self.sock.recvfrom(256)
-                with self._hb_lock:
-                    self.last_heartbeat = time.monotonic()
-                    if not self.stm32_alive:
-                        self.stm32_alive = True
-                        self.get_logger().info(f'STM32 heartbeat received from {addr}')
-            except socket.timeout:
-                continue
-            except OSError:
-                break  # socket closed during shutdown
+    # Heartbeat disabled — re-enable by uncommenting state in __init__ and these methods.
+    # def _heartbeat_listener(self):
+    #     while rclpy.ok():
+    #         try:
+    #             self.sock.settimeout(1.0)
+    #             data, addr = self.sock.recvfrom(256)
+    #             with self._hb_lock:
+    #                 self.last_heartbeat = time.monotonic()
+    #                 if not self.stm32_alive:
+    #                     self.stm32_alive = True
+    #                     self.get_logger().info(f'STM32 heartbeat received from {addr}')
+    #         except socket.timeout:
+    #             continue
+    #         except OSError:
+    #             break
+    #
+    # def _check_heartbeat(self):
+    #     with self._hb_lock:
+    #         if self.last_heartbeat == 0.0:
+    #             if not self._hb_warned_offline:
+    #                 self._hb_warned_offline = True
+    #                 self.get_logger().warn('No heartbeat from STM32 yet — device may be offline')
+    #             return
+    #         elapsed = time.monotonic() - self.last_heartbeat
+    #         if elapsed > self.heartbeat_timeout:
+    #             if self.stm32_alive:
+    #                 self.stm32_alive = False
+    #                 self.get_logger().error(f'STM32 heartbeat lost! Last seen {elapsed:.1f}s ago')
+    #         else:
+    #             if not self.stm32_alive:
+    #                 self.stm32_alive = True
+    #                 self.get_logger().info('STM32 heartbeat recovered')
 
-    def _check_heartbeat(self):
-        """Timer callback (1 Hz): warn if no heartbeat within timeout window."""
-        with self._hb_lock:
-            if self.last_heartbeat == 0.0:
-                if not self._hb_warned_offline:
-                    self._hb_warned_offline = True
-                    self.get_logger().warn('No heartbeat from STM32 yet — device may be offline')
-                return
-            elapsed = time.monotonic() - self.last_heartbeat
-            if elapsed > self.heartbeat_timeout:
-                if self.stm32_alive:
-                    self.stm32_alive = False
-                    self.get_logger().error(
-                        f'STM32 heartbeat lost! Last seen {elapsed:.1f}s ago'
-                    )
-            else:
-                if not self.stm32_alive:
-                    self.stm32_alive = True
-                    self.get_logger().info('STM32 heartbeat recovered')
-
-    #  Manual control callback                                           
+    #  Manual control callback
     def on_man_ctrl(self, msg: ManCtrl):
         if getattr(msg, 'auto_en', False):
             self.get_logger().debug('Manual suppressed (auto_en=True).')
@@ -132,7 +128,11 @@ class UgvControlSubNode(Node):
             self._last_arm_payload = arm_payload
             self._last_arm_send_time = now
 
-        self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
+        if (drive_payload != self._last_drive_payload
+                or now - self._last_drive_send_time >= self.drive_refresh_interval):
+            self._send(drive_payload, 'MAN DRIVE', self.drive_ip, self.drive_port)
+            self._last_drive_payload = drive_payload
+            self._last_drive_send_time = now
 
     #  Autonomous control callback                                       #
     def on_auto_ctrl(self, msg: AutoCtrl):
