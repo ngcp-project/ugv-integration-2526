@@ -31,7 +31,7 @@ class ArmController:
     def process_arm_control(self, dt, ud_pad, lr_pad):
         """LT held: D-pad left/right controls joint 0, D-pad up/down controls joint 1."""
         step = self.inc_dec_val * dt
-        self.update_joint(0, -float(lr_pad) * step, self.joint0_lo, self.joint0_hi)
+        self.update_joint(0, float(lr_pad) * step, self.joint0_lo, self.joint0_hi)
         self.update_joint(1, float(ud_pad) * step, self.joint1_lo, self.joint1_hi)
 
     def get_joint_status(self):
