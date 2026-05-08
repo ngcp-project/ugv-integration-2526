@@ -10,6 +10,11 @@ def generate_launch_description():
     repo_root = str(Path(__file__).resolve().parent.parent.parent.parent)
     xsens_params = Path(get_package_share_directory('xsens_mti_ros2_driver'), 'param', 'xsens_mti_node.yaml')
 
+    xsens_port_arg = DeclareLaunchArgument(
+        'xsens_port',
+        default_value='/dev/ttyUSB1',
+        description='Serial port for the Xsens MTi IMU',
+    )
     xbee_port_arg = DeclareLaunchArgument(
         'xbee_port',
         default_value='/dev/ttyUSB3',
@@ -28,6 +33,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         SetEnvironmentVariable('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}] [{name}]: {message}'),
+        xsens_port_arg,
         xbee_port_arg,
         gcs_mac_arg,
         vehicle_mac_arg,
@@ -38,7 +44,9 @@ def generate_launch_description():
             executable='xsens_mti_node',
             name='xsens_mti_node',
             output='screen',
-            parameters=[str(xsens_params)],
+            parameters=[str(xsens_params), {
+                'port': LaunchConfiguration('xsens_port'),
+            }],
         ),
 
         # Xsens → /ngcp/telemetry bridge
