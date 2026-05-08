@@ -1,0 +1,2 @@
+../Drivers/drive_motor/ugv_drive_servo.c:5:6:MotorControl_Init	1
+../Drivers/drive_motor/ugv_drive_servo.c:11:6:MotorControl_SetSpeed	3
