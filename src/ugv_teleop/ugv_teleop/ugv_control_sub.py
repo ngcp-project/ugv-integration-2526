@@ -6,6 +6,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 
+from std_msgs.msg import Bool
 from ugv_msgs.msg import ManCtrl, AutoCtrl
 
 
@@ -39,6 +40,7 @@ class UgvControlSubNode(Node):
         self.arm_refresh_interval = float(self.get_parameter('arm_refresh_interval').value)
         self.arm_drive_stagger = float(self.get_parameter('arm_drive_stagger').value)
 
+        self._estop_active = False
         self._last_arm_payload = None
         self._last_arm_send_time = 0.0
 
@@ -69,6 +71,7 @@ class UgvControlSubNode(Node):
         qos = QoSProfile(depth=10)
         self.man_sub = self.create_subscription(ManCtrl, 'man_ctrl', self.on_man_ctrl, qos)
         self.auto_sub = self.create_subscription(AutoCtrl, 'auto_ctrl', self.on_auto_ctrl, qos)
+        self.estop_sub = self.create_subscription(Bool, '/ngcp/estop', self.on_estop, qos)
 
         self.get_logger().info('UGV CONTROL SUBSCRIBER STARTED')
 
@@ -105,8 +108,21 @@ class UgvControlSubNode(Node):
     #                 self.stm32_alive = True
     #                 self.get_logger().info('STM32 heartbeat recovered')
 
+    def on_estop(self, msg: Bool):
+        self._estop_active = msg.data
+        if msg.data:
+            self.get_logger().warn('E-STOP ACTIVATED — sending zero velocity')
+            stop_drive = '0.000,0.000'.encode()
+            stop_arm = '0.000,0.000'.encode()
+            self._send(stop_drive, 'ESTOP DRIVE', self.drive_ip, self.drive_port)
+            self._send(stop_arm, 'ESTOP ARM', self.arm_ip, self.arm_port)
+        else:
+            self.get_logger().info('E-STOP RELEASED — resuming control')
+
     #  Manual control callback
     def on_man_ctrl(self, msg: ManCtrl):
+        if self._estop_active:
+            return
         if getattr(msg, 'auto_en', False):
             self.get_logger().debug('Manual suppressed (auto_en=True).')
             return
@@ -135,6 +151,8 @@ class UgvControlSubNode(Node):
 
     #  Autonomous control callback                                       #
     def on_auto_ctrl(self, msg: AutoCtrl):
+        if self._estop_active:
+            return
         heading_error = float(getattr(msg, 'heading_error', 0.0))
         if abs(heading_error) < 1e-6:
             return

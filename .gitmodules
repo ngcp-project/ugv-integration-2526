@@ -7,3 +7,12 @@
 [submodule "lib/xbee-python"]
 	path = lib/xbee-python
 	url = https://github.com/ngcp-project/xbee-python.git
+[submodule "src/lib/gcs-infrastructure"]
+	path = src/lib/gcs-infrastructure
+	url = https://github.com/ngcp-project/gcs-infrastructure.git
+[submodule "src/lib/gcs-packet"]
+	path = src/lib/gcs-packet
+	url = https://github.com/ngcp-project/gcs-packet.git
+[submodule "src/lib/xbee-python"]
+	path = src/lib/xbee-python
+	url = https://github.com/ngcp-project/xbee-python.git

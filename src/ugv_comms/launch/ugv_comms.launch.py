@@ -40,9 +40,18 @@ def generate_launch_description():
         }],
     )
 
+    
+    xbee_sender_node = Node(
+        package='ugv_comms',
+        executable='xb_s',
+        name='xb_s',
+        output='screen',
+    )
+
     return LaunchDescription([
         xbee_port_arg,
         gcs_mac_arg,
         vehicle_mac_arg,
         xbee_node,
+        xbee_sender_node,
     ])

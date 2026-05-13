@@ -57,7 +57,7 @@ def generate_launch_description():
             output='screen',
         ),
 
-        # XBee comms
+        # XBee comms (receiver)
         Node(
             package='ugv_comms',
             executable='xb_r',
@@ -69,5 +69,13 @@ def generate_launch_description():
                 'vehicle_mac_address': LaunchConfiguration('vehicle_mac_address'),
                 'workspace_root':      repo_root,
             }],
+        ),
+
+        # XBee telemetry sender
+        Node(
+            package='ugv_comms',
+            executable='xb_s',
+            name='xb_s',
+            output='screen',
         ),
     ])

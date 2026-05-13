@@ -169,10 +169,21 @@ New way of communicating between gcs and jetson
   instead of using hardcoded values.
 
 
+
+
+
+
+
+
+
+
+
+on the gcs side
   python scripts/gcs_command_manual.py --xbee-port COM3
 
   python scripts/gcs_command_sender.py
 
 
-
+on the jetson side
+  ros2 launch ugv_comms ugv_all.launch.py xbee_port:=/dev/ttyUSB0
 
