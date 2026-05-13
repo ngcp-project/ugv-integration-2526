@@ -81,13 +81,13 @@ def deliver_location(location_msg: dict) -> None:
     payload = {
         "latitude": location_msg["latitude"],
         "longitude": location_msg["longitude"],
-        "confidence": location_msg.get("confidence", 1.0),
+        "heading": location_msg.get("heading", 1.0),
     }
     log.info(
-        "Forward survivor location: lat=%.6f lon=%.6f conf=%.2f",
+        "Forward survivor location: lat=%.6f lon=%.6f heading=%.2f",
         payload["latitude"],
         payload["longitude"],
-        payload["confidence"],
+        payload["heading"],
     )
     # Replace this stub with your actual interface handoff.
 
