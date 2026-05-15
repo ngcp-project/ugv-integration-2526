@@ -176,8 +176,7 @@ int main(void)
     pl_actuate_to(0.0);
     ugv_servoSetAngle(&pl_end, 225.0);
 
-    //udp_client_connect();
-    //HAL_TIM_Base_Start_IT(&htim2);
+    udp_client_connect();
 
   /* USER CODE END 2 */
 
@@ -188,23 +187,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //ethernetif_input(&gnetif);
-	  //ethernet_link_check_state(&gnetif);
-	  //sys_check_timeouts();
-
-
-	 if(pl_direction){
-		 pl_angle += 0.25;
-	  	 if(pl_angle >= PL_MAX_ANGLE)
-	  		 pl_direction = 0;
-	 }
-	 else{
-		 pl_angle -= 0.25;
-		 if(pl_angle <= PL_MIN_ANGLE)
-			 pl_direction = 1;
-	  	 }
-	 pl_actuate_to(0.0);
-	 HAL_Delay(10);
+	  ethernetif_input(&gnetif);
+	  ethernet_link_check_state(&gnetif);
+	  sys_check_timeouts();
 
   }
   /* USER CODE END 3 */
@@ -603,17 +588,39 @@ static void udp_client_send()
 void udp_receive_callback(void *arg, struct udp_pcb *upcb, struct pbuf *p,
 		const ip_addr_t *addr, u16_t port)
 {
-	// Copy data from the pbuf
-	strncpy(buffer, (char *)p->payload, p->len);
-	//Parse Input
+	int len = p->len < 99 ? p->len : 99;
+	strncpy(buffer, (char *)p->payload, len);
+	buffer[len] = '\0';
+	pbuf_free(p);
+
+	// Hardware e-stop: lock all outputs until explicitly released
+	if (strncmp(buffer, "ESTOP", 5) == 0)
+	{
+		estop_active = 1;
+		HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_RESET);
+		return;
+	}
+
+	if (strncmp(buffer, "RELEASE", 7) == 0)
+	{
+		estop_active = 0;
+		HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_SET);
+		return;
+	}
+
+	if (estop_active)
+	{
+		return;
+	}
+
 	uint8_t data_index = 0;
-	// PARSES DATA
 	float data_vals[10] = {0};
 	char *buffer_data = strtok(buffer, ",");
 	while (buffer_data != NULL && data_index < 10)
 	{
 		float conv_check = atof(buffer_data);
-		//Make data was converted properly
 		if (conv_check == 0)
 		{
 			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
@@ -625,7 +632,6 @@ void udp_receive_callback(void *arg, struct udp_pcb *upcb, struct pbuf *p,
 		buffer_data = strtok(NULL, ",");
 	}
 	// payload angle 0, end effector 1
-	pbuf_free(p);
 	pl_angle = data_vals[0];
 	plend_angle = data_vals[1];
 

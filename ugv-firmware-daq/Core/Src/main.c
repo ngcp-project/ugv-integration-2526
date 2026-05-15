@@ -86,10 +86,7 @@ float vh_vel_mag = 0.0;
 int duty_cycle = 0;
 float vh_conv_heading = 47.0;
 ugvServo_t vh_steering;
-
-//TEST VARIABLES
-//int vh_vel_direction = 1;
-//int vh_heading_direction = 1;
+volatile uint8_t estop_active = 0;
 /* USER CODE END 0 */
 
 /**
@@ -167,6 +164,10 @@ int main(void)
 	  ethernetif_input(&gnetif);
 	  ethernet_link_check_state(&gnetif);
 	  sys_check_timeouts();
+	  if (estop_active)
+	  {
+		  MotorControl_SetSpeed(&ugv_drive_mtr, 0.0, 0);
+	  }
 	  /*
 	  if(vh_vel_direction){
 		  vh_vel_mag += 0.001;
@@ -509,17 +510,42 @@ static void udp_client_send()
 void udp_receive_callback(void *arg, struct udp_pcb *upcb, struct pbuf *p,
 		const ip_addr_t *addr, u16_t port)
 {
-	// Copy data from the pbuf
-	strncpy(buffer, (char *)p->payload, p->len);
-	//Parse Input
+	int len = p->len < 99 ? p->len : 99;
+	strncpy(buffer, (char *)p->payload, len);
+	buffer[len] = '\0';
+	pbuf_free(p);
+
+	// Hardware e-stop: lock all outputs until explicitly released
+	if (strncmp(buffer, "ESTOP", 5) == 0)
+	{
+		estop_active = 1;
+		MotorControl_SetSpeed(&ugv_drive_mtr, 0.0, 0);
+		ugv_servoSetAngle(&vh_steering, (VH_MIN_HEADING + VH_MAX_HEADING) / 2.0);
+		HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_RESET);
+		return;
+	}
+
+	if (strncmp(buffer, "RELEASE", 7) == 0)
+	{
+		estop_active = 0;
+		HAL_GPIO_WritePin(GPIOB, LD3_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, LD1_Pin, GPIO_PIN_SET);
+		return;
+	}
+
+	if (estop_active)
+	{
+		MotorControl_SetSpeed(&ugv_drive_mtr, 0.0, 0);
+		return;
+	}
+
 	uint8_t data_index = 0;
-	// PARSES DATA
 	float data_vals[10] = {0};
 	char *buffer_data = strtok(buffer, ",");
 	while (buffer_data != NULL && data_index < 10)
 	{
 		float conv_check = atof(buffer_data);
-		//Make data was converted properly
 		if (conv_check == 0)
 		{
 			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
@@ -531,7 +557,6 @@ void udp_receive_callback(void *arg, struct udp_pcb *upcb, struct pbuf *p,
 		buffer_data = strtok(NULL, ",");
 	}
 	// steering 0, velocity 1
-	pbuf_free(p);
 	vh_vel_mag = data_vals[1];
 	vh_heading = data_vals[0];
 	if(fabsf(vh_vel_mag) > VH_MAX_VEL){

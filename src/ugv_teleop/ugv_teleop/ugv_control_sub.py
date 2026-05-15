@@ -43,6 +43,7 @@ class UgvControlSubNode(Node):
         self._estop_active = False
         self._last_arm_payload = None
         self._last_arm_send_time = 0.0
+        self._estop_enforce_timer = self.create_timer(1.0, self._enforce_estop)
 
         # --- UDP socket setup ---
         try:
@@ -111,13 +112,25 @@ class UgvControlSubNode(Node):
     def on_estop(self, msg: Bool):
         self._estop_active = msg.data
         if msg.data:
-            self.get_logger().warn('E-STOP ACTIVATED — sending zero velocity')
-            stop_drive = '0.000,0.000'.encode()
-            stop_arm = '0.000,0.000'.encode()
-            self._send(stop_drive, 'ESTOP DRIVE', self.drive_ip, self.drive_port)
-            self._send(stop_arm, 'ESTOP ARM', self.arm_ip, self.arm_port)
+            self.get_logger().warn('E-STOP ACTIVATED — locking MCUs')
+            estop_cmd = b'ESTOP'
+            self._send(estop_cmd, 'ESTOP DRIVE', self.drive_ip, self.drive_port)
+            self._send(estop_cmd, 'ESTOP ARM', self.arm_ip, self.arm_port)
         else:
-            self.get_logger().info('E-STOP RELEASED — resuming control')
+            self.get_logger().info('E-STOP RELEASED — unlocking MCUs')
+            release_cmd = b'RELEASE'
+            self._send(release_cmd, 'RELEASE DRIVE', self.drive_ip, self.drive_port)
+            self._send(release_cmd, 'RELEASE ARM', self.arm_ip, self.arm_port)
+
+    def _enforce_estop(self):
+        if not self._estop_active:
+            return
+        estop_cmd = b'ESTOP'
+        try:
+            self.sock.sendto(estop_cmd, (self.drive_ip, int(self.drive_port)))
+            self.sock.sendto(estop_cmd, (self.arm_ip, int(self.arm_port)))
+        except Exception as ex:
+            self.get_logger().warning(f'E-STOP enforcement send failed: {ex}')
 
     #  Manual control callback
     def on_man_ctrl(self, msg: ManCtrl):
