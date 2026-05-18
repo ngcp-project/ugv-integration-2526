@@ -62,7 +62,7 @@ def telemetry_listener():
     while True:
         try:
             telem = ReceiveTelemetry()
-            display(
+            line = (
                 f'  <- REPLY  '
                 f'CmdID={telem.CommandID}  PktID={telem.PacketID}  '
                 f'Speed={telem.Speed:.3f}  Yaw={telem.Yaw:.3f}  '
@@ -70,6 +70,12 @@ def telemetry_listener():
                 f'Status={telem.VehicleStatus}  '
                 f'MsgFlag={telem.MessageFlag}'
             )
+            display(line)
+            if telem.MessageFlag == 2:
+                display(
+                    f'  ** PATIENT LOCATION: '
+                    f'lat={telem.MessageLat:.6f}, lon={telem.MessageLon:.6f}'
+                )
         except Exception as e:
             display(f'  <- REPLY ERROR: {e}')
             time.sleep(1)

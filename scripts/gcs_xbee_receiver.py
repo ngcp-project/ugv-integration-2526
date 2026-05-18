@@ -66,6 +66,11 @@ def main():
                 f'Alt={telem.Altitude:.2f}  '
                 f'Pos=({telem.CurrentPositionX:.6f}, {telem.CurrentPositionY:.6f})'
             )
+            if telem.MessageFlag == 2:
+                print(
+                    f'  ** PATIENT LOCATION: '
+                    f'lat={telem.MessageLat:.6f}, lon={telem.MessageLon:.6f}'
+                )
     except KeyboardInterrupt:
         print('\nStopped.')
 

@@ -26,7 +26,5 @@ Or save that JSON to a file and do:
   ros2 launch ugv_comms ugv_all.launch.py xbee_port:=/dev/ttyUSB0
   xsens_port:=/dev/ttyUSB1
 
-  Debug what ports are visible:
+  ### Debug what ports are visible:
   python scripts/port_detect.py
-
-✻ Crunched for 5m 19s
