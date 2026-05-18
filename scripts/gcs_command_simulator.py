@@ -3,7 +3,7 @@
 and prints any telemetry replies received from the Jetson.
 
 Usage:
-    python scripts/gcs_command_simulator.py --xbee-port COM3 --vehicle-mac 0013A20042839F3E
+    python scripts/gcs_command_simulator.py --vehicle-mac 0013A20042839F3E
 """
 import argparse
 import os
@@ -27,6 +27,7 @@ from Enum.ConnectionStatus import ConnectionStatus
 from Enum.ZoneType import ZoneType
 from Enum.Vehicle import Vehicle
 from PacketLibrary.PacketLibrary import PacketLibrary
+from port_detect import find_xbee_port
 
 # Send all our output to stderr so we can mute the XBee library's stdout spam
 out = sys.stderr
@@ -98,21 +99,30 @@ def telemetry_listener():
 
 def main():
     parser = argparse.ArgumentParser(description='Simulate GCS commands over XBee')
-    parser.add_argument('--xbee-port', required=True, help='Serial port for GCS XBee (e.g. COM3)')
+    parser.add_argument('--xbee-port', default='auto',
+                        help='Serial port for GCS XBee (e.g. COM3). Default: auto-detect')
     parser.add_argument('--vehicle-mac', default='0013A20042839F3E',
                         help='64-bit MAC of the vehicle XBee')
     parser.add_argument('--interval', type=float, default=5.0,
                         help='Seconds between commands (default: 5)')
     args = parser.parse_args()
 
+    xbee_port = args.xbee_port
+    if xbee_port == 'auto':
+        print('Auto-detecting XBee port...', file=out)
+        xbee_port = find_xbee_port()
+        if not xbee_port:
+            print('ERROR: Could not auto-detect XBee port. Use --xbee-port to specify.', file=out)
+            sys.exit(1)
+
     PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, args.vehicle_mac)
 
-    print(f'Starting GCS XBee on {args.xbee_port}...', file=out)
+    print(f'Starting GCS XBee on {xbee_port}...', file=out)
 
     # Mute all stdout from XBee library background threads
     sys.stdout = open(os.devnull, 'w')
 
-    LaunchGCSXBee(args.xbee_port)
+    LaunchGCSXBee(xbee_port)
 
     print(f'Connected. Sending random commands every {args.interval}s to vehicle {args.vehicle_mac}', file=out)
     print('Press Ctrl+C to stop\n', file=out)

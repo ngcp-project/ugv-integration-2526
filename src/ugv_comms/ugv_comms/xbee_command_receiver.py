@@ -1,5 +1,6 @@
 
 import json
+import sys
 import threading
 import time
 
@@ -8,6 +9,7 @@ from rclpy.node import Node
 from std_msgs.msg import Bool, String
 from geometry_msgs.msg import Point
 from ugv_msgs.msg import UGVTelemetry, ManCtrl
+import serial.tools.list_ports
 
 # Normal imports. run pip install -e . in every submodule
 from Infrastructure.InfrastructureInterface import (
@@ -23,13 +25,37 @@ from PacketLibrary.PacketLibrary import PacketLibrary
 from Telemetry.Telemetry import Telemetry
 
 
-# ros2 launch ugv_comms ugv_comms.launch.py xbee_port:=/dev/ttyUSB0 \
-#     gcs_mac_address:=0013A200427EA7FC \
-#     vehicle_mac_address:=0013A20042839F3E
+XBEE_PORT = 'auto'
+GCS_MAC_ADDRESS = '0013A200427EA7FC'
+VEHICLE_MAC_ADDRESS = '0013A20042839F3E'
 
-XBEE_PORT = 'COM3'  
-GCS_MAC_ADDRESS = '0013A200427EA7FC' # GCS xbee
-VEHICLE_MAC_ADDRESS = '0013A20042839F3E'  # Jetson xbee
+FTDI_VID = 0x0403
+XSENS_VID = 0x2639
+
+
+def detect_xbee_port():
+    """Scan serial ports and return the most likely XBee device path."""
+    all_ports = sorted(serial.tools.list_ports.comports(), key=lambda p: p.device)
+    candidates = []
+    for p in all_ports:
+        text = ' '.join([p.description or '', p.manufacturer or '', p.product or '']).lower()
+        if 'xsens' in text or 'mti' in text or p.vid == XSENS_VID:
+            continue
+        candidates.append(p)
+
+    for p in candidates:
+        text = ' '.join([p.description or '', p.manufacturer or '', p.product or '']).lower()
+        if 'xbee' in text or 'digi' in text:
+            return p.device
+
+    for p in candidates:
+        if p.vid == FTDI_VID:
+            return p.device
+
+    if len(candidates) == 1:
+        return candidates[0].device
+
+    return None
 
 class XBeeCommandReceiver(Node):
     def __init__(self):
@@ -42,6 +68,17 @@ class XBeeCommandReceiver(Node):
         xbee_port      = self.get_parameter('xbee_port').value
         gcs_mac        = self.get_parameter('gcs_mac_address').value
         vehicle_mac    = self.get_parameter('vehicle_mac_address').value
+
+        if xbee_port == 'auto':
+            self.get_logger().info('Auto-detecting XBee port...')
+            xbee_port = detect_xbee_port()
+            if not xbee_port:
+                self.get_logger().error(
+                    'Could not auto-detect XBee port. '
+                    'Pass it via launch arg: xbee_port:=/dev/ttyUSBx'
+                )
+                return
+            self.get_logger().info(f'Auto-detected XBee port: {xbee_port}')
 
         # Store refs so threads can reach them
         self._ReceiveCommand  = ReceiveCommand

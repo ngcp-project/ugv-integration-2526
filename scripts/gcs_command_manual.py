@@ -5,6 +5,7 @@ Can be used standalone (type commands directly) or with gcs_command_sender.py
 in a second terminal for a split display/input setup.
 
 Usage:
+    python scripts/gcs_command_manual.py
     python scripts/gcs_command_manual.py --xbee-port COM3 --vehicle-mac 0013A20042839F3E
 """
 import argparse
@@ -30,6 +31,7 @@ from Enum.ConnectionStatus import ConnectionStatus
 from Enum.ZoneType import ZoneType
 from Enum.Vehicle import Vehicle
 from PacketLibrary.PacketLibrary import PacketLibrary
+from port_detect import find_xbee_port
 
 DEFAULT_CMD_PORT = 5556
 
@@ -47,6 +49,7 @@ Commands:
   5 - AddZone (KeepIn)
   6 - AddZone (KeepOut)
   7 - PatientLocation (uses Jetson GPS position)
+  8 - AddZone from JSON
   q - Quit
 > """
 
@@ -154,6 +157,36 @@ def prompt_coordinates():
     return coords if len(coords) >= 3 else None
 
 
+def parse_zone_json(raw):
+    """Parse a JSON zone string or @filepath into (cmd_id, coordinates).
+
+    JSON format:
+        {"type": "keep_in"|"keep_out", "coords": [[lat, lon, alt], ...]}
+    Alt is carried in the JSON but not sent in the packet (lat/lon only).
+    """
+    if raw.startswith('@'):
+        path = raw[1:].strip()
+        with open(path, 'r') as f:
+            raw = f.read()
+    data = json.loads(raw)
+    zone_type = data.get('type', '').lower().replace('-', '_').replace(' ', '_')
+    if zone_type == 'keep_in':
+        cmd_id = 5
+    elif zone_type == 'keep_out':
+        cmd_id = 6
+    else:
+        raise ValueError(f'type must be "keep_in" or "keep_out", got "{data.get("type")}"')
+    raw_coords = data.get('coords', [])
+    if not (3 <= len(raw_coords) <= 6):
+        raise ValueError(f'Need 3-6 coordinates, got {len(raw_coords)}')
+    coords = []
+    for c in raw_coords:
+        if len(c) < 2:
+            raise ValueError(f'Each coord needs at least [lat, lon], got {c}')
+        coords.append([float(c[0]), float(c[1])])
+    return cmd_id, coords
+
+
 def keyboard_loop():
     print(MENU, file=out, end='')
     while True:
@@ -180,6 +213,25 @@ def keyboard_loop():
             request = {'cmd': int(choice), 'coordinates': coords}
         elif choice == '7':
             request = {'cmd': 7}
+        elif choice == '8':
+            print('  Paste JSON or @filepath:', file=out)
+            print('  Format: {"type": "keep_in", "coords": [[lat,lon,alt], ...]}', file=out)
+            print('  JSON> ', file=out, end='', flush=True)
+            try:
+                raw = input('').strip()
+            except (KeyboardInterrupt, EOFError):
+                print(MENU, file=out, end='')
+                continue
+            if not raw:
+                print(MENU, file=out, end='')
+                continue
+            try:
+                cmd_id, coords = parse_zone_json(raw)
+                request = {'cmd': cmd_id, 'coordinates': coords}
+            except Exception as e:
+                print(f'  Error: {e}', file=out)
+                print(MENU, file=out, end='')
+                continue
         elif choice in ('q', 'Q'):
             break
         else:
@@ -245,21 +297,30 @@ def command_server(port):
 
 def main():
     parser = argparse.ArgumentParser(description='GCS display + command input')
-    parser.add_argument('--xbee-port', required=True, help='Serial port for GCS XBee (e.g. COM3)')
+    parser.add_argument('--xbee-port', default='auto',
+                        help='Serial port for GCS XBee (e.g. COM3). Default: auto-detect')
     parser.add_argument('--vehicle-mac', default='0013A20042839F3E',
                         help='64-bit MAC of the vehicle XBee')
     parser.add_argument('--cmd-port', type=int, default=DEFAULT_CMD_PORT,
                         help=f'TCP port for command sender (default: {DEFAULT_CMD_PORT})')
     args = parser.parse_args()
 
+    xbee_port = args.xbee_port
+    if xbee_port == 'auto':
+        display('Auto-detecting XBee port...')
+        xbee_port = find_xbee_port()
+        if not xbee_port:
+            print('ERROR: Could not auto-detect XBee port. Use --xbee-port to specify.', file=out)
+            sys.exit(1)
+
     PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, args.vehicle_mac)
 
-    display(f'Starting GCS XBee on {args.xbee_port}...')
+    display(f'Starting GCS XBee on {xbee_port}...')
     sys.stdout = open(os.devnull, 'w')
     try:
-        LaunchGCSXBee(args.xbee_port)
+        LaunchGCSXBee(xbee_port)
     except Exception as e:
-        print(f'ERROR: Failed to open XBee on {args.xbee_port}: {e}', file=out)
+        print(f'ERROR: Failed to open XBee on {xbee_port}: {e}', file=out)
         sys.exit(1)
     display(f'XBee connected. Vehicle MAC: {args.vehicle_mac}')
 

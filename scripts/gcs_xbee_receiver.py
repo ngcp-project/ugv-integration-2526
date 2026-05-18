@@ -2,7 +2,7 @@
 """GCS-side XBee receiver — prints telemetry (including joystick data) from the Jetson.
 
 Usage:
-    python scripts/gcs_xbee_receiver.py --xbee-port COM5 --vehicle-mac 0013A20042839F3E
+    python scripts/gcs_xbee_receiver.py --vehicle-mac 0013A20042839F3E
 """
 import argparse
 import io
@@ -16,24 +16,34 @@ sys.path.insert(0, os.path.join(repo_root, 'lib', 'gcs-packet', 'Packet'))
 from Infrastructure.InfrastructureInterface import LaunchGCSXBee, ReceiveTelemetry
 from PacketLibrary.PacketLibrary import PacketLibrary
 from Enum.Vehicle import Vehicle
+from port_detect import find_xbee_port
 
 
 def main():
     parser = argparse.ArgumentParser(description='Receive XBee telemetry on GCS')
-    parser.add_argument('--xbee-port', required=True, help='Serial port for GCS XBee (e.g. COM5)')
+    parser.add_argument('--xbee-port', default='auto',
+                        help='Serial port for GCS XBee (e.g. COM5). Default: auto-detect')
     parser.add_argument('--vehicle-mac', default='0013A20042839F3E',
                         help='64-bit MAC of the vehicle XBee')
     args = parser.parse_args()
 
+    xbee_port = args.xbee_port
+    if xbee_port == 'auto':
+        print('Auto-detecting XBee port...')
+        xbee_port = find_xbee_port()
+        if not xbee_port:
+            print('ERROR: Could not auto-detect XBee port. Use --xbee-port to specify.', file=sys.stderr)
+            sys.exit(1)
+
     PacketLibrary.SetVehicleMACAddress(Vehicle.MRA, args.vehicle_mac)
 
-    print(f'Starting GCS XBee on {args.xbee_port}...')
+    print(f'Starting GCS XBee on {xbee_port}...')
 
     # Suppress noisy print() calls from the XBee library during startup
     real_stdout = sys.stdout
     sys.stdout = io.StringIO()
     try:
-        LaunchGCSXBee(args.xbee_port)
+        LaunchGCSXBee(xbee_port)
     finally:
         sys.stdout = real_stdout
 

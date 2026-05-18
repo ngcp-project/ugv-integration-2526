@@ -10,6 +10,7 @@ Usage:
 """
 import argparse
 import json
+import os
 import socket
 import sys
 
@@ -24,6 +25,7 @@ Commands:
   5 - AddZone (KeepIn)
   6 - AddZone (KeepOut)
   7 - PatientLocation (uses Jetson GPS position)
+  8 - AddZone from JSON
   q - Quit
 > """
 
@@ -43,6 +45,36 @@ def send_request(sock, request):
             raise ConnectionError('Display disconnected')
         buf += data.decode('utf-8')
     return json.loads(buf.split('\n', 1)[0])
+
+
+def parse_zone_json(raw):
+    """Parse a JSON zone string or @filepath into (cmd_id, coordinates).
+
+    JSON format:
+        {"type": "keep_in"|"keep_out", "coords": [[lat, lon, alt], ...]}
+    Alt is carried in the JSON but not sent in the packet (lat/lon only).
+    """
+    if raw.startswith('@'):
+        path = raw[1:].strip()
+        with open(path, 'r') as f:
+            raw = f.read()
+    data = json.loads(raw)
+    zone_type = data.get('type', '').lower().replace('-', '_').replace(' ', '_')
+    if zone_type == 'keep_in':
+        cmd_id = 5
+    elif zone_type == 'keep_out':
+        cmd_id = 6
+    else:
+        raise ValueError(f'type must be "keep_in" or "keep_out", got "{data.get("type")}"')
+    raw_coords = data.get('coords', [])
+    if not (3 <= len(raw_coords) <= 6):
+        raise ValueError(f'Need 3-6 coordinates, got {len(raw_coords)}')
+    coords = []
+    for c in raw_coords:
+        if len(c) < 2:
+            raise ValueError(f'Each coord needs at least [lat, lon], got {c}')
+        coords.append([float(c[0]), float(c[1])])
+    return cmd_id, coords
 
 
 def prompt_coordinates():
@@ -124,6 +156,24 @@ def main():
             elif choice == '7':
                 print('  Requesting patient location from Jetson GPS...')
                 request = {'cmd': 7}
+            elif choice == '8':
+                print('  Paste JSON or @filepath:')
+                print('  Format: {"type": "keep_in", "coords": [[lat,lon,alt], ...]}')
+                try:
+                    raw = input('  JSON> ').strip()
+                except (KeyboardInterrupt, EOFError):
+                    print(MENU, end='')
+                    continue
+                if not raw:
+                    print(MENU, end='')
+                    continue
+                try:
+                    cmd_id, coords = parse_zone_json(raw)
+                    request = {'cmd': cmd_id, 'coordinates': coords}
+                except Exception as e:
+                    print(f'  Error: {e}')
+                    print(MENU, end='')
+                    continue
             elif choice in ('q', 'Q'):
                 break
             else:
