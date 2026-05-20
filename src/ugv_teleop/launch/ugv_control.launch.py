@@ -23,9 +23,9 @@ def generate_launch_description():
             parameters=[{
                 'arm0_lower_limit': 0.0,
                 'arm0_upper_limit': 170.0,
-                'arm1_lower_limit': 75.0,
-                'arm1_upper_limit': 225.0,
-                'inc_dec_val': 8.0,
+                'arm1_lower_limit': 80.0,
+                'arm1_upper_limit': 238.0,
+                'inc_dec_val': 20.0,
                 'publish_rate': 25.0,
                 'log_interval': 0.5,
             }]
