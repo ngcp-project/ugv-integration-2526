@@ -21,7 +21,8 @@ class UgvControlNode(Node):
         self.declare_parameter('max_joy_val', float(2**15))
         self.declare_parameter('dead_zone', 0.15)
         self.declare_parameter('upper_steer_limit', 1.0)
-        self.declare_parameter('inc_dec_val', 12.0)
+        self.declare_parameter('inc_dec_val_arm', 8.0)
+        self.declare_parameter('inc_dec_val_ee', 20.0)
         self.declare_parameter('arm0_lower_limit', 0.0)
         self.declare_parameter('arm0_upper_limit', 170.0)
         self.declare_parameter('arm1_lower_limit', 80.0)
@@ -32,7 +33,8 @@ class UgvControlNode(Node):
         self.max_joy_val = self.get_parameter('max_joy_val').value
         self.dead_zone = self.get_parameter('dead_zone').value
         self.upper_steer_limit = self.get_parameter('upper_steer_limit').value
-        self.inc_dec_val = self.get_parameter('inc_dec_val').value
+        self.inc_dec_val_arm = self.get_parameter('inc_dec_val_arm').value
+        self.inc_dec_val_ee = self.get_parameter('inc_dec_val_ee').value
         self.arm0_lo = self.get_parameter('arm0_lower_limit').value
         self.arm0_hi = self.get_parameter('arm0_upper_limit').value
         self.arm1_lo = self.get_parameter('arm1_lower_limit').value
@@ -66,7 +68,8 @@ class UgvControlNode(Node):
 
         self.arm_controller = ArmController(
             num_joints=2,
-            inc_dec_val=float(self.inc_dec_val),
+            inc_dec_val_arm=float(self.inc_dec_val_arm),
+            inc_dec_val_ee=float(self.inc_dec_val_ee),
             joint0_limits=(self.arm0_lo, self.arm0_hi),
             joint1_limits=(self.arm1_lo, self.arm1_hi),
         )

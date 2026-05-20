@@ -2,11 +2,12 @@ def clamp(v, lo, high):
     return max(lo, min(v, high))
 
 class ArmController:
-    def __init__(self, num_joints=2, inc_dec_val=12.0,
+    def __init__(self, num_joints=2, inc_dec_val_arm=8.0, inc_dec_val_ee=20.0,
                  joint0_limits=(0.0, 170.0),
                  joint1_limits=(80.0, 238.0)):
         self.num_joints = num_joints
-        self.inc_dec_val = inc_dec_val
+        self.inc_dec_val_arm = inc_dec_val_arm
+        self.inc_dec_val_ee = inc_dec_val_ee
         self.joint0_lo, self.joint0_hi = joint0_limits
         self.joint1_lo, self.joint1_hi = joint1_limits
         self.joint_positions = [0.0, self.joint1_hi]
@@ -29,10 +30,9 @@ class ArmController:
         self.joint_positions[joint_index] = clamp(self.joint_positions[joint_index], min_limit, max_limit)
 
     def process_arm_control(self, dt, ud_pad, lr_pad):
-        """LT held: D-pad left/right controls joint 0, D-pad up/down controls joint 1."""
-        step = self.inc_dec_val * dt
-        self.update_joint(0, float(lr_pad) * step, self.joint0_lo, self.joint0_hi)
-        self.update_joint(1, float(ud_pad) * step, self.joint1_lo, self.joint1_hi)
+        """LT held: D-pad left/right controls joint 0 (big arm), D-pad up/down controls joint 1 (end effector)."""
+        self.update_joint(0, float(lr_pad) * self.inc_dec_val_arm * dt, self.joint0_lo, self.joint0_hi)
+        self.update_joint(1, float(ud_pad) * self.inc_dec_val_ee * dt, self.joint1_lo, self.joint1_hi)
 
     def get_joint_status(self):
         return f"Arm Joints: [{self.joint_positions[0]:.1f}, {self.joint_positions[1]:.1f}]"
