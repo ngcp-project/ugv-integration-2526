@@ -21,7 +21,7 @@ class UgvControlNode(Node):
         self.declare_parameter('max_joy_val', float(2**15))
         self.declare_parameter('dead_zone', 0.15)
         self.declare_parameter('upper_steer_limit', 1.0)
-        self.declare_parameter('inc_dec_val', 20.0)
+        self.declare_parameter('inc_dec_val', 12.0)
         self.declare_parameter('arm0_lower_limit', 0.0)
         self.declare_parameter('arm0_upper_limit', 170.0)
         self.declare_parameter('arm1_lower_limit', 80.0)

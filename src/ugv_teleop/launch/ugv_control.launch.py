@@ -25,7 +25,7 @@ def generate_launch_description():
                 'arm0_upper_limit': 170.0,
                 'arm1_lower_limit': 80.0,
                 'arm1_upper_limit': 238.0,
-                'inc_dec_val': 20.0,
+                'inc_dec_val': 12.0,
                 'publish_rate': 25.0,
                 'log_interval': 0.5,
             }]

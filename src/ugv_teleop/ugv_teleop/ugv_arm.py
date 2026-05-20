@@ -2,7 +2,7 @@ def clamp(v, lo, high):
     return max(lo, min(v, high))
 
 class ArmController:
-    def __init__(self, num_joints=2, inc_dec_val=20.0,
+    def __init__(self, num_joints=2, inc_dec_val=12.0,
                  joint0_limits=(0.0, 170.0),
                  joint1_limits=(80.0, 238.0)):
         self.num_joints = num_joints
