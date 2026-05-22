@@ -242,7 +242,6 @@ class XsensLocalXY(Node):
         self.euler_topic   = self.declare_parameter('euler_topic',   '/filter/euler').value
         self.xy_topic      = self.declare_parameter('xy_topic',      '/gnss_local').value
         self.heading_topic = self.declare_parameter('heading_topic', '/xsens/heading_deg').value
-        self.goal_latlon_topic = self.declare_parameter('goal_latlon_topic', '/nav/goal_latlon').value
         self.frame_id      = self.declare_parameter('frame_id',      'map').value
         self.log_every_fix = self.declare_parameter('log_every_fix', True).value
 
@@ -305,25 +304,10 @@ class XsensLocalXY(Node):
         self.create_subscription(Vector3Stamped, self.gps_topic,   self.gps_callback,   10)
         self.create_subscription(Vector3Stamped, self.euler_topic, self.euler_callback, 10)
         self.create_subscription(XsStatusWord,   '/status',        self.status_callback, 10)
-        self.create_subscription(PointStamped,   self.goal_latlon_topic, self.goal_latlon_callback, 10)
 
         self.get_logger().info(
-            f"Subscribing GPS: {self.gps_topic}  euler: {self.euler_topic}  "
-            f"goal_latlon: {self.goal_latlon_topic}"
+            f"Subscribing GPS: {self.gps_topic}  euler: {self.euler_topic}"
         )
-
-    def goal_latlon_callback(self, msg: PointStamped):
-        # x=lat, y=lon, z=alt (alt ignored — planner is 2D).
-        lat, lon = float(msg.point.x), float(msg.point.y)
-        if not self.origin_set:
-            self.get_logger().warning(
-                f"Goal lat/lon received ({lat:.7f}, {lon:.7f}) but origin not set yet; ignoring."
-            )
-            return
-        if not self.heading_received:
-            self.get_logger().warning("Goal lat/lon received but heading not yet available; ignoring.")
-            return
-        self.process_latlon_input(lat, lon, None)
 
     # -----------------------------------------------------------------------
     # Sensor callbacks
