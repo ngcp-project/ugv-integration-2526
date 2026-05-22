@@ -1,3 +1,4 @@
+import os
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix
@@ -17,7 +18,7 @@ class CoordDumper(Node):
         self.count = 0
         self.latest_z = None
 
-        # open('ntrip_coords.txt', 'w').close()
+        open('ntrip_coords.txt', 'w').close()
         self.get_logger().info('coord_dumper started')
 
     def euler_callback(self, msg):
@@ -43,7 +44,7 @@ class CoordDumper(Node):
 
         if self.count >= 3:
             self.get_logger().info('Collected 3 valid samples, shutting down')
-            rclpy.shutdown()
+            os._exit(0)
 
 def main():
     rclpy.init()

@@ -101,7 +101,17 @@ def notify_reposition_requested(result_msg: dict, attempt: int) -> None:
         "attempt": attempt + 1,
     }
     log.info("Forward reposition request: %s", signal)
-    # Replace this stub with your actual interface handoff.
+
+   # Run coord_dump.py to get fresh GPS coordinates
+    log.info("Running coord_dump.py to get fresh GPS...")
+    import subprocess
+    subprocess.run(
+        ["python3", "coord_dump.py"],
+        cwd="/home/ugvjetson2025/ugv-integration-2526/src/xsens_mti_ros2_driver/scripts",
+        check=True,
+    )
+    log.info("Fresh GPS coordinates ready")
+
 
 
 def wait_for_single_result(result_port: int = RESULT_PORT, timeout: float = RECV_TIMEOUT) -> Optional[dict]:
