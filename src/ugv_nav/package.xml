@@ -1,9 +1,9 @@
-<?xml version=1.0?>
-<package format=3>
+<?xml version="1.0"?>
+<package format="3">
   <name>ugv_nav</name>
   <version>0.0.1</version>
   <description>UGV navigation: Xsens GPS/heading subscriber with Dubins path + pure pursuit</description>
-  <maintainer email=todo@todo.com>ugv</maintainer>
+  <maintainer email="todo@todo.com">ugv</maintainer>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>
