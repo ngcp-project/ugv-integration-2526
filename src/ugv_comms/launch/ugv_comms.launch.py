@@ -12,8 +12,8 @@ def generate_launch_description():
 
     xbee_port_arg = DeclareLaunchArgument(
         'xbee_port',
-        default_value='auto',
-        description='Serial port for the XBee module (auto = auto-detect)',
+        default_value='/dev/xbee',
+        description='Serial port for the XBee module (udev symlink; "auto" = auto-detect)',
     )
     gcs_mac_arg = DeclareLaunchArgument(
         'gcs_mac_address',

@@ -25,7 +25,7 @@ from PacketLibrary.PacketLibrary import PacketLibrary
 from Telemetry.Telemetry import Telemetry
 
 
-XBEE_PORT = 'auto'
+XBEE_PORT = '/dev/xbee'
 GCS_MAC_ADDRESS = '0013A200427EA7FC'
 VEHICLE_MAC_ADDRESS = '0013A20042839F3E'
 

@@ -116,10 +116,10 @@ def _launch_setup(context):
 def generate_launch_description():
     return LaunchDescription([
         SetEnvironmentVariable('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}] [{name}]: {message}'),
-        DeclareLaunchArgument('xsens_port', default_value='auto',
-                              description='Serial port for the Xsens MTi IMU (auto = auto-detect)'),
-        DeclareLaunchArgument('xbee_port', default_value='auto',
-                              description='Serial port for the XBee module (auto = auto-detect)'),
+        DeclareLaunchArgument('xsens_port', default_value='/dev/xsens',
+                              description='Serial port for the Xsens MTi IMU (udev symlink; pass "auto" for auto-detect)'),
+        DeclareLaunchArgument('xbee_port', default_value='/dev/xbee',
+                              description='Serial port for the XBee module (udev symlink; pass "auto" for auto-detect)'),
         DeclareLaunchArgument('gcs_mac_address', default_value='0013A200427EA7FC',
                               description='64-bit MAC address of the GCS XBee'),
         DeclareLaunchArgument('vehicle_mac_address', default_value='0013A20042839F3E',
