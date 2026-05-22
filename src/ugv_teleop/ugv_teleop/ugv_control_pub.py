@@ -66,6 +66,9 @@ class UgvControlNode(Node):
         self.lt_val = 0
         self.rt_val = 0
 
+        self.auto_mode = False
+        self._prev_auto_btn = 0
+
         self.arm_controller = ArmController(
             num_joints=2,
             inc_dec_val_arm=float(self.inc_dec_val_arm),
@@ -89,6 +92,7 @@ class UgvControlNode(Node):
             self.cmd_steer,
             -self.upper_steer_limit, self.upper_steer_limit
         )
+        self.man_obj.auto_en = self.auto_mode
 
         # LT held = arm control mode (D-pad controls 2 joints)
         LT_ON = self.lt_val > 1000
@@ -126,6 +130,14 @@ class UgvControlNode(Node):
         self.rt_val = int((1 - msg.axes[5]) * self.max_joy_val / 2)
         self.lr_dpad = int(msg.axes[6])
         self.ud_dpad = int(msg.axes[7])
+
+        auto_btn = int(msg.buttons[5])
+        if auto_btn == 1 and self._prev_auto_btn == 0:
+            self.auto_mode = not self.auto_mode
+            self.get_logger().info(
+                f'AUTO MODE {"ENABLED" if self.auto_mode else "DISABLED"}'
+            )
+        self._prev_auto_btn = auto_btn
 
         now = time.monotonic()
         if now - self._last_debug_time > self._debug_interval:
